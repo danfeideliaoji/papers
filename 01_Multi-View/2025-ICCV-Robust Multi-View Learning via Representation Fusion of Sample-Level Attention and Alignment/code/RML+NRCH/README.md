@@ -1,0 +1,1 @@
+RML+NRCH is the implementation of the proposed RML regularization to promote the cross-modal hashing retrieval method NRCH (Wang et al. Robust Contrastive Cross-modal Hashing with Noisy Labels, ACM Multimedia 2024). For more details, please refer to [https://github.com/LonganWANG-cs/NRCH](https://github.com/LonganWANG-cs/NRCH).
