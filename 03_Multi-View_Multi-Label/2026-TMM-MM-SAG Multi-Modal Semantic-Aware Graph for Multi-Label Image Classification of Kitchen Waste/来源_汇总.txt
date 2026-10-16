@@ -1,0 +1,1 @@
+﻿Title      : MM-SAG: Multi-Modal Semantic-Aware Graph for Multi-Label Image Classification of Kitchen Waste Venue      : CCF-B期刊 / TMM (2026) Scope      : 相关(多模态+多标签) Publisher  : IEEE Xplore DOI        : https://doi.org/10.1109/tmm.2026.3703323 arXiv      : -  Local PDF  : 未获取 —— 需校园网/机构IP 按上面 DOI 下载 Local code : 未找到公开仓库

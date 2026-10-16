@@ -1,0 +1,1 @@
+﻿Title      : Category-Adaptive Cross-Modal Semantic Refinement and Transfer for Open-Vocabulary Multi-Label Recognition Venue      : CCF-B期刊 / TMM (2026) Scope      : 相关(多模态+多标签) Publisher  : IEEE Xplore DOI        : https://doi.org/10.1109/tmm.2026.3727181 arXiv      : -  Local PDF  : paper.pdf Local code : 未找到公开仓库
