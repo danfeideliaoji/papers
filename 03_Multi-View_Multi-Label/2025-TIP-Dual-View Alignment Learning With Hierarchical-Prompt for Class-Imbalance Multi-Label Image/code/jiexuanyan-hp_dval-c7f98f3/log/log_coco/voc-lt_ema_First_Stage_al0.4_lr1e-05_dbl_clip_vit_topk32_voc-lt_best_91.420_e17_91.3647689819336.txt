@@ -1,0 +1,11 @@
+{'batch_size': 16, 'workers': 2, 'num_classes': 80, 'max_epoch': 120, 'resume': '/data2/yanjiexuan/checkpoints/RC-Tran/MKT_LT_checkpoint/ema_First_Stage_al0.4_lr1e-05_dbl_clip_vit_topk32_voc-lt_best_91.420_e17.ckpt', 'evaluation': True, 'threshold': 0.8, 'dataset': 'voc-lt', 'ctx_init': 'a photo of a', 'n_ctx': 4, 'class_token_position': 'end', 'lr': 1e-05, 'train': False, 'topk': 32, 'lamda': 1.0, 'alpha': 0.4}
+=================================================>>>>>>> OP, OR, OF1, CP, CR, CF1:
+(0.0, 0.0, nan, 0.0, 0.0, nan)
+=================================================>>>>>>> OP_k, OR_k, OF1_k, CP_k, CR_k, CF1_k:
+(0.0, 0.0, nan, 0.0, 0.0, nan)
+test mAP:tensor(91.3648)
+head APs:{'bottle': tensor(73.1305), 'car': tensor(94.8489), 'chair': tensor(73.9816), 'diningtable': tensor(89.4429), 'person': tensor(87.0153), 'pottedplant': tensor(80.1386)}
+middle APs:{'bicycle': tensor(96.6459), 'cat': tensor(96.8613), 'dog': tensor(96.3266), 'motorbike': tensor(93.5985), 'sofa': tensor(87.0772), 'tvmonitor': tensor(92.1721)}
+tail APs:{'aeroplane': tensor(97.2581), 'bird': tensor(96.9426), 'boat': tensor(97.0794), 'bus': tensor(93.5804), 'cow': tensor(91.5623), 'horse': tensor(92.9923), 'sheep': tensor(97.5263), 'train': tensor(99.1144)}
+=================================================>>>>>>> mAP head, mAP medium, mAP tail:
+tensor(83.0930),tensor(93.7803),tensor(95.7570)

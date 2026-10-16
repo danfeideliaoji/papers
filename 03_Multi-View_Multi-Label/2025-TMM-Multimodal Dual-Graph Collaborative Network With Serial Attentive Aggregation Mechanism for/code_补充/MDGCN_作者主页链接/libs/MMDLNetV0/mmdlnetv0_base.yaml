@@ -1,0 +1,33 @@
+# data attribution
+data_dir: /home/
+modules: scene,tra,mfcc
+
+# model attribution
+in_dims: 2048,2048 
+hid_dims: 128,128,256,32 # real out dims
+out_dims: 1024 # unused
+num_classes: 63
+
+# optimizer attribution
+model: MMDLNetV0
+job_dir: /home/
+batch_size: 64 #64 16
+epochs: 80
+learning_rate: 0.001 #0.01 0.005
+scheduler: MultiStepLR,0.1,65,-1
+optimizer: SGD,0.99,0.0001
+num_workers: 2
+
+# model parameter
+active_domain_loss_step: 0
+alpha_weight: 0.1 
+beta_weight: 0.05 
+gamma_weight: 0.05 
+
+use_resume: False 
+resume_dir: /home/
+checkpoint: best_model.pth.tar 
+test_only: True 
+print_freq: 100
+device: None
+gpu: 0

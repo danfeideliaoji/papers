@@ -1,0 +1,1 @@
+﻿Title      : Multimodal Dual-Graph Collaborative Network With Serial Attentive Aggregation Mechanism for Micro-Video Multi-Label Classification Venue      : CCF-B期刊 / TMM (2025) Scope      : 相关(多模态+多标签) Publisher  : IEEE Xplore DOI        : https://doi.org/10.1109/tmm.2025.3542895 arXiv      : -  Local PDF  : 未获取 —— 需校园网/机构IP 按上面 DOI 下载 Local code : 未找到公开仓库

@@ -1,0 +1,84 @@
+{
+  "paper_title": "Reliable Representation Learning for Incomplete Multi-View Missing Multi-Label Classification",
+  "source_version": "arXiv:2303.17117v4",
+  "source_url": "https://arxiv.org/src/2303.17117v4",
+  "source_sha256": "f94b56e3326dae3e10cfae0adefcbd7f4bdf0e6fa034f76b20db2e6a9d3de4fd",
+  "local_pdf_sha256": "f2623a3ffb109a2d3cc68d41084c94c7705957c317cc6d90d8364f7d98ec4c11",
+  "equation_count": 21,
+  "reference_count": 60,
+  "figure_panels": [
+    "all0.3-AP.png",
+    "all0.3-AUC.png",
+    "all0.3-OE.png",
+    "all0.3-RL.png",
+    "all0.5-0-AP.png",
+    "all0.5-0-AUC.png",
+    "all0.5-0-OE.png",
+    "all0.5-0-RL.png",
+    "all00.5-AP.png",
+    "all00.5-AUC.png",
+    "all00.5-OE.png",
+    "all00.5-RL.png",
+    "contr.png",
+    "corel5k-beta.png",
+    "corel5k.png",
+    "corel5k_all_cls_tokens.png",
+    "corel5k_cls_tokens.png",
+    "corel5k_missing_labels.png",
+    "corel5k_missing_views.png",
+    "disc.png",
+    "main.png",
+    "mcc.png",
+    "pascal07-beta.png",
+    "pascal07.png",
+    "pascal07_all_cls_tokens.png",
+    "pascal07_cls_tokens.png",
+    "pascal07_missing_labels.png",
+    "pascal07_missing_views.png"
+  ],
+  "translation_file": "RANK_论文中文翻译.md",
+  "translation_sha256": "2871c7e0cc5134f3ef365142572962f5ff5c7018a6baeb10de49019d1bb9e7e1",
+  "table_copy_verification": [
+    {
+      "table": 4,
+      "rows": 35,
+      "mean_std_pairs": 270,
+      "exact_copy": true
+    },
+    {
+      "table": 5,
+      "rows": 35,
+      "mean_std_pairs": 270,
+      "exact_copy": true
+    },
+    {
+      "table": 6,
+      "rows": 13,
+      "scalar_values": 156,
+      "exact_copy": true
+    },
+    {
+      "table": 7,
+      "scalar_values": 18,
+      "exact_copy": true
+    }
+  ],
+  "formula_tags": 21,
+  "reference_entries": 60,
+  "original_figure_count": 8,
+  "figure_panel_count": 28,
+  "source_to_translation_sections": [
+    "摘要",
+    "1 引言",
+    "2 相关工作",
+    "3 预备知识",
+    "4 方法",
+    "5 实验",
+    "6 结论",
+    "资助与作者单位",
+    "参考文献",
+    "作者简介"
+  ],
+  "scope": "完整正文翻译；公式与表格由同版本源文件插入；参考文献与插图文字保留原文。",
+  "limitations": "文本内容人工翻译；未将译文当作方法正确性审计或论文复现结果。"
+}

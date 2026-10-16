@@ -1,0 +1,22 @@
+{'batch_size': 16, 'workers': 2, 'num_classes': 80, 'max_epoch': 120, 'resume': '/data2/yanjiexuan/checkpoints/RC-Tran/MKT_LT_checkpoint/ema_First_Stage_al0.4_lr1e-05_dbl_clip_vit_topk32_voc-lt_best_90.513_e28.ckpt', 'evaluation': True, 'threshold': 0.8, 'dataset': 'voc-lt', 'ctx_init': 'a photo of a', 'n_ctx': 4, 'class_token_position': 'end', 'lr': 1e-05, 'train': False, 'topk': 32, 'lamda': 1.0, 'alpha': 0.4}
+=================================================>>>>>>> OP, OR, OF1, CP, CR, CF1:
+(0.0, 0.0, nan, 0.0, 0.0, nan)
+=================================================>>>>>>> OP_k, OR_k, OF1_k, CP_k, CR_k, CF1_k:
+(0.0, 0.0, nan, 0.0, 0.0, nan)
+test mAP:tensor(90.4485)
+head APs:{'bottle': tensor(76.2010), 'car': tensor(94.4434), 'chair': tensor(72.2433), 'diningtable': tensor(86.6054), 'person': tensor(90.3199), 'pottedplant': tensor(75.1913)}
+middle APs:{'bicycle': tensor(94.9764), 'cat': tensor(95.5842), 'dog': tensor(94.4573), 'motorbike': tensor(93.7643), 'sofa': tensor(84.4675), 'tvmonitor': tensor(89.9535)}
+tail APs:{'aeroplane': tensor(98.3866), 'bird': tensor(93.8457), 'boat': tensor(96.6509), 'bus': tensor(91.9604), 'cow': tensor(90.1155), 'horse': tensor(93.8587), 'sheep': tensor(97.1668), 'train': tensor(98.7786)}
+=================================================>>>>>>> mAP head, mAP medium, mAP tail:
+tensor(82.5007),tensor(92.2005),tensor(95.0954)
+{'batch_size': 16, 'workers': 2, 'num_classes': 80, 'max_epoch': 120, 'resume': '/data2/yanjiexuan/checkpoints/RC-Tran/MKT_LT_checkpoint/ema_First_Stage_al0.4_lr1e-05_dbl_clip_vit_topk32_voc-lt_best_90.513_e28.ckpt', 'evaluation': True, 'threshold': 0.8, 'dataset': 'voc-lt', 'ctx_init': 'a photo of a', 'n_ctx': 4, 'class_token_position': 'end', 'lr': 1e-05, 'train': False, 'topk': 32, 'lamda': 1.0, 'alpha': 0.4}
+=================================================>>>>>>> OP, OR, OF1, CP, CR, CF1:
+(0.0, 0.0, nan, 0.0, 0.0, nan)
+=================================================>>>>>>> OP_k, OR_k, OF1_k, CP_k, CR_k, CF1_k:
+(0.0, 0.0, nan, 0.0, 0.0, nan)
+test mAP:tensor(90.4485)
+head APs:{'bottle': tensor(76.2010), 'car': tensor(94.4434), 'chair': tensor(72.2433), 'diningtable': tensor(86.6054), 'person': tensor(90.3199), 'pottedplant': tensor(75.1913)}
+middle APs:{'bicycle': tensor(94.9764), 'cat': tensor(95.5842), 'dog': tensor(94.4573), 'motorbike': tensor(93.7643), 'sofa': tensor(84.4675), 'tvmonitor': tensor(89.9535)}
+tail APs:{'aeroplane': tensor(98.3866), 'bird': tensor(93.8457), 'boat': tensor(96.6509), 'bus': tensor(91.9604), 'cow': tensor(90.1155), 'horse': tensor(93.8587), 'sheep': tensor(97.1668), 'train': tensor(98.7786)}
+=================================================>>>>>>> mAP head, mAP medium, mAP tail:
+tensor(82.5007),tensor(92.2005),tensor(95.0954)

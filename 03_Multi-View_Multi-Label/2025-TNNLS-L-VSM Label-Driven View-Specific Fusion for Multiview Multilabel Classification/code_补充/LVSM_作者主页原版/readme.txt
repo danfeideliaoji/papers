@@ -1,0 +1,1 @@
+python train_batch.py --end_epochs 50 --t 0.95 --seed 122 --batch_size 8 --dataset emotions.mat --k 8 --lr 0.0008

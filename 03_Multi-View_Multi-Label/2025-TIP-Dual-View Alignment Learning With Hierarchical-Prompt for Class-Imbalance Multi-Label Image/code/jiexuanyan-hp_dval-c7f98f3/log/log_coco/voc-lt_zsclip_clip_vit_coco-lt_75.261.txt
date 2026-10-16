@@ -1,0 +1,11 @@
+{'batch_size': 16, 'workers': 2, 'num_classes': 80, 'max_epoch': 120, 'resume': '', 'evaluation': True, 'threshold': 0.8, 'dataset': 'voc-lt', 'ctx_init': 'a photo of a', 'n_ctx': 4, 'class_token_position': 'end', 'lr': 1e-05, 'train': False, 'topk': 16, 'lamda': 1.0, 'alpha': 0.5}
+=================================================>>>>>>> OP, OR, OF1, CP, CR, CF1:
+(0.07705977382875606, 1.0, 0.14309284535773215, 0.07705977382875608, 1.0, 0.14309284535773212)
+=================================================>>>>>>> OP_k, OR_k, OF1_k, CP_k, CR_k, CF1_k:
+(0.42602315562735593, 0.8292714884696016, 0.5628779793667733, 0.4243839507022137, 0.8780402117092649, 0.5722040248864195)
+test mAP:tensor(75.2612)
+head APs:{'bottle': tensor(39.8354), 'car': tensor(81.2318), 'chair': tensor(38.3369), 'diningtable': tensor(73.3305), 'person': tensor(45.7296), 'pottedplant': tensor(49.9873)}
+middle APs:{'bicycle': tensor(78.0741), 'cat': tensor(96.5744), 'dog': tensor(91.4685), 'motorbike': tensor(79.7593), 'sofa': tensor(65.3837), 'tvmonitor': tensor(52.3664)}
+tail APs:{'aeroplane': tensor(94.4521), 'bird': tensor(94.2513), 'boat': tensor(88.9214), 'bus': tensor(86.3911), 'cow': tensor(83.1113), 'horse': tensor(75.1667), 'sheep': tensor(91.9913), 'train': tensor(98.8610)}
+=================================================>>>>>>> mAP head, mAP medium, mAP tail:
+tensor(54.7419),tensor(77.2711),tensor(89.1433)

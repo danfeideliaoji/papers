@@ -1,0 +1,1 @@
+﻿Title      : Dynamic multi-modal hypergraph learning for semi-supervised multi-label image recognition Venue      : CCF-B期刊 / Pattern Recognition (2025) Scope      : 相关(多模态+多标签) Publisher  : Elsevier ScienceDirect DOI        : https://doi.org/10.1016/j.patcog.2025.111959 arXiv      : -  Local PDF  : 未获取 —— 需校园网/机构IP 按上面 DOI 下载 Local code : 未找到公开仓库

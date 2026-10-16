@@ -1,0 +1,1 @@
+﻿Title      : RAMer: Reconstruction-based Adversarial Model for Multi-party Multi-modal Multi-label Emotion Recognition Venue      : CCF-A会议 / IJCAI (2025) Scope      : 核心(多视图+多标签) Publisher  : IJCAI (官方免费) DOI        : https://doi.org/10.24963/ijcai.2025/247 arXiv      : -  Local PDF  : paper.pdf Local code : 未找到公开仓库
