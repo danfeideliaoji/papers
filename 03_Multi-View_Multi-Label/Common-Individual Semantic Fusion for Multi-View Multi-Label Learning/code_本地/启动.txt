@@ -1,0 +1,12 @@
+用matlab打开文件夹后，在命令窗口执行下面脚本
+rng(1, 'twister')
+result = tune_cisf_parameters('dataset\emotions.mat');
+result.best
+result.test.metrics
+
+tune_cisf_parameters里会
+按70%/10%/20%划分数据；
+搜索42组 alpha、gamma；
+在验证集 A-P 选最优 alpha、gamma；
+用验证集 H-L 选阈值；
+最后评估测试集。
