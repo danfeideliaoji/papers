@@ -1,0 +1,2 @@
+bert：
+/model/zfr888/dual/bert-base-uncased

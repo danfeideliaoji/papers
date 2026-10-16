@@ -1,0 +1,8 @@
+waste_bag 0
+metal 1 
+shoe 2
+plastic 3
+bottle 4
+carton 5
+lile 6
+galss 7
