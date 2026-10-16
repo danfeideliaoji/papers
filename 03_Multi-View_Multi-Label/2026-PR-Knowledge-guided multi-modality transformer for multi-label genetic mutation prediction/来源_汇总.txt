@@ -1,0 +1,1 @@
+﻿Title      : Knowledge-guided multi-modality transformer for multi-label genetic mutation prediction Venue      : CCF-B期刊 / Pattern Recognition (2026) Scope      : 相关(多模态+多标签) Publisher  : Elsevier ScienceDirect DOI        : https://doi.org/10.1016/j.patcog.2026.113047 arXiv      : -  Local PDF  : 未获取 —— 需校园网/机构IP 按上面 DOI 下载 Local code : 未找到公开仓库

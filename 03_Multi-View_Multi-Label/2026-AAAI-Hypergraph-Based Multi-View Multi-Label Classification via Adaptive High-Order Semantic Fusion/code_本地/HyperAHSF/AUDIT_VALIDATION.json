@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-05",
+  "status": "FIXED_IMPLEMENTATION_AND_PROTOCOL_NOT_VERIFIED_PAPER_REPRODUCTION",
+  "before_regression": {
+    "passed": 1,
+    "failed": 4
+  },
+  "after_verification": {
+    "passed": 11,
+    "failed": 0,
+    "command": "python -m pytest tests/test_reproduction_integrity.py experiments/hgnn_ablation/tests/test_runtime_compat.py::test_message_passing_preserves_original_mean_aggregation -q"
+  },
+  "real_data_smoke": {
+    "samples": 64,
+    "view_dims": [
+      100,
+      1000,
+      512,
+      4096,
+      4096,
+      4096
+    ],
+    "device": "cpu",
+    "folds_executed": 2,
+    "epochs_per_fold": 1,
+    "source_provenance": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\audit_validation\\subset_provenance.json",
+    "output": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\audit_validation\\real_subset_cpu_smoke_attempt04",
+    "independent_AP_MicroF1_tolerance": 1e-12,
+    "initial_parameter_hashes": [
+      "410fda83b3f4d76a27e6cade781c10537ebb3b8b2e8f7895e0702e7fb4c4bc8d",
+      "410fda83b3f4d76a27e6cade781c10537ebb3b8b2e8f7895e0702e7fb4c4bc8d"
+    ],
+    "initial_parameters_identical": true
+  },
+  "full_cuda_five_fold_run": true,
+  "limitation": "GPU occupied ~7GB by other program; no user program interrupted",
+  "preserved_failed_checks": [
+    "4 initial regression failures",
+    "independent AP check ~6.1e-9 difference before float64 metric repair",
+    "isolated import subprocess WinError1455 under memory pressure",
+    "Attempt03 checkpoint write failed because C volume was full; attempt04 succeeded on E"
+  ],
+  "code_sha256": {
+    "train.py": "44e0c750009b128b27bc1bf50d0e22442c63d297a2dafda6bb926bbffc2dcb0e",
+    "corel5k_cv.py": "68c6688ebdc79590a386358006d8ba6493a859464e1e546198cea2ebb51616e1",
+    "eval_5folds.py": "a472d29e3226a726c17615049074fcb94dbf5e85d666fceed90380157d9fb9b2",
+    "model.py": "331536f7d706d9e0dab896dbcf95e8bbe6ead7279714506fcf6e2c6b900d30c5",
+    "utils.py": "3d4315e12ec7b5001796eb0659ab70f719803761b1cb65aac7f1fa121a0751c6",
+    "metrics.py": "49f02d64984fe31d12cac49cc3758f3873a29d250327a0b8d009a12848ca82ac",
+    "config.yaml": "7ee843f35557ee2f1a2162fe790c47e5bb4096a0abe90cdfbbff99711ab06691",
+    "experiments/hgnn_ablation/tensor_ops.py": "ff457e3da246d0a76b004b47f4d39262bd433cfff1d27abacac7021b25b40c9b"
+  },
+  "artifact_root": "E:/Papers_2025_2026/Papers_2025_2026_CCF_A/03_Multi-View_Multi-Label/research_design_20261005/hyperahsf_corel5k_code_audit/runs",
+  "storage_relocation": "Own generated smoke artifacts moved from C to E after C ran out of space; original code/data/backups preserved.",
+  "environment": {
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+    "executable": "E:\\pytorch\\.venv\\Scripts\\python.exe",
+    "torch": "2.8.0+cu128",
+    "sklearn": "1.9.1",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "torch_geometric": "2.8.0.post1",
+    "device": "cpu",
+    "threads": 4,
+    "gpu": null
+  },
+  "metadata_storage_patch_preserved_smoke_metrics_exactly": true,
+  "full_cuda_rerun": {
+    "status": "COMPLETE",
+    "result_directory": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\rerun_20261005_131646\\result",
+    "source_snapshot": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\rerun_20261005_131646\\source",
+    "epochs_per_fold": 65,
+    "folds": 5,
+    "samples": 4999,
+    "wall_seconds": 114.17501930000071,
+    "means": {
+      "HM": 0.013395023485023486,
+      "AP": 0.5101412199850323,
+      "OE": 0.39328388388388386,
+      "RL": 0.06255821098611646,
+      "subset": 0.04340880880880881,
+      "coverage": 39.143252052052055,
+      "macro": 0.19075262320862732,
+      "micro": 0.43870276577104717
+    },
+    "sample_stds": {
+      "HM": 0.0003199003604605909,
+      "AP": 0.012372072820028515,
+      "OE": 0.016283294907370176,
+      "RL": 0.001630982732277944,
+      "subset": 0.005814946361642245,
+      "coverage": 0.9067651530999686,
+      "macro": 0.011983818387436949,
+      "micro": 0.014821205869354608
+    },
+    "independent_verification": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\rerun_20261005_131646\\result\\POSTRUN_VERIFICATION.json",
+    "formal_author_reproduction_verified": false
+  },
+  "subsequent_causal_diagnosis": {
+    "status": "COMPLETE",
+    "report": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\rerun_20261005_131646\\diagnosis\\DIAGNOSIS_REPORT.md",
+    "fixed_counterfactual_arms": 3,
+    "diagnostic_new_training_folds": 13,
+    "epochs": 65,
+    "metric_independent_verification_difference": 0.0,
+    "effects": {
+      "AP": {
+        "global_scaling_at_fresh": 0.008629609747612177,
+        "carry_at_local": 0.0017439094439323233,
+        "carry_at_global": 0.001070136565783586,
+        "global_scaling_at_carry": 0.00795583686946344,
+        "interaction": -0.0006737728781487373,
+        "both_legacy_factors_minus_repaired": 0.009699746313395763
+      },
+      "micro": {
+        "global_scaling_at_fresh": 0.010852980288526826,
+        "carry_at_local": 0.0026206305097730143,
+        "carry_at_global": 0.00030830207389781483,
+        "global_scaling_at_carry": 0.008540651852651626,
+        "interaction": -0.0023123284358751994,
+        "both_legacy_factors_minus_repaired": 0.01116128236242464
+      }
+    }
+  },
+  "latest_jaccard_boundary_fix": {
+    "file": "C:\\Users\\A\\Desktop\\科研\\HyperAHSF\\HyperAHSF代码\\HyperAHSF\\model.py",
+    "sha256": "bff57f7da93809ba7dc82f28b54fe9953859125e17783ca5b5699bd3520c5bb0",
+    "regression_tests_passed": 12,
+    "full_five_fold_after_fix_run": true,
+    "note": "Full identical-setting CUDA5fold65epoch verification completed; small AP/Micro changes, paper reproduction not verified",
+    "result_directory": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\jaccard_fix_20261005_135631\\result",
+    "independent_verification": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\jaccard_fix_20261005_135631\\result\\POSTRUN_VERIFICATION.json"
+  },
+  "latest_full_cuda_run": {
+    "status": "COMPLETE",
+    "source_snapshot": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\jaccard_fix_20261005_135631\\source",
+    "result_directory": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\research_design_20261005\\hyperahsf_corel5k_code_audit\\runs\\jaccard_fix_20261005_135631\\result",
+    "epochs": 65,
+    "folds": 5,
+    "wall_seconds": 117.99575809999988,
+    "means": {
+      "HM": 0.01339965734965735,
+      "AP": 0.5110320061499756,
+      "OE": 0.39208348348348354,
+      "RL": 0.062322640973523635,
+      "subset": 0.040407407407407406,
+      "coverage": 39.0071059059059,
+      "macro": 0.1914896603955632,
+      "micro": 0.4412916816403799
+    },
+    "sample_stds": {
+      "HM": 0.0003326695494887325,
+      "AP": 0.01065652960329845,
+      "OE": 0.015929612838289264,
+      "RL": 0.0010481239064462225,
+      "subset": 0.0032767836952505014,
+      "coverage": 0.5251992605549929,
+      "macro": 0.012490640068654633,
+      "micro": 0.013804541493406796
+    },
+    "mean_deltas": {
+      "HM": 4.63386463386492e-06,
+      "AP": 0.0008907861649433135,
+      "OE": -0.0012004004004003144,
+      "RL": -0.00023557001259282007,
+      "subset": -0.003001401401401406,
+      "coverage": -0.13614614614615306,
+      "macro": 0.0007370371869358794,
+      "micro": 0.002588915869332742
+    },
+    "paper_reproduction_verified": false
+  }
+}

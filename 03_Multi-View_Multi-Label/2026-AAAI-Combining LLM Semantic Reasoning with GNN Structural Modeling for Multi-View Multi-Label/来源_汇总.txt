@@ -1,0 +1,1 @@
+﻿Title      : Combining LLM Semantic Reasoning with GNN Structural Modeling for Multi-View Multi-Label Feature Selection Venue      : CCF-A会议 / AAAI (2026) Scope      : 核心(多视图+多标签) Publisher  : AAAI 2026 (无真实DOI, 按标题去官网找) DOI        : https://doi.org/10.48448/mbe7-sj98 arXiv      : https://arxiv.org/abs/2511.08008  Local PDF  : paper.pdf Local code : 未找到公开仓库

@@ -1,0 +1,92 @@
+# HyperAHSF Ablation Progress
+
+## 2026-08-31 — Goal initialization
+
+- Read the complete pasted specification and created the substantive persistent goal.
+- Ran the mandated initial Git checks; confirmed the target was not a repository.
+- Initialized Git only at the requested project root.
+- Inventoried top-level files and identified existing datasets, caches, logs, experiments, docs, and research outputs to protect.
+- Created `.gitignore` plus persistent planning, findings, and progress records.
+- Verified the four files exist and confirmed the planning records are ignored while source/docs/experiments/results remain available for precise review and staging.
+- Read `model.py` and `train.py`; recorded the active per-view/common HGNN data flow, current edge-return behavior, loss path, validation graph construction, and the nonstandard disabled attention implementation.
+- Read `config.yaml` and `metrics.py`; recorded the exact Emotions hyperparameters and the fixed eight-metric ordering/definitions that the common harness must preserve and expand into named CSV columns.
+- Read `utils.py` and `README.md`; recorded global hyperedge ID ordering, the unchanged contrastive-loss behavior, and the minimal existing run documentation.
+- Located the local paper and read Eq. (7)/(8) from its existing text extraction; documented node→edge, edge→node, `Q`, diagonal positive `W`, and the paper's default `W=I`.
+- Inventoried prior candidate1 experiment code and results; reserved separate HGNN-ablation paths to prevent collisions.
+- Located exact model extension points and confirmed the existing five-fold pickle loader is read-only for training/validation runs.
+- Checked the default Python runtime and found it lacks PyTorch; began searching for the already-installed project runtime without downloading dependencies.
+- Reviewed the existing Candidate1 runner only for reusable result-writing conventions; its mechanisms remain out of scope.
+- Found that the Python launcher's Anaconda entry is stale (`D:\anac` no longer exists); switched to filesystem-based runtime discovery rather than repeating the failed path.
+- Excluded the unrelated `D:\py\.venv` after confirming it also lacks PyTorch.
+- Found an Ubuntu WSL installation and a local Conda metadata directory; changed the WSL probe approach after one quoting error.
+- Confirmed WSL system Python has no PyTorch and that the local Conda metadata directory contains no executable runtime.
+- Confirmed the app-bundled Python also lacks PyTorch and found no usable Python installation registered in Windows.
+- Located an existing completed baseline log and a likely CUDA-enabled virtual-environment path in shell history; queued it for direct verification.
+- Verified the CUDA venv has GPU PyTorch but not PyG; continued searching for existing compatible PyG and torch-scatter installations.
+- Began checking recent HyperAHSF task history for the previously successful interpreter; adjusted the listing request after its documented limit validation.
+- Found the immediately preceding task “检查插件虚拟环境识别”, which is directly about this missing runtime; adjusted the read request to its maximum supported turn count.
+- Wrote `docs/superpowers/plans/2026-08-31-hgnn-isolated-ablation.md` with explicit TDD tasks, interfaces, branch creation rules, formulas, artifact schemas, experiment commands, and final audits.
+- Self-reviewed the implementation plan against the supplied specification; the prohibited-placeholder scan returned no matches.
+- Chose an ignored project-local `.deps/` target for the minimum missing Python libraries while reusing the existing local CUDA PyTorch runtime; no papers, datasets, or models will be downloaded.
+- Audited and committed exactly 21 allowed original source/config/test/script/doc files plus `.gitignore` as preservation commit `d9ea272`; prior result directories stayed untracked.
+- Created and switched to `experiment/hgnn-ablation-base` before any implementation.
+- Completed Phase 1; Phase 2 (common harness and baseline) is now in progress.
+- Installed only missing ordinary Python runtime libraries under ignored `.deps/`, reusing the existing CUDA Torch interpreter.
+- Added common flags/exclusivity validation and native scatter compatibility under TDD; 10 tests passed.
+- Added collision-safe reporting, required metric schema, fold summaries, real runner, timing/VRAM/parameter records, SVG curves, and reports under TDD.
+- Diagnosed and minimally fixed the pre-existing `torch.topk` indices typo that blocked all training-graph construction.
+- Restored the pre-existing Candidate1 test suite under the native scatter compatibility path and fixed duplicate test-module discovery with package markers.
+- Verified syntax compilation and the combined original/new suite: 36 passed.
+- Completed a real fold0/one-epoch CUDA baseline smoke: finite loss/metrics, 610,375 trainable parameters, 42,525,184 peak allocated GPU bytes.
+- Fresh pre-commit verification repeated syntax compilation, all 36 tests, and a separate real CUDA run successfully.
+- Committed the common harness as `03b8d90` (`BASE_COMMIT`) on `experiment/hgnn-ablation-base`.
+- Ran and verified the official baseline (Emotions, 5×125, seed 0): 625/625 rows present, five folds complete, zero non-finite losses, 48.7970 s total.
+- Completed Phase 2; Phase 3 (residual-only) is now in progress.
+- Implemented residual-only under TDD; 12 focused tests and 48 total tests passed, plus real CPU/CUDA checks.
+- Committed residual-only as `4dbec56` and ran fold0×20 smoke followed by the required 5×125 full experiment; both completed with finite losses.
+- Completed Phase 3; Phase 4 (dynamic hyperedge weight only) is now in progress.
+- Implemented dynamic hyperedge weighting under TDD with a per-layer shared scorer, positive `softplus + eps` weights, mean-one normalization, and W applied before edge→node propagation and consistently to the legacy returned edge proxy.
+- Verified 12 focused tests and all 35 tests present on the isolated weight branch, syntax compilation, a real CPU epoch, CUDA tensor paths, and a real CUDA epoch.
+- Committed weight-only as `93afb8b` and verified it descends directly from `BASE_COMMIT` `03b8d90`.
+- Ran fold0×20 CUDA smoke: 20 rows, no non-finite losses, 1,190 positive final weights, final mean 1.0 and std 0.3821.
+- Ran the required 5×125 CUDA full experiment: 625 metric rows, five summaries, 625 weight-stat rows, 5,930 final weight values, and no non-finite loss/metric or invalid weight.
+- Completed Phase 4; Phase 5 (grouped hypergraph attention only) is now in progress.
+- Implemented standard four-head grouped hypergraph attention under TDD: n2e softmax groups by `edge_id`, e2n groups by `node_id`, and four 32-dimensional heads concatenate to 128 dimensions.
+- Verified singleton self-loop coefficients equal one exactly; empty edges, isolated nodes, zero-edge graphs, gradients, CPU/CUDA shapes, off-path equality, and mechanism exclusivity are covered.
+- Verified 14 focused tests, all 37 ablation tests, the repository-wide 50-test suite, syntax compilation, a real CPU epoch, and a real CUDA epoch.
+- Committed attention-only as `d9298a1` and verified it descends directly from `BASE_COMMIT` `03b8d90`.
+- Ran fold0×20 CUDA smoke: 20 rows, no non-finite loss, 40 attention-stat rows, maximum group-sum error 1.19e-7, and all singleton checks passed.
+- Ran the required 5×125 CUDA full experiment: 625 metric rows, five summaries, 1,250 direction-stat rows, no non-finite values, and all singleton checks passed.
+- Completed Phase 5; Phase 6 (results-only summary branch and conclusions) is now in progress.
+- Created `experiment/hgnn-ablation-summary` directly from `BASE_COMMIT`; it contains no mechanism implementation code.
+- Generated and visually verified `aggregate_results.csv`, `metric_comparison.svg`, `runtime_comparison.svg`, `最终对比报告.md`, and `复现说明.md`.
+- Used a baseline-relative, paired-fold comparison with AP-best and final snapshots, sample standard deviations, absolute/percentage deltas, win counts, descriptive paired-delta intervals, stability/overfitting indicators, and cost analysis.
+- Committed the results-only summary as `38ae998`; exactly 62 result/report paths and zero code paths differ from `BASE_COMMIT`.
+- Final post-commit verification: 36 tests passed; 11 SVGs parsed; all four full runs total 2,500 metric rows; aggregate CSV has 32 rows; all eight required research questions are answered.
+- Audited all branches: every mechanism is exactly one direct child commit of `BASE_COMMIT`, every pairwise mechanism merge-base is `03b8d90`, and no branch tracks datasets, checkpoints, caches, or local dependencies.
+- Completed Phases 6 and 7. No combined mechanism was implemented or tested.
+- Current phase: complete; waiting for the user to decide any next research step.
+
+## 2026-08-31 — Yeast cross-dataset continuation
+
+- Read the complete new Yeast specification and activated a new persistent goal.
+- Classified the previous explanatory turn as no authoritative-state progress for this new goal; started with the required safety and format-provenance audit.
+- Re-read planning/TDD skill instructions, restored all persistent records, and created a six-step live plan with the multi-view format as a hard training gate.
+- Confirmed the repository and current results-only summary branch are intact; only pre-existing Candidate1 result directories are untracked.
+- Found no Yeast config or local Yeast data, but found the author-code Yeast/Corel5k/Pascal MATLAB cell-layout preprocessor; documented its 10-fold and global-scaler leakage issues.
+- Phase 8 began by locating the local paper/author materials and establishing the exact multi-view Yeast source requirement before any preprocessing or training.
+- Inspected the adjacent preserved original source archive; confirmed it contains no Yeast data/config/supplement and no view-construction documentation.
+- Downloaded official MULAN `yeast.rar` from the MULAN SourceForge project into `Multi_View_dataset/yeast_raw/`, verified the 1,635,486-byte size and SHA-256, extracted its four official members, and recorded all hashes/provenance.
+- Completed a raw authenticity audit: 2,417 samples, 103 numeric features, 14 binary labels, mean label cardinality 4.2371, no empty labels, non-finite values, duplicates, or split overlap.
+- Confirmed the official data is a single undifferentiated feature matrix, while the author code requires a true multi-view MATLAB cell. Continued the format-gate investigation through the official AAAI DOI/article and author presentation; no code/data supplement or view rule has been found yet.
+- Created `experiment/yeast-ablation-base` directly from the clean Emotions results-only summary commit; it is not yet a `YEAST_BASE_COMMIT` because the data-format gate prevents baseline training.
+- Added official-ARFF parsing and authenticity auditing under TDD: the new tests first failed on the missing module, then all four focused tests passed after implementation.
+- Generated `research_outputs/yeast_hgnn_ablation/data_authenticity_report.json` and the Chinese `格式差异报告.md`; neither creates or recommends an invented view split.
+- Extended `.gitignore` for ARFF/XML/ZIP/RAR/7z files and verified the raw archive/members are ignored while the Markdown provenance record remains eligible for precise staging.
+- Full repository verification passed: syntax compilation succeeded and 40 tests passed with only three pre-existing deprecation warnings.
+- Completed Phases 8 and 9. Phase 10 reached the required stop condition: training, folds, config, graph audit, and all four Yeast runs remain pending until the user provides an author-supported multi-view file/mapping or explicitly authorizes a non-paper single-view adaptation.
+- Revalidated the stopped state after an explanatory-only turn: branch `experiment/yeast-ablation-base` remains at `5f5749f`; only the two pre-existing Candidate1 result directories are untracked. Began a final author-chain provenance pass through D-VSM before declaring the multi-view format blocker irreducible.
+- Downloaded and structurally verified the complete official D-VSM PDF, visually inspected its experimental pages, and audited the official author code archive; D-VSM does not use Yeast and contributes no view mapping.
+- Audited the official LVSM, VAMS, and GNAM code archives from the HyperAHSF coauthor’s homepage. LVSM/VAMS confirm a missing preconstructed `Yeast.mat` cell dataset but contain no data, dimensions, or construction rule; GNAM adds no Yeast evidence.
+- Downloaded and verified the complete nine-page official VAMS paper plus official poster. The paper reports Yeast results and cites MULAN, but omits view count/dimensions and does not resolve whether the author MAT was single- or multi-view.
+- Corrected the format report so the generic MAT cell loader is no longer overinterpreted as proof of multiple views, and recorded the exhausted author-chain evidence.

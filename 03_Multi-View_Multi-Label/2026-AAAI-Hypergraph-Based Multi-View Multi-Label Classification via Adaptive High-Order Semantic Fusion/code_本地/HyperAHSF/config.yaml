@@ -1,0 +1,44 @@
+emotions:
+  name: emotions
+  num_views: 2
+  inputs_sizes: [64, 8]
+  num_class: 6
+  # embedding extract
+  EDC_feature_matrix: [[128], [64]] # view-specific embedding dimension
+  specific_dim_matrix: [[128], [128]] # dimension of HGNNs for view-specific hypergraphs
+  k: 6
+  thr: 0.9
+  test_k: 6 # optional
+  test_thr: 99 # optional--cosine similarity selection for the testing phase
+  num_layers: 2
+  hid_dim: 128 # dimension of HGNN for unified multi-view hypergraph
+  w_intra: 0.06 # alpha
+  confidence_bar: 0.47
+  epochs: 125
+  lr: 0.35e-03
+  weight_decay: 1.0e-01
+
+corel5k:
+  # Gemini 本地适配参数；已使用外层 fold0 调参，并非已核实的作者 Corel5k 配置。
+  # 保留数值用于审查前后追溯。修正入口只用固定末轮评估，不再挑外层最佳轮次。
+  configuration_source: gemini_local_adaptation_history_exposed
+  # 本机 C 盘空间不足，模型与预测保存在 E 盘；这是输出路径，不是模型超参数。
+  artifact_root: E:/Papers_2025_2026/Papers_2025_2026_CCF_A/03_Multi-View_Multi-Label/research_design_20261005/hyperahsf_corel5k_code_audit/runs
+  name: corel5k
+  num_views: 6
+  inputs_sizes: [100, 1000, 512, 4096, 4096, 4096]
+  num_class: 260
+  # embedding extract (views 3, 4, 5 have 4096 dims, using 2-layer MLP [512, 128] for deep representation)
+  EDC_feature_matrix: [[128], [128], [128], [512, 128], [512, 128], [512, 128]]
+  specific_dim_matrix: [[128], [128], [128], [128], [128], [128]] # dimension of HGNNs for view-specific hypergraphs
+  k: 5
+  thr: 0.5
+  test_k: 5 # optional
+  test_thr: 99 # optional--cosine similarity selection for the testing phase
+  num_layers: 2
+  hid_dim: 128 # dimension of HGNN for unified multi-view hypergraph
+  w_intra: 0.1 # alpha
+  confidence_bar: 0.30
+  epochs: 65
+  lr: 3.0e-03
+  weight_decay: 3.0e-03

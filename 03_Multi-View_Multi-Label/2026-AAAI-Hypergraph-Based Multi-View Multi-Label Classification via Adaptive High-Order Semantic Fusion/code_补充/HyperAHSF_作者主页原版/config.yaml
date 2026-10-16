@@ -1,0 +1,19 @@
+emotions:
+  name: emotions
+  num_views: 2
+  inputs_sizes: [64, 8]
+  num_class: 6
+  # embedding extract
+  EDC_feature_matrix: [[128], [64]] # view-specific embedding dimension
+  specific_dim_matrix: [[128], [128]] # dimension of HGNNs for view-specific hypergraphs
+  k: 6
+  thr: 0.9
+  test_k: 6 # optional
+  test_thr: 99 # optional--cosine similarity selection for the testing phase
+  num_layers: 2
+  hid_dim: 128 # dimension of HGNN for unified multi-view hypergraph
+  w_intra: 0.06 # alpha
+  confidence_bar: 0.47
+  epochs: 125
+  lr: 0.35e-03
+  weight_decay: 1.0e-01

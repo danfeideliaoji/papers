@@ -1,0 +1,1 @@
+﻿Title      : Consistency-diversity trade-off and label-guided learning for double-incomplete multi-view multi-label classification Venue      : CCF-B期刊 / Pattern Recognition (2026) Scope      : 核心(多视图+多标签) Publisher  : Elsevier ScienceDirect DOI        : https://doi.org/10.1016/j.patcog.2026.113391 arXiv      : -  Local PDF  : 未获取 —— 需校园网/机构IP 按上面 DOI 下载 Local code : 未找到公开仓库
