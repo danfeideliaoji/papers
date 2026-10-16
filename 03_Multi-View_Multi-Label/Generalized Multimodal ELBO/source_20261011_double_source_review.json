@@ -1,0 +1,12 @@
+{
+  "title": "Generalized Multimodal ELBO",
+  "url": "https://arxiv.org/pdf/2105.02470v1",
+  "path": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\研究探索\\02_不完整多视图多标签\\03_不完整MVML自身问题\\探索项目\\双源缺视图恢复\\001_原文与模型设计_20261011\\资料\\论文\\MoPoE_arXiv2105.02470v1\\paper.pdf",
+  "pages": 23,
+  "bytes": 12924995,
+  "sha256": "264d1d2487e4d9a76325c18ea3350d97ccfb8cca95c10ad6faf30ea9f58274e1",
+  "first_page": "Published as a conference paper at ICLR 2021\nGENERALIZED MULTIMODAL ELBO\nThomas M. Sutter∗ Imant Daunhawer∗ Julia E. Vogt\nDepartment of Computer Science\nETH Zur",
+  "status": "FORMALLY_ARCHIVED_VERIFIED",
+  "access_date": "2026-10-11",
+  "formal_path": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\Generalized Multimodal ELBO\\paper.pdf"
+}
