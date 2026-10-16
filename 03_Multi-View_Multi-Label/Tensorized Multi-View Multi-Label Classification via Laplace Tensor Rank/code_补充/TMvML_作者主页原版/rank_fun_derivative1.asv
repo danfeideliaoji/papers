@@ -1,0 +1,4 @@
+function y = rank_fun_derivative1(x,delta)
+y  = exp(-x./delta+eps)*exp(delta^2)./delta;
+%y = delta./(delta+x).^2;
+end
