@@ -1,0 +1,26 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+torch==2.0.1+cu117
+torchmetrics==0.8.2
+torchvision==0.15.2+cu117
+
+hydra-core==1.2.0
+hydra-colorlog==1.2.0
+hydra-optuna-sweeper==1.2.0
+
+basemap>=1.3.6
+basemap_data>=1.3.2
+h5py==3.7.0
+matplotlib==3.6.3
+numpy>=1.25.2
+omegaconf==2.2.3
+pandas==1.5.2
+Pillow==10.2.0
+pyrootutils==1.0.4
+python-dotenv==1.0.1
+pytorch_lightning==1.5.10
+rich==13.7.1
+robustness==1.2.1.post2
+scikit_learn==1.1.3
+scipy==1.12.0
+seaborn==0.13.2
+wandb==0.13.5
