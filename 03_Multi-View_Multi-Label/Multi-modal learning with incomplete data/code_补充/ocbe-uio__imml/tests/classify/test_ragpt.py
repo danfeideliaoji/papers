@@ -1,0 +1,240 @@
+import pandas as pd
+import pytest
+torch = pytest.importorskip("torch")
+transformers = pytest.importorskip("transformers")
+L = pytest.importorskip("lightning")
+from lightning import seed_everything
+import copy
+import importlib
+import os
+import shutil
+import sys
+import tempfile
+from unittest.mock import patch
+from torch.utils.data import DataLoader
+
+from imml.classify import RAGPT
+from imml.load import RAGPTDataset
+
+seed_everything(42)
+estimator = RAGPT
+
+
+@pytest.fixture
+def sample_data():
+    tmp_path = tempfile.mkdtemp()
+    Xs = [
+        pd.DataFrame(["docs/figures/graph.png", "docs/figures/logo_imml.png"]),
+        pd.DataFrame(["This is the graphical abstract of iMML.", "This is the logo of iMML."]),
+    ]
+    y = [0, 1]
+    dataset = RAGPTDataset(Xs=Xs, y=y, Xs_bank=Xs, y_bank=y, modalities=["image", "text"],
+                           prompt_path=str(tmp_path), n_neighbors=1)
+    loader = DataLoader(dataset, batch_size=2)
+    batch = next(iter(loader))
+    return batch, tmp_path
+
+
+def test_deepmodule_not_installed():
+    estimator()
+    with patch.dict(sys.modules, {"torch": None}):
+        import imml as imml_mock
+        import imml.classify.ragpt as module_mock
+        importlib.reload(imml_mock)
+        importlib.reload(module_mock)
+        with pytest.raises(ImportError, match="Module 'deep' needs to be installed."):
+            estimator()
+    importlib.reload(imml_mock)
+    importlib.reload(module_mock)
+
+
+def test_default_params(sample_data):
+    batch, tmp_path = sample_data
+    model = estimator()
+    assert hasattr(model, 'model')
+    assert hasattr(model, 'loss_fn')
+    assert hasattr(model, 'learning_rate')
+    assert hasattr(model, 'weight_decay')
+    with torch.no_grad():
+        loss = model.training_step(batch)
+    assert isinstance(loss, torch.Tensor)
+    shutil.rmtree(tmp_path, ignore_errors=True)
+    assert not os.path.exists(tmp_path)
+
+
+def test_invalid_params():
+    with pytest.raises(ValueError, match="Invalid max_text_len."):
+        estimator(max_text_len=None)
+    with pytest.raises(ValueError, match="Invalid max_text_len."):
+        estimator(max_text_len=-1)
+
+    with pytest.raises(ValueError, match="Invalid max_image_len."):
+        estimator(max_image_len=None)
+    with pytest.raises(ValueError, match="Invalid max_image_len."):
+        estimator(max_image_len=-1)
+
+    # Test invalid prompt_position
+    with pytest.raises(ValueError, match="Invalid prompt_position."):
+        estimator(prompt_position=None)
+    with pytest.raises(ValueError, match="Invalid prompt_position."):
+        estimator(prompt_position=-1)
+
+    # Test invalid prompt_length
+    with pytest.raises(ValueError, match="Invalid prompt_length."):
+        estimator(prompt_length=None)
+    with pytest.raises(ValueError, match="Invalid prompt_length."):
+        estimator(prompt_length=-1)
+
+    # Test invalid dropout_rate
+    with pytest.raises(ValueError, match="Invalid dropout_rate."):
+        estimator(dropout_rate=None)
+    with pytest.raises(ValueError, match="Invalid dropout_rate."):
+        estimator(dropout_rate=-1)
+    with pytest.raises(ValueError, match="Invalid dropout_rate."):
+        estimator(dropout_rate=2)
+
+    # Test invalid hidden_dim
+    with pytest.raises(ValueError, match="Invalid hidden_dim."):
+        estimator(hidden_dim=None)
+    with pytest.raises(ValueError, match="Invalid hidden_dim."):
+        estimator(hidden_dim=-1)
+
+    # Test invalid cls_num
+    with pytest.raises(ValueError, match="Invalid output_dim."):
+        estimator(output_dim=None)
+    with pytest.raises(ValueError, match="Invalid output_dim."):
+        estimator(output_dim=-1)
+
+    # Test invalid loss
+    with pytest.raises(ValueError, match="Invalid loss_fn."):
+        estimator(loss_fn="not_callable")
+
+    # Test invalid learning_rate
+    with pytest.raises(ValueError, match="Invalid learning_rate."):
+        estimator(learning_rate=None)
+    with pytest.raises(ValueError, match="Invalid learning_rate."):
+        estimator(learning_rate=-1)
+
+    # Test invalid weight_decay
+    with pytest.raises(ValueError, match="Invalid weight_decay."):
+        estimator(weight_decay=None)
+    with pytest.raises(ValueError, match="Invalid weight_decay."):
+        estimator(weight_decay=-1)
+
+
+def test_lightning_methods(sample_data):
+    # Create model
+    model = estimator()
+
+    # Test training_step
+    batch, tmp_path = sample_data
+    loss = model.training_step(copy.deepcopy(batch))
+    assert isinstance(loss, torch.Tensor)
+
+    # Test validation_step
+    loss = model.validation_step(copy.deepcopy(batch))
+    assert isinstance(loss, torch.Tensor)
+
+    # Test test_step
+    loss = model.test_step(copy.deepcopy(batch))
+    assert isinstance(loss, torch.Tensor)
+
+    # Test predict_step
+    preds = model.predict_step(copy.deepcopy(batch))
+    assert isinstance(preds, torch.Tensor)
+
+    # Test configure_optimizers
+    optimizer = model.configure_optimizers()
+    assert isinstance(optimizer, torch.optim.Optimizer)
+    shutil.rmtree(tmp_path, ignore_errors=True)
+    assert not os.path.exists(tmp_path)
+
+
+def test_custom_loss_fn(sample_data):
+    batch, tmp_path = sample_data
+    model = estimator(loss_fn=torch.nn.functional.cross_entropy)
+    with torch.no_grad():
+        loss = model.training_step(copy.deepcopy(batch), 0)
+    assert isinstance(loss, torch.Tensor)
+    assert not torch.isnan(loss).any()
+    preds = model.predict_step(copy.deepcopy(batch))
+    assert isinstance(preds, torch.Tensor)
+    assert not torch.isnan(preds).any()
+    assert preds.ndim == 2
+    assert preds.shape[1] == 2
+    assert len(preds) == len(batch["label"])
+    assert torch.ge(preds, 0).all() and torch.le(preds, 2).all()
+
+
+def test_multiclass(sample_data):
+    Xs = [
+        pd.DataFrame(["docs/figures/graph.png", "docs/figures/logo_imml.png", "docs/figures/logo_imml.png"]),
+        pd.DataFrame(["This is the graphical abstract of iMML.", "This is the logo of iMML.", "This is the logo of iMML."]),
+    ]
+    y = [0, 1, 2]
+    tmp_path = tempfile.mkdtemp()
+    train_data = RAGPTDataset(Xs=Xs, y=y, Xs_bank=Xs, y_bank=y, modalities=["image", "text"],
+                              n_neighbors=1, prompt_path=str(tmp_path))
+    loader = DataLoader(train_data, batch_size=len(train_data))
+    batch = next(iter(loader))
+    model = estimator(output_dim=3)
+    with torch.no_grad():
+        loss = model.training_step(copy.deepcopy(batch), 0)
+    assert isinstance(loss, torch.Tensor)
+    assert not torch.isnan(loss).any()
+    preds = model.predict_step(copy.deepcopy(batch))
+    assert isinstance(preds, torch.Tensor)
+    assert not torch.isnan(preds).any()
+    assert preds.ndim == 2
+    assert preds.shape[1] == 3
+    assert len(preds) == len(batch["label"])
+    assert torch.ge(preds, 0).all() and torch.le(preds, 2).all()
+
+
+def test_missing_values_handling(sample_data):
+    # Create model
+    model = estimator()
+
+    # Create batch with missing values
+    batch, tmp_path = sample_data
+    batch['observed_image'] = [0, 1]  # First image is missing
+    batch['observed_text'] = [1, 0]   # Second text is missing
+
+    # Test forward pass with missing values
+    with torch.no_grad():
+        loss = model.training_step(copy.deepcopy(batch))
+    assert isinstance(loss, torch.Tensor)
+    shutil.rmtree(tmp_path, ignore_errors=True)
+    assert not os.path.exists(tmp_path)
+
+
+@pytest.mark.skipif(sys.platform.startswith("darwin"), reason="Error with MPS")
+def test_example(sample_data):
+    from imml.load import RAGPTDataset
+    from imml.classify import RAGPT
+    from lightning import Trainer
+    from torch.utils.data import DataLoader
+    images = ["docs/figures/graph.png", "docs/figures/logo_imml.png",
+              "docs/figures/graph.png", "docs/figures/logo_imml.png"]
+    texts = ["This is the graphical abstract of iMML.", "This is the logo of iMML.",
+             "This is the graphical abstract of iMML.", "This is the logo of iMML."]
+    Xs = [
+        pd.DataFrame(images),
+        pd.DataFrame(texts),
+    ]
+    y = [0, 1, 0, 1]
+    modalities = ["image", "text"]
+    tmp_path = tempfile.mkdtemp()
+    train_data = RAGPTDataset(Xs=Xs, y=y, Xs_bank=Xs, y_bank=y, modalities=modalities,
+                              n_neighbors=1, prompt_path=str(tmp_path))
+    train_dataloader = DataLoader(train_data, batch_size=len(train_data))
+    trainer = Trainer(max_epochs=1, logger=False, enable_checkpointing=False)
+    estimator = RAGPT()
+    trainer.fit(estimator, train_dataloader)
+    trainer.predict(estimator, train_dataloader)
+    shutil.rmtree(tmp_path, ignore_errors=True)
+    assert not os.path.exists(tmp_path)
+
+
+if __name__ == "__main__":
+    pytest.main()

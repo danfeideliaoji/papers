@@ -1,0 +1,44 @@
+# License: BSD-3-Clause
+
+__version__ = "0.6.1"
+
+try:
+    import torch
+    from torch import nn
+    import lightning as L
+    import torchvision
+    from torch import Tensor
+    from transformers import BertTokenizer, ViltModel, ViltImageProcessor
+    LightningModule = L.LightningModule
+    Module = nn.Module
+    Dataset = torch.utils.data.Dataset
+    deepmodule_installed = True
+    deepmodule_error = None
+except ImportError:
+    LightningModule = object
+    Module = object
+    Dataset = object
+    Tensor = str
+    ViltModel = object
+    BertTokenizer = object
+    ViltImageProcessor = object
+    deepmodule_installed = False
+    deepmodule_error = "Module 'deep' needs to be installed. See https://imml.readthedocs.io/stable/main/installation.html#optional-dependencies"
+
+
+try:
+    import oct2py
+    octavemodule_installed = True
+    oct2py_module_error = None
+except ImportError:
+    octavemodule_installed = False
+    oct2py_module_error = "Module 'octave' needs to be installed. See https://imml.readthedocs.io/stable/main/installation.html#optional-dependencies"
+
+
+try:
+    import rpy2
+    rmodule_installed = True
+    rmodule_error = None
+except ImportError:
+    rmodule_installed = False
+    rmodule_error = "Module 'r' needs to be installed to use r engine. See https://imml.readthedocs.io/stable/main/installation.html#optional-dependencies"

@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imml"
+dynamic = ["version"]
+description = "A python package for multi-modal learning with incomplete data"
+readme = "README.md"
+authors = [
+    {name = "Alberto López", email = "a.l.sanchez@medisin.uio.no" }
+]
+maintainers = [
+    {name = "Alberto López", email = "a.l.sanchez@medisin.uio.no" }
+]
+keywords = ["multi-modal learning", "machine learning", "incomplete data", "missing data"]
+license = { file = "LICENSE" }
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Development Status :: 3 - Alpha",
+    'License :: OSI Approved :: BSD License',
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Topic :: Software Development",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+
+requires-python = ">=3.10"
+dependencies = [
+    "scikit-learn>=1.4.1",
+    "pandas>=2.2.2",
+    "networkx>=2.5",
+    "h5py>=3.9.0",
+    "control>=0.10.1",
+    "cvxpy>=1.7.1"
+]
+
+[project.urls]
+Documentation = "https://imml.readthedocs.io"
+Source = "https://github.com/ocbe-uio/imml"
+Download = "https://pypi.org/project/imml/#files"
+Tracker = "https://github.com/ocbe-uio/imml/issues"
+Changelog = "https://imml.readthedocs.io/stable/development/changelog.html"
+
+[project.optional-dependencies]
+octave = [
+    "ipython>=8.20.0,<9.0.0",
+    "oct2py>=5.8.0",
+]
+r = [
+    "rpy2>=3.5.14",
+]
+deep = [
+    "lightning>=2.2",
+    "transformers>=4.51.3",
+    "torch_geometric>=2.6.1",
+    "torchvision>=0.19.1",
+#    "imagebind @ git+https://github.com/facebookresearch/ImageBind.git",
+#    "soundfile",
+#    "cv2",
+#    "torchcodec",
+]
+docs = [
+#    deep
+    "lightning>=2.2",
+    "transformers>=4.51.3",
+#    tutorials
+    "ipython>=8.20.0,<9.0.0",
+    "datasets==3.6.0",
+#    docs
+    "sphinx>=7.0.0,<9.0.0",
+    "sphinx-gallery>=0.17.1",
+    "sphinx_rtd_theme>=1.0.0",
+]
+tests = [
+    "pytest>=7.1.2",
+    "pytest-cov>=2.9.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["imml", "imml.*"]
+
+[tool.setuptools]
+license-files = []
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "imml.__version__"}
+
+[tool.setuptools.package-data]
+"imml" = ["**/*.R", "**/*.m"]
