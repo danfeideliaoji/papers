@@ -1,0 +1,25 @@
+function [ACC, NMI] = FederatedEvaluate(X, Y, global_W, c)
+Xhat_all = cell2mat(X');
+W_all = cell2mat(global_W');
+[~, idx] = sort(sum(W_all.*W_all,2), 'descend');
+d = size(Xhat_all,1);
+fea_ratio = 0.3;
+feaSet = Xhat_all(idx(1:round(fea_ratio*d)), :)';
+nan_mask = any(isnan(feaSet),2);
+feaSet_clean = feaSet(~nan_mask,:);
+Y_clean = Y(~nan_mask);
+Metric = zeros(10,2);
+parfor i = 1:10
+    if numel(Y_clean) < c || numel(unique(Y_clean)) < 2
+        Metric(i,:) = [0 0];
+        continue;
+    end
+    yhat = kmeans(feaSet_clean, c, 'Start', 'plus', 'Replicates', 3);
+    yhat = bestMap(Y_clean, yhat);
+    acc_ = length(find(yhat == Y_clean)) / length(yhat);
+    nmi_ = MutualInfo(Y_clean, yhat);
+    Metric(i,:) = [acc_ nmi_];
+end
+ACC = mean(Metric(:,1));
+NMI = mean(Metric(:,2));
+end 

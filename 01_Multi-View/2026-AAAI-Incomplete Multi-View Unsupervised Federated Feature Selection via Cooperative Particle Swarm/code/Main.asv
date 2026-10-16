@@ -1,0 +1,37 @@
+clc; clear;
+warning('off', 'all');
+addpath('D:\研1\论文\AAAI\提交\IMUFFS-main\CPSO-TAL\')
+addpath('CalcMeasures')
+addpath('D:\研1\论文\AAAI\提交\IMUFFS-main\dataset')
+
+%% 参数设置
+K = 5; % 客户端数量
+max_comm_rounds = 5; % 联邦通信轮数
+options = [];
+options.gamma = 6; options.lambda = 0.001; options.eta = 1;
+
+%% 加载数据
+load('COIL100_MissingRatio0.4.mat'); % X: 1xV cell, Y: n x 1
+c = length(unique(Y)); % 聚类数
+V = numel(X); % 视图数
+n = size(X{1},2); % 样本数
+
+%% 客户端划分
+client_indices = FederatedPartition(n, K);
+ACC_1 = -inf;
+NMI_1 = -inf;
+%%运行10次后的结果
+for run = 1:10
+    fprintf('Running iteration %d...\n', run);
+    [global_W, last_mean_NMI] = FederatedTrain(X, Y, c, V, K, client_indices, options, max_comm_rounds);
+
+
+    [ACC, NMI] = FederatedEvaluate(X, Y, global_W, c);
+    if ACC > ACC_1
+        ACC_1 = ACC;
+        NMI_1 = NMI;
+    end
+end
+
+% 输出最优值
+fprintf('Results after 10 runs: ACC(mean) = %f, NMI(mean) = %f\n', ACC_1, NMI_1);

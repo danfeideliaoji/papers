@@ -1,0 +1,173 @@
+function [Z] = UVELRS(X, gt, param)
+
+%% Normalized data
+m = length(X);          % 
+N = numel(gt);          % 
+
+dk=cell(1, m);
+% 
+for i=1:m
+    X{i} = NormalizeData(X{i});             % 
+end
+
+transform = 'DFT';
+weight = ones(m+1,1);                         % 
+    
+%% parameters
+directions = [1,2];                         % 低秩+光滑先验方向
+n = length(directions);
+% 
+lambda1  = param.lambda1;
+lambda2  = param.lambda2;
+% 
+mu=1e-2; theta=1e-2; 
+
+%% 
+for v = 1:m   
+
+    E1{v} = zeros(size(X{v},1), N);            
+    E2{v} = zeros(N, N);                      
+    J{v} = zeros(size(X{v},1), N);                    
+    O{v} = zeros(N,N);                          
+end
+Z1 = zeros(N,N);                                
+for v = 1:m+1
+    Z{v} = zeros(N, N);
+   
+end
+dim = [N,N,m+1];
+
+A_tensor = zeros(N,N,m+1);         
+C_tensor = zeros(N,N,m+1);          
+
+
+MAX_iter = 30;                      
+flag = 1;                          
+
+iter = 0;
+
+%% 生成差分张量，为后续求解张量方程组做准备
+for i = 1:n
+    index        = directions(i);                        
+    G{index}     = porder_diff(A_tensor,index);           
+    N_t{index}   = zeros(dim);                           
+end
+
+
+%% FFT setting
+T = zeros(dim);
+for i = 1:n
+    Eny = diff_element(dim,directions(i));
+    T   = T + Eny; 
+end
+
+
+
+while flag
+    iter = iter + 1;
+
+    if iter>MAX_iter
+        break;
+    end
+    if mod(iter, 10)==0
+        fprintf('%d..',iter);
+    end
+
+    %% updat Z
+    for v=1:m
+        temp1 = mu*X{v}'*X{v}+(mu+theta)*eye(size(X{v}'*X{v}));
+        temp2 = mu*X{v}'*(X{v}-E1{v})+X{v}'*J{v}+theta*A_tensor(:,:,v)-C_tensor(:,:,v)+mu*(Z1+E2{v})-O{v};
+        Z{v} = temp1\temp2;
+    end
+    clear temp1 temp2
+
+    
+    %% updat E1
+    for v=1:m
+        temp = X{v}-X{v}*Z{v}+J{v}/mu;
+        E1{v} = solve_l1l2(temp',lambda2/mu*2);
+        E1{v} = E1{v}';
+    end
+    clear temp
+
+
+    %% updat E2
+    for v=1:m
+        temp = Z{v}-Z1+O{v}/mu;
+        E2{v} = solve_l1l2(temp',lambda2/mu*2);
+        E2{v} = E2{v}';
+    end
+    clear temp
+    
+
+    %% updat \hat{Z}
+    temp1 = (theta+mu*m);
+    sum = zeros(N,N);
+    for v= 1 : m
+        sum = sum + O{v}+mu*(Z{v}-E2{v});
+    end
+    sum = sum -C_tensor(:,:,m+1)+theta*A_tensor(:,:,m+1);
+    Z1 = sum./temp1;
+    clear temp1
+    Z{m+1} = Z1;                
+
+
+
+    %%  updat tensor
+    HA = zeros(dim); 
+    for i = 1:n
+       index = directions(i);
+
+       size(N_t{index});
+       HA = HA + porder_diff_T(theta*G{index}+N_t{index},index); 
+    end
+    Z_tensor = cat(3,Z{:,:});
+    A_tensor = real( ifftn( fftn( theta*Z_tensor+C_tensor+HA)./(theta*(1+T)) ) );
+
+
+
+
+    % schatten-p parameter
+    p = 0.97;
+
+    %% Updata Gi -- proximal operator of TNN
+    for i = 1:n
+        index = directions(i);
+        temp=porder_diff(A_tensor,index)-N_t{index}/theta;
+        [G{index},tnn_G{index}] = wshrinkObj_weight_lp(temp(:),weight.*lambda1./(theta),size(temp),0,3,p);
+        tnn_G{index};
+        G{index} = reshape(G{index},dim);
+    end
+    norm(Z_tensor - A_tensor, 'fro');
+
+
+    for i = 1:n
+        index = directions(i); 
+        N_t{index} = N_t{index}+theta*(G{index}-porder_diff(A_tensor,index));
+    end
+    C_tensor = C_tensor + theta*(Z_tensor-A_tensor);
+
+    % mulpliers
+    for v=1:m
+        J{v} = J{v} + mu*(X{v}-X{v}*Z{v}-E1{v});
+        O{v} = O{v} + mu*(Z{v}-Z1-E2{v});
+    end
+    
+    error1 = 0;
+    error2 = 0;
+    error3 = 0;
+    
+    for v=1:m
+        error1 = norm(X{v}-X{v}*Z{v}-E1{v}) + error1;   % 重构误差
+        error2 = norm(Z{v}-Z{m+1}-E2{v})+error2;
+    end
+    
+    %% 检查是否达到收敛条件
+    norm(Z_tensor-A_tensor,'fro');
+    error1 = 
+
+
+    rho = 2;
+    mu = min(mu*rho,1e10);
+    theta = min(theta*rho,1e10);
+end

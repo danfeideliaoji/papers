@@ -1,0 +1,375 @@
+function [W, Xhat] = CPSO_TAL(X, c, options)
+%% Input
+    % X = cell(1, V) multi-view dataset, each cell is a view, each column represents a sample
+    % options: struct with parameters (gamma, lambda, eta, r, k)
+    % c: the number of clusters
+%% Output
+    % W: Feature selection matrix
+    % Xhat: the imputed multi-view data
+
+options.r = c; % Set the number of anchors to the number of clusters c
+options.k = c; % Set the dimensionality of the low-dimensional subspace to the number of clusters c
+V = size(X, 2); % Get the number of views V
+[~, n] = size(X{1}); % Get the number of samples n
+options.use_cpso = true;
+
+% ========== Direct CPSO Optimization of W ==========
+if isfield(options, 'use_cpso') && options.use_cpso
+    % 1. Calculate the total parameter dimension of W
+    d_list = zeros(1, V);
+    w_dim = 0;
+    for v = 1:V
+        d_list(v) = size(X{v}, 1);
+        w_dim = w_dim + d_list(v) * options.k;
+    end
+    num_particles = 21; % Conveniently divide into three equal parts
+    max_cpso_iter = 30;
+    swarm = rand(num_particles, w_dim); % Initialize the particle swarm
+    velocity = zeros(num_particles, w_dim);
+    pbest = swarm;
+    pbest_fitness = inf(num_particles, 1);
+    w = 0.7; c1 = 1.5; c2 = 1.5;
+    K = floor(num_particles / 3); % Number of particles in each sub-group
+    % Triple-system PSO main loop
+    for iter = 1:max_pso_iter
+        % 1. Fitness evaluation
+        fitvals = inf(num_particles, 1);
+        parfor i = 1:num_particles
+            w_vec = swarm(i, :); % Current particle's W vector
+            % Restore w_vec to cell format W
+            W_cell = cell(1, V);
+            cnt = 0;
+            for v = 1:V
+                d = d_list(v);
+                W_cell{v} = reshape(w_vec(cnt + 1:cnt + d * options.k), d, options.k);
+                cnt = cnt + d * options.k;
+            end
+            try
+                [~, ~, fitval] = TIME_FS_core_givenW(X, c, options, W_cell);
+            catch
+                fitval = inf;
+            end
+            fitvals(i) = fitval;
+            if fitval < pbest_fitness(i)
+                pbest_fitness(i) = fitval;
+                pbest(i, :) = w_vec;
+            end
+        end
+        % 2. Fitness sorting and clustering
+        [~, idx] = sort(pbest_fitness);
+        idx_baoc = idx(1:K);      % Retained group
+        idx_huif = idx(K + 1:2*K);  % Recovered group
+        idx_buyu = idx(2*K + 1:end); % Sterile group
+        % 3. Independent PSO for each sub-group
+        % Retained group
+        gbest_baoc = pbest(idx_baoc(1), :); % Global best of the retained group
+        for j = 1:K
+            i = idx_baoc(j);
+            velocity(i, :) = w * velocity(i, :) + c1 * rand(1, w_dim) .* (pbest(i, :) - swarm(i, :)) + c2 * rand(1, w_dim) .* (gbest_baoc - swarm(i, :));
+            swarm(i, :) = swarm(i, :) + velocity(i, :);
+        end
+        % Recovered group
+        gbest_huif = pbest(idx_huif(1), :); % Global best of the recovered group
+        for j = 1:K
+            i = idx_huif(j);
+            velocity(i, :) = w * velocity(i, :) + c1 * rand(1, w_dim) .* (pbest(i, :) - swarm(i, :)) + c2 * rand(1, w_dim) .* (gbest_huif - swarm(i, :));
+            swarm(i, :) = swarm(i, :) + velocity(i, :);
+        end
+        % Sterile group
+        gbest_buyu = pbest(idx_buyu(1), :); % Global best of the sterile group
+        for j = 1:(num_particles - 2 * K)
+            i = idx_buyu(j);
+            velocity(i, :) = w * velocity(i, :) + c1 * rand(1, w_dim) .* (pbest(i, :) - swarm(i, :)) + c2 * rand(1, w_dim) .* (gbest_buyu - swarm(i, :));
+            swarm(i, :) = swarm(i, :) + velocity(i, :);
+        end
+        % 4. Triple-system co-evolution (crossover + mutation + replacement)
+        % Crossover between retained and recovered groups, generating new individuals
+        num_cross = min(length(idx_buyu), K); % Number of crossovers
+        for j = 1:num_cross
+            p1 = swarm(idx_baoc(randi(K)), :);
+            p2 = swarm(idx_huif(randi(K)), :);
+            alpha = rand();
+            child = alpha * p1 + (1 - alpha) * p2; % Linear crossover
+            % Add Gaussian mutation
+            child = child + 0.05 * randn(1, w_dim);
+            % Replace the worst individual in the sterile group
+            swarm(idx_buyu(j), :) = child;
+            velocity(idx_buyu(j), :) = 0;
+        end
+        % 5. Global best
+        [gbest_fitness, gbest_idx] = min(pbest_fitness);
+        gbest = pbest(gbest_idx, :);
+    end
+    % ========== Run TIME_FS_core once with optimal W ==========
+    w_vec = gbest;
+    W = cell(1, V);
+    cnt = 0;
+    for v = 1:V
+        d = d_list(v);
+        W{v} = reshape(w_vec(cnt + 1:cnt + d * options.k), d, options.k);
+        cnt = cnt + d * options.k;
+    end
+    [W, Xhat, ~] = TIME_FS_core_givenW(X, c, options, W);
+    return;
+end
+% % ========== Original TIME_FS process ========== 
+% [W, Xhat] = TIME_FS_core(X, c, options); % Directly run the main process
+end
+
+
+% 新增：支持外部给定W的TIME_FS_core
+function [W,Xhat,objval] = TIME_FS_core_givenW(X,c,options,W)
+% 只用给定的W，优化Z、A、M、P等参数
+V = size(X,2);
+[~,n] = size(X{1});
+% ...（可复用TIME_FS_core的初始化和优化流程，只是W不再更新）...
+% -------------- Initialize E-------------- %
+G = cell(1,V); E = cell(1,V); Xhat = cell(1,V);
+for v = 1:V
+    [dv, n_local] = size(X{v});
+    idx_v = find(ismissing(X{v}(1,:)));
+    ns = numel(idx_v);
+    G{v} = sparse(1:ns, idx_v, 1, ns, n_local);
+    Xv = X{v};
+    Xv(:, idx_v) = 0;
+    if n_local - ns > 0
+        E{v} = (sum(Xv, 2) / (n_local - ns)) * ones(1, ns);
+    else
+        E{v} = zeros(dv, ns);
+    end
+    X{v} = Xv;
+    Xhat{v} = Xv + E{v} * G{v};
+end
+% -------------- Initialize Z -------------- %
+Z = zeros(options.k,n,V);
+for v = 1:V
+    tmp = rand(n,options.k);
+    [zr,~] = qr(tmp,0);
+    zr = zr(:,1:options.k);
+    Z(:,:,v) = zr';
+end
+% -------------- Initialize A M P -------------- %
+A = rand(options.k,options.r);
+P = rand(V,options.r);
+M = updateM(Z,A,P,options);
+% -------------- Initialize QW -------------- %
+QW = cell(1,V);
+for v = 1:V
+    QW{v} = ones(size(W{v}));
+end
+alpha = updateAlpha(Xhat,W,Z,QW,options);
+% -------------- Optimization -------------- %
+max_iter = 20;
+for iter = 1:max_iter
+    Z = updateZ(Xhat,W,alpha,A,M,P,options);
+    A = updateA(Z,M,P);
+    P = updateP(Z,A,M);
+    M = updateM(Z,A,P,options);
+    E = updateE(W,Z,G);
+    for v = 1:V
+       Xhat{v} = X{v}+E{v}*G{v};
+    end
+    % QW可选：如需动态更新，可重新赋值，否则保持不变
+    % for v = 1:V
+    %     QW{v} = ones(size(W{v}));
+    % end
+    alpha = updateAlpha(Xhat,W,Z,QW,options);
+    objval = obj_fun(Xhat,W,Z,QW,alpha,A,M,P,options);
+    if iter > 1 && abs(objval-objval(iter-1))<1e-3
+        break
+    end
+end
+end
+
+
+function f=obj_fun(Xhat,W,Z,QW,alpha,A,M,P,options)
+%% Input 
+% Xhat: The imputed multi-view dataset
+% W: Feature selection matrix 
+% Z: Tensor formed by stacking low-dimensional representations of views.
+% QW: Auxiliary matrix for computing the 2,1 norm of matrix W
+% alpha: Adaptive weights for each views 
+% A: Consensus anchor matrix
+% M: Concensus anchor graph
+% P: Anchor preference weight matrix;
+% options: Parameters 
+%% output
+% f: objective function value
+
+V=size(Xhat,2); % 视图数
+
+f1=0;
+f2=0;
+f3 = 0;
+for v = 1:V
+    Xv_hat = Xhat{v}; 
+    f1 = f1 + (alpha(v)^options.gamma)*(norm(Xv_hat-W{v}*Z(:,:,v),'fro')^2);  % 重建误差项
+    f2 = f2+(alpha(v)^options.gamma)*trace((W{v}.*QW{v})'*W{v}); % 稀疏正则项
+    f3 = f3 + norm(Z(:,:,v)-A*diag(P(v,:))*M','fro')^2; % 低维一致性项
+end
+
+f4 = norm(M,'fro')^2; % 锚点图正则项
+
+f = f1+options.lambda*f2+f3+options.eta*f4; % 总目标函数
+clear f1 f2 f3 f4
+end
+
+function A = updateA(Z,M,P)
+%% Input 
+% Z: Tensor formed by stacking low-dimensional representations of views
+% M: Consensus anchor graph
+% P: View preference weight matrix
+
+%% output
+% A: Consensus anchor matrix
+
+% Obtain the mode-1 unfolding of tensor Z
+tensor_size = size(Z);
+Z_mode_1 = reshape(Z, tensor_size(1), []); % mode-1展开
+% Calculate P*M ,where * is khatri-rao product
+PM = khatrirao(P,M); % 计算Khatri-Rao积
+% Update A
+A = Z_mode_1*PM/(PM'*PM); % 更新A
+clear tensor_size Z_mode_1 PM
+end
+
+function [M] = updateM (Z,A,P,options)
+%% Input 
+% Z: Tensor formed by stacking low-dimensional representations of views
+% A: Consensus anchor matrix
+% P: View preference weight matrix
+% options: Parameters 
+
+%% output
+% M: Consensus anchor graph
+
+tensor_size = size(Z);
+n = tensor_size(2);
+
+% Obtain the horizontal mode-2 unfolding of tensor Z
+Z_mode_2 = reshape(permute(Z, [2 1 3]), tensor_size(2), []); % mode-2展开
+I = eye(options.r); % r是锚点数
+
+% Calculate P*A ,where * is khatri-rao product
+PA = khatrirao(P,A); % 计算Khatri-Rao积
+
+Y = -1*Z_mode_2*(PA)/(options.eta*I+(PA')*PA); % 计算Y
+
+% Update M
+v1 = ones(options.r,1); 
+tmp = ((1+Y*v1)/options.r).*ones(n,options.r)-Y; % 计算M的中间变量
+M = max(tmp,0); % 取非负部分
+clear tensor_size Z_mode_2 PA Y tmp
+end
+
+function P = updateP(Z,A,M)
+%% Input 
+% Z: Tensor formed by stacking low-dimensional representations of views
+% A: Consensus anchor matrix
+% M: Consensus anchor graph
+%% output
+% P: View preference weight matrix
+
+% Obtain the horizontal mode-3 unfolding of tensor Z
+tensor_size = size(Z);
+Z_mode_3 = reshape(permute(Z, [3 1 2]), tensor_size(3), []); % mode-3展开
+
+% Calculate P*M ,where * is khatri-rao product
+MA = khatrirao(M,A); % 计算Khatri-Rao积
+% Update P
+P = Z_mode_3*MA/(MA'*MA);   % 更新P
+clear Z_mode_3 tensor_size MA
+end 
+
+function [alpha] = updateAlpha(Xhat,W,Z,QW,options)
+%% Input 
+% Xhat: The imputed multi-view dataset
+% W: Feature selection matrix 
+% Z: Tensor formed by stacking low-dimensional representations of views
+% QW: Auxiliary matrix for computing the 2,1 norm of matrix W
+% options: parameters 
+%% output
+% alpha: Adaptive weights of each view
+
+V = size(Xhat,2); 
+
+d = zeros(1,V); 
+for v = 1:V
+   d(v) = norm(Xhat{v}-W{v}*Z(:,:,v),'fro')^2 + ...
+        options.lambda*trace((W{v}.*QW{v})'*W{v});   % 计算每个视图的损失
+end
+
+% Update alpha
+alpha = d.^(1/(1-options.gamma))/sum(d.^(1/(1-options.gamma))); % 更新权重
+end
+
+function [E] = updateE(W,Z,G)
+%% Input 
+% W: Feature selection matrix 
+% Z: Tensor formed by stacking low-dimensional representations of views
+% G: Missing samples indicator matrix for each view 
+% options: Parameters 
+%% output
+% E: Adaptive imputation matrix for missing samples in each view
+
+V = size(W,2); 
+
+% Update E
+E = cell(1,V);
+for v =1:V
+    E{v} = full(W{v}*(Z(:,:,v)*G{v}')); % 计算补全矩阵
+end
+
+end
+
+function [W,QW] = updateW(Xhat,Z,QW,options)
+%% Input 
+% Xhat: The imputed multi-view dataset
+% Z: Tensor formed by stacking low-dimensional representations of views
+% QW: Auxiliary matrix for computing the 2,1 norm of matrix W
+% options: Parameters
+
+%% output
+% W: Feature selection matrix
+% QW: Auxiliary matrix for computing the 2,1 norm of matrix W
+
+V = size(Xhat,2);
+W = cell(1,V);
+
+for v = 1:V
+    Xv_hat = Xhat{v};
+    W{v} = (Xv_hat*Z(:,:,v)')./(1+options.lambda*QW{v}); % 更新W
+    QW{v} = 1./(2*sqrt(sum(W{v}.*W{v},2)+eps)); % 更新QW
+end
+
+end
+
+function [Z] = updateZ(Xhat,W,alpha,A,M,P,options)
+%% Input 
+% Xhat: The imputed multi-view dataset
+% W: Feature selection matrix 
+% alpha: Adaptive weights for each view
+% A: Consensus anchor matrix
+% M: Consensus anchor graph
+% P: Anchor preference weight matrix;
+% options: Parameters 
+%% output
+% Z: Tensor formed by stacking low-dimensional representations of views.
+
+V = size(Xhat,2); % 视图数
+
+[~,n] = size(Xhat{1}); % 样本数
+
+% Update Z
+Z = zeros(options.k,n,V); % 初始化Z
+for v = 1:V
+    Cv = A*diag(P(v,:))*M'; % 计算一致性项
+    Qv = (alpha(v)^options.gamma)*W{v}'*Xhat{v}+Cv;% 中间变量
+    [Uv, ~, Vv] = svd(Qv,'econ'); % 奇异值分解
+    Z(:,:,v) = Uv*Vv'; % 更新Z
+end
+
+end
+
+
+
