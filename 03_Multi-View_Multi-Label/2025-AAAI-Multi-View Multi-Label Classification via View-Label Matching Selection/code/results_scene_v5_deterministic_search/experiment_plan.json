@@ -1,0 +1,30 @@
+{
+  "dataset": "Scene",
+  "data_sha256": "b1ebfbfed7690e78ffb8c0caf2e57b886d9ec2e19feacf7fe13e5a8f9216472a",
+  "baseline": "results_scene_v4_5fold_80epochs",
+  "folds": 5,
+  "seed": 2020,
+  "model": "unchanged_v4",
+  "runtime_fix": "deterministic_algorithms_and_cublas_workspace",
+  "candidate_grid": [
+    "sgd",
+    "adam"
+  ],
+  "same_initial_weights_per_fold": true,
+  "initial_lr": 0.001,
+  "gamma": 0.933,
+  "minimum_epochs": 80,
+  "maximum_epochs": 120,
+  "patience": 20,
+  "maximum_total_epochs": 1200,
+  "selection": "candidate_and_epoch_by_inner_dev_LRAP_per_fold",
+  "threshold": 0.5,
+  "test_policy": "each_fold_test_once_after_inner_selection_then_replay_verification",
+  "primary_target": "paper_Scene_Table1_LRAP_0.878",
+  "secondary_targets": {
+    "Micro_F1": 0.748,
+    "Macro_F1": 0.758
+  },
+  "hard_stop": "complete_grid_once_no_extra_seeds_or_configs_based_on_test",
+  "interpretation": "optimization_attempt_using_already_evaluated_dataset; no_independent_confirmation_claim"
+}

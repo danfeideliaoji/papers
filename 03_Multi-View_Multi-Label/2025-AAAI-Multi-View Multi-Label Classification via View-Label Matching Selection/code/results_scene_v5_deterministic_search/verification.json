@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "source_and_data_hashes": "verified",
+  "folds": 5,
+  "candidates": 10,
+  "epochs": 1078,
+  "test_rows": 2407,
+  "early_stop_and_inner_selection": "verified",
+  "train_only_scalers_and_frequencies": "verified",
+  "dev_and_test_predictions": "replayed",
+  "frequency_reference": "FP64 mean of inner training labels",
+  "frequency_atol": 3e-08,
+  "max_prediction_abs_error": 0.0,
+  "test_classifications_and_ranks": "identical",
+  "preflight_cross_process_three_epoch_repeatability": "see formula_alignment_v5/training_repeatability.json"
+}

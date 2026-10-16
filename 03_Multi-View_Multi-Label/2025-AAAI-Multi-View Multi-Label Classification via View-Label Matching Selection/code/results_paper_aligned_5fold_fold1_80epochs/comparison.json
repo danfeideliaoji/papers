@@ -1,0 +1,15 @@
+{
+  "paper_sha256": "96229a213ddb7fb71502fdcfe582f5094ee3edfd055db150018caa2d3d983590",
+  "same_splits_as_previous": true,
+  "verified_training_snapshot": "formula_alignment/source",
+  "replay_precision_evidence": "replay_numerics.json",
+  "comparison_to_previous": {
+    "LRAP": -7.009506225585938e-05,
+    "Hamming": 0.008403361344537813,
+    "Ranking": -0.0023109243697479465,
+    "Coverage": -0.01680672268907557,
+    "Micro_F1": 0.0007905138339920903,
+    "Macro_F1": -0.009869886481476908
+  },
+  "verifier_sha256": "7d493375869f4c189971b62f2351185128480c613f19d2a7c8e87c7eda873846"
+}

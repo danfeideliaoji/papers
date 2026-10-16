@@ -1,0 +1,41 @@
+{
+  "experiment": "low_lr",
+  "epochs": 33,
+  "seconds": 84.54475116729736,
+  "test_used": false,
+  "lr": 0.001,
+  "explicit_regularizer": 0.005,
+  "weight_decay": 0.005,
+  "best_dev": {
+    "epoch": 32,
+    "task_loss": 0.2963012804587682,
+    "reg_loss": 4.979780912399292,
+    "LRAP": 0.8555555939674377,
+    "Hamming": 0.17894736842105263,
+    "Ranking": 0.11807017543859649,
+    "Coverage": 1.6105263157894738,
+    "Micro_F1": 0.711864406779661,
+    "Macro_F1": 0.7000511391136174,
+    "score_sample_std": 0.3277001976966858,
+    "score_label_std": 0.32521793246269226,
+    "predicted_positives": 168,
+    "score_min": 0.01144968718290329,
+    "score_max": 0.966148853302002
+  },
+  "last_dev": {
+    "epoch": 33,
+    "task_loss": 0.28303156793117523,
+    "reg_loss": 4.979595581690471,
+    "LRAP": 0.8421052694320679,
+    "Hamming": 0.1824561403508772,
+    "Ranking": 0.12441520467836258,
+    "Coverage": 1.642105263157895,
+    "Micro_F1": 0.7094972067039106,
+    "Macro_F1": 0.6986983153662303,
+    "score_sample_std": 0.33354175090789795,
+    "score_label_std": 0.33023518323898315,
+    "predicted_positives": 172,
+    "score_min": 0.011722290888428688,
+    "score_max": 0.96753990650177
+  }
+}

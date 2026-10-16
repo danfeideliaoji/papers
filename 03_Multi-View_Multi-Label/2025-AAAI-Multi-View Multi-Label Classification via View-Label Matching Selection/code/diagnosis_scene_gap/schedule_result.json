@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "test_evaluations": 0,
+  "epochs": 80,
+  "seconds": 184.55977702140808,
+  "best": {
+    "epoch": 72,
+    "train_loss": 0.40465650806179293,
+    "lr": 0.0004898902730042048,
+    "dev_LRAP": 0.8567531108856201,
+    "dev_Hamming": 0.10779220779220779,
+    "dev_Ranking": 0.07456709956709956,
+    "dev_Coverage": 0.4701298701298702,
+    "dev_Micro_F1": 0.7313915857605178,
+    "dev_Macro_F1": 0.7389436204112384
+  },
+  "last": {
+    "epoch": 80,
+    "train_loss": 0.3454930344959358,
+    "lr": 0.00045204365026647533,
+    "dev_LRAP": 0.8485857248306274,
+    "dev_Hamming": 0.1025974025974026,
+    "dev_Ranking": 0.07823953823953823,
+    "dev_Coverage": 0.48571428571428577,
+    "dev_Micro_F1": 0.7234539089848308,
+    "dev_Macro_F1": 0.7312994547548576
+  },
+  "baseline_dev_LRAP": 0.8651947975158691,
+  "dev_LRAP_difference": -0.008441686630249023,
+  "scope": "single_fold_training_validation_diagnostic_not_a_reproduction_score",
+  "causal_interpretation": "inconclusive: same-seed training trajectory is not deterministic; slow decay did not improve observed dev LRAP, but cannot isolate gamma effect against prior stochastic baseline"
+}

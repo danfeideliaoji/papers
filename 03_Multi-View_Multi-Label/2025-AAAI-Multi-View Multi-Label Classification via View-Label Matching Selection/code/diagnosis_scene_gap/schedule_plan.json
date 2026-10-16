@@ -1,0 +1,24 @@
+{
+  "hypothesis": "rapid_lr_decay_limits_training_progress",
+  "fold": 1,
+  "epochs": 80,
+  "intervention": "only_gamma_0.933_to_0.99",
+  "baseline": "results_scene_v4_5fold_80epochs",
+  "unchanged": "source model, split, seed, optimizer, learning rate, losses, order, dimensions, k, threshold",
+  "selection_metric": "dev_LRAP",
+  "test_evaluations": 0,
+  "hard_stop": "one_fold_one_intervention_80epochs_no_rescue_tuning",
+  "baseline_dev_LRAP": 0.8651947975158691,
+  "source_sha256": {
+    "demo.py": "0ba37f6973b6694daa953a3028f7893ae17d79beefc5a0c8c41bfd0c2f1fd069",
+    "strict_training.py": "a1b1cdaf70627e8cd157e9e8443e80281b16d16bdfc2b19e59768aa547e6746a",
+    "paper_gn.py": "1461bfc64ddbd5544ffbbfa6a5280af73a52f87f57fef22c5f0136a879faf42c",
+    "paper_graph.py": "1d94f7e4bda15ccbfbdabc67ffb426c5a3687e1b72cf6124116945a791751c70",
+    "GNBlock_model.py": "7c6cba750177ab78ed34180f4894170c42c0a8711033aa34d9fd650bf41ca6d4",
+    "conv_layer.py": "cb0791fb9b8617a1fe960fba3b4f4a274a1f91ea1d129ea8d64b4d80f08708ec",
+    "build_graph.py": "f2531c1e623bdf420bbf59db2df674663fcff716340ec261f7d3419da2c60014",
+    "MLP.py": "aa7bcff9b07b63ddb7f2363ffbbc6d9e9dbdd34c8aa026be6ceefe1859972a6e",
+    "util.py": "a832ecb8b95c432135726df4cc74401463bc24dc5567e9bbe40201d2f87de787"
+  },
+  "data_sha256": "b1ebfbfed7690e78ffb8c0caf2e57b886d9ec2e19feacf7fe13e5a8f9216472a"
+}

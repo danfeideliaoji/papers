@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "device": "cuda",
+  "checks": [
+    {
+      "views": 1,
+      "batch": 1,
+      "formula_oracle": "PASS"
+    },
+    {
+      "views": 1,
+      "batch": 3,
+      "formula_oracle": "PASS"
+    },
+    {
+      "views": 2,
+      "batch": 1,
+      "formula_oracle": "PASS"
+    },
+    {
+      "views": 2,
+      "batch": 3,
+      "formula_oracle": "PASS"
+    },
+    {
+      "views": 3,
+      "batch": 1,
+      "formula_oracle": "PASS"
+    },
+    {
+      "views": 3,
+      "batch": 3,
+      "formula_oracle": "PASS"
+    }
+  ],
+  "task_loss": 1.0950127840042114,
+  "last_node_nonzero_gradient": true,
+  "terminal_unused_edge_parameters": [
+    "graph.layers.2.edge_model.edge_rho_ins.0.weight",
+    "graph.layers.2.edge_model.edge_rho_ins.0.bias",
+    "graph.layers.2.edge_model.edge_rho_ins.2.weight",
+    "graph.layers.2.edge_model.edge_rho_ins.2.bias",
+    "graph.layers.2.edge_model.edge_rho_ins.3.weight",
+    "graph.layers.2.edge_model.edge_rho_ins.3.bias",
+    "graph.layers.2.edge_model.edge_rho_ins.5.weight",
+    "graph.layers.2.edge_model.edge_rho_ins.5.bias",
+    "graph.layers.2.edge_model.edge_mlp_ins.0.weight",
+    "graph.layers.2.edge_model.edge_mlp_ins.0.bias",
+    "graph.layers.2.edge_model.edge_mlp_ins.2.weight",
+    "graph.layers.2.edge_model.edge_mlp_ins.2.bias",
+    "graph.layers.2.edge_model.edge_mlp_ins.3.weight",
+    "graph.layers.2.edge_model.edge_mlp_ins.3.bias",
+    "graph.layers.2.edge_model.edge_mlp_ins.5.weight",
+    "graph.layers.2.edge_model.edge_mlp_ins.5.bias",
+    "graph.layers.2.edge_model.edge_rho_label.0.weight",
+    "graph.layers.2.edge_model.edge_rho_label.0.bias",
+    "graph.layers.2.edge_model.edge_rho_label.2.weight",
+    "graph.layers.2.edge_model.edge_rho_label.2.bias",
+    "graph.layers.2.edge_model.edge_rho_label.3.weight",
+    "graph.layers.2.edge_model.edge_rho_label.3.bias",
+    "graph.layers.2.edge_model.edge_rho_label.5.weight",
+    "graph.layers.2.edge_model.edge_rho_label.5.bias",
+    "graph.layers.2.edge_model.edge_mlp_label.0.weight",
+    "graph.layers.2.edge_model.edge_mlp_label.0.bias",
+    "graph.layers.2.edge_model.edge_mlp_label.2.weight",
+    "graph.layers.2.edge_model.edge_mlp_label.2.bias",
+    "graph.layers.2.edge_model.edge_mlp_label.3.weight",
+    "graph.layers.2.edge_model.edge_mlp_label.3.bias",
+    "graph.layers.2.edge_model.edge_mlp_label.5.weight",
+    "graph.layers.2.edge_model.edge_mlp_label.5.bias"
+  ],
+  "split_scaler_knn_information_boundary": "PASS",
+  "batch_isolation_and_label_placeholder": "PASS",
+  "algorithm_1_node_then_edge": "PASS",
+  "label_order_invariance": "PASS",
+  "source_sha256": {
+    "paper_gn.py": "1461bfc64ddbd5544ffbbfa6a5280af73a52f87f57fef22c5f0136a879faf42c",
+    "paper_graph.py": "1d94f7e4bda15ccbfbdabc67ffb426c5a3687e1b72cf6124116945a791751c70",
+    "conv_layer.py": "cb0791fb9b8617a1fe960fba3b4f4a274a1f91ea1d129ea8d64b4d80f08708ec",
+    "strict_training.py": "c8aa8fe8fb891e6c1587770f67743ef3ef3b9add645a75a19c271a368cefdde5",
+    "MLP.py": "aa7bcff9b07b63ddb7f2363ffbbc6d9e9dbdd34c8aa026be6ceefe1859972a6e",
+    "verify_paper_alignment.py": "729f2c3863b0c01de16768fc86a01df39a1b6cec84dd3c3ee0a73a56f6a190e2"
+  }
+}

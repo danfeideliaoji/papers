@@ -1,0 +1,38 @@
+{
+  "run": "results_scene_v5_refit_outer_train",
+  "source_verified": true,
+  "implementation": "snapshot",
+  "no_training": true,
+  "test_evaluations": 0,
+  "query_role": "training_subset_former_inner_dev",
+  "label_permutations": [
+    {
+      "permutation": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "max_abs_change": 2.6226043701171875e-06,
+      "mean_abs_change": 2.394095588442724e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "max_abs_change": 2.8908252716064453e-06,
+      "mean_abs_change": 2.401143035513087e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    }
+  ]
+}

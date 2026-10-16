@@ -1,0 +1,35 @@
+{
+  "status": "complete_and_verified",
+  "dataset": "emotions.mat",
+  "folds": 6,
+  "epochs_per_fold": 80,
+  "verified_epochs": 480,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "training_and_export_seconds": 1206.0932447910309,
+  "mean_of_fold_best_metrics": {
+    "haming_loss": 0.2213718820861678,
+    "Ranking_loss": 0.13937074829931975,
+    "one_error": 0.4115646258503401,
+    "Coverage": 1.634353741496599,
+    "Average_Precision": 0.8268376986185709,
+    "Micro_F1": 0.7012093019434612,
+    "Subset_Accuracy": 0.2482993205388387,
+    "Macro_F1": 0.6919382910159947
+  },
+  "sample_std_of_fold_best_metrics": {
+    "haming_loss": 0.017589233128915478,
+    "Ranking_loss": 0.019716745620062856,
+    "one_error": 0.03515104947690835,
+    "Coverage": 0.0994396350088334,
+    "Average_Precision": 0.015403649542862012,
+    "Micro_F1": 0.014339295880146354,
+    "Subset_Accuracy": 0.03205229836405779,
+    "Macro_F1": 0.019864896213806604
+  },
+  "fold1_replayed_lrap": 0.8434240221977234,
+  "data_sha256": "173e1288a327681207bd8b1eef7f7635ea0727c7cd48921d0e8d6e07f0c01520",
+  "limitations": [
+    "Original global preprocessing and test-best epoch selection retained.",
+    "Not a strict paper reproduction or independent held-out estimate."
+  ]
+}

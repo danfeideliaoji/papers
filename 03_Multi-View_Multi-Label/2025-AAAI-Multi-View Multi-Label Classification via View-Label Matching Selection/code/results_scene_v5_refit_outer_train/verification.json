@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "folds": 5,
+  "epochs": 491,
+  "test_rows": 2407,
+  "source_data_and_parent_candidate_hashes": "verified",
+  "fixed_inner_selection_and_refit_epochs": "verified",
+  "outer_train_scalers_and_frequencies": "verified",
+  "frequency_atol": 3e-08,
+  "test_predictions": "replayed",
+  "max_prediction_abs_error": 0.0,
+  "test_classifications_and_ranks": "identical",
+  "independent_refit_dev_set": false,
+  "claim_scope": "exploratory_protocol_alignment_on_previously_evaluated_dataset"
+}

@@ -1,0 +1,40 @@
+{
+  "paper": "Multi-View Multi-Label Classification via View-Label Matching Selection",
+  "paper_page": 5,
+  "paper_sha256": "96229a213ddb7fb71502fdcfe582f5094ee3edfd055db150018caa2d3d983590",
+  "paper_metrics": {
+    "LRAP": {
+      "mean": 0.826,
+      "std": 0.012
+    },
+    "Micro_F1": {
+      "mean": 0.692,
+      "std": 0.015
+    },
+    "Macro_F1": {
+      "mean": 0.679,
+      "std": 0.017
+    },
+    "Hamming": {
+      "mean": 0.193,
+      "std": 0.019
+    },
+    "Ranking": {
+      "mean": 0.144,
+      "std": 0.013
+    },
+    "Coverage": {
+      "mean": 1.659,
+      "std": 0.055
+    }
+  },
+  "mean_difference": {
+    "LRAP": -0.030353964328765803,
+    "Micro_F1": -0.013987840906077853,
+    "Macro_F1": -0.016234165647156296,
+    "Hamming": 0.011327493709348158,
+    "Ranking": 0.01818633781196094,
+    "Coverage": 0.09006708446090284
+  },
+  "decision": "full_fixed_protocol_run_complete_paper_effect_not_reproduced"
+}

@@ -1,0 +1,37 @@
+{
+  "run": "results_scene_v4_5fold_80epochs",
+  "source_verified": true,
+  "implementation": "snapshot",
+  "no_training": true,
+  "test_evaluations": 0,
+  "label_permutations": [
+    {
+      "permutation": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "max_abs_change": 3.0994415283203125e-06,
+      "mean_abs_change": 1.7605383106911177e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "max_abs_change": 2.9206275939941406e-06,
+      "mean_abs_change": 1.8287386183146737e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    }
+  ]
+}

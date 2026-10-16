@@ -1,0 +1,37 @@
+{
+  "run": "results_scene_v5_deterministic_search",
+  "source_verified": true,
+  "implementation": "snapshot",
+  "no_training": true,
+  "test_evaluations": 0,
+  "label_permutations": [
+    {
+      "permutation": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "max_abs_change": 2.294778823852539e-06,
+      "mean_abs_change": 1.7405491803401674e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "max_abs_change": 2.115964889526367e-06,
+      "mean_abs_change": 1.657552530787143e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    }
+  ]
+}

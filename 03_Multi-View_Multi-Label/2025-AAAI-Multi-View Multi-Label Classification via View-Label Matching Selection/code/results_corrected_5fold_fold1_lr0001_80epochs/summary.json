@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "protocol": "vams_train_dev_test_v2",
+  "seconds": 886.3568148612976,
+  "folds": 1,
+  "outer_folds": 5,
+  "selected_folds": [
+    1
+  ],
+  "epochs": 80,
+  "scope": "selected_folds",
+  "mean": {
+    "LRAP": 0.7844071984291077,
+    "Hamming": 0.19607843137254902,
+    "Ranking": 0.17728758169934644,
+    "Coverage": 1.7142857142857144,
+    "Micro_F1": 0.6818181818181818,
+    "Macro_F1": 0.6740160425135091
+  },
+  "std": {
+    "LRAP": null,
+    "Hamming": null,
+    "Ranking": null,
+    "Coverage": null,
+    "Micro_F1": null,
+    "Macro_F1": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "one_epoch_train_dev_wiring_only",
+  "test_evaluations": 0,
+  "train_rows": 379,
+  "dev_rows": 95,
+  "batches": 6,
+  "losses": [
+    1.1362184286117554,
+    1.0342316627502441,
+    1.0282057523727417,
+    1.1324644088745117,
+    1.075758695602417,
+    1.0652400255203247
+  ],
+  "scores_min": 0.22865664958953857,
+  "scores_max": 0.6449593305587769,
+  "checkpoint_replay": "PASS",
+  "seconds": 43.94492199999968,
+  "args": {
+    "dataset": "emotions.mat",
+    "data_root": "./data",
+    "seed": 2020,
+    "k_fold": 5,
+    "dev_fraction": 0.2,
+    "nhidden": 128,
+    "target_dim": 128,
+    "dropout": 0.4,
+    "k": 5,
+    "batch_size": 64,
+    "conv_layers": 3,
+    "lr": 0.001,
+    "beta": 1.0,
+    "threshold": 0.5,
+    "weight_decay": 0.0,
+    "norm_regularizer": 0.0
+  }
+}

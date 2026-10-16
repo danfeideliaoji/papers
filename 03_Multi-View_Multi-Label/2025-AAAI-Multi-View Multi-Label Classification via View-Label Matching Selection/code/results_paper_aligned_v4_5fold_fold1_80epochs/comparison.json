@@ -1,0 +1,39 @@
+{
+  "status": "complete_verified",
+  "same_splits_and_training_args_as_v3": true,
+  "delta_from_v3": {
+    "LRAP": 0.016503334045410156,
+    "Hamming": 0.0,
+    "Ranking": -0.01311858076563957,
+    "Coverage": -0.10084033613445387,
+    "Micro_F1": -0.02533170034700949,
+    "Macro_F1": -0.032575449582330496
+  },
+  "paper_emotions_table1": {
+    "LRAP": [
+      0.826,
+      0.012
+    ],
+    "Micro_F1": [
+      0.692,
+      0.015
+    ],
+    "Macro_F1": [
+      0.679,
+      0.017
+    ],
+    "Hamming": [
+      0.193,
+      0.019
+    ],
+    "Ranking": [
+      0.144,
+      0.013
+    ],
+    "Coverage": [
+      1.659,
+      0.055
+    ]
+  },
+  "paper_sha256": "96229a213ddb7fb71502fdcfe582f5094ee3edfd055db150018caa2d3d983590"
+}

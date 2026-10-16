@@ -1,0 +1,29 @@
+{
+  "Dataset": "emotions.mat",
+  "Device": "cuda",
+  "GPU": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "Folds": 6,
+  "EpochsPerFold": 80,
+  "Seed": 2020,
+  "BatchSize": 64,
+  "FreshStart": true,
+  "Command": ".\\run-windows.ps1 -Epochs 80 -Folds 6",
+  "Python": "D:\\python-venv\\cuda\\.venv\\Scripts\\python.exe",
+  "StartedAt": "2026-09-30T17:50:13.8375897+08:00",
+  "SourceSHA256": {
+    "build_graph.py": "EF40F595C0627147FC851E355824EE739A64EF193A375DBE9B63519D84817F64",
+    "GNBlock_model.py": "D08FC8340BAF8BBA8628647115F6507AD4AAE5746B2B7D14023A0BF56F86A9CE",
+    "MLP.py": "EF6E76A497DE9D18F3825A6A10EB92B4F539E9879E44C72EF4A0C91835B0EF24",
+    "encoder.py": "072224AF41EDA7A27E288921F1B6B02224EA706CDEE607336C5D43B4BA2320DF",
+    "util.py": "29F8003A759383A66A9B271770E58F5D5DDA07B3D4ACCBDF03AB3988F406A0D7",
+    "demo.py": "E4C6BF380162243C319CBEED7BA422C1282607A51A2AEEB4BC6F7A110F290A53",
+    "test.py": "9A9DB32D6A37D27FE813ACE64A2777A0461261BECAFF196767539A3358876B12",
+    "conv_layer.py": "560284035D809C9432E26EE72B63178728C1080B52FA9317920C8CE54EB01134",
+    "data\\emotions.mat": "173E1288A327681207BD8B1EEF7F7635EA0727C7CD48921D0E8D6E07F0C01520"
+  },
+  "Status": "complete_and_verified",
+  "ExitCode": 0,
+  "CurrentResultsDirectory": "results",
+  "CurrentModelDirectory": "Model_Best_GPU",
+  "SourceHashesReferTo": "Original run source preserved in results/source"
+}

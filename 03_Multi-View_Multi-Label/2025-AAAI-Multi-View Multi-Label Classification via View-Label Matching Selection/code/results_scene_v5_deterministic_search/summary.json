@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "protocol": "vams_v5_deterministic_inner_validation_optimizer_selection",
+  "folds": 5,
+  "candidates_per_fold": 2,
+  "total_epochs": 1078,
+  "seconds": 3696.6923344135284,
+  "mean": {
+    "LRAP": 0.8417194366455079,
+    "Hamming": 0.11251714529722827,
+    "Ranking": 0.08941548075365502,
+    "Coverage": 0.5330026483553455,
+    "Micro_F1": 0.7012338499254692,
+    "Macro_F1": 0.7095550173433016
+  },
+  "std": {
+    "LRAP": 0.010034537067559426,
+    "Hamming": 0.012125598808746424,
+    "Ranking": 0.0075303850263483095,
+    "Coverage": 0.046790813717920404,
+    "Micro_F1": 0.022700644499986676,
+    "Macro_F1": 0.021326982918565888
+  },
+  "selected_candidates": [
+    "sgd",
+    "sgd",
+    "sgd",
+    "sgd",
+    "sgd"
+  ]
+}

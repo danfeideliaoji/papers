@@ -1,0 +1,36 @@
+{
+  "run": "results_corrected_5fold_fold1_lr0001_80epochs",
+  "source_verified": true,
+  "no_training": true,
+  "test_evaluations": 0,
+  "label_permutations": [
+    {
+      "permutation": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "max_abs_change": 1.6093254089355469e-06,
+      "mean_abs_change": 1.5525800733939832e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "max_abs_change": 1.519918441772461e-06,
+      "mean_abs_change": 1.4413278393021756e-07,
+      "changed_threshold_positions": 0,
+      "invariance_at_1e_5": true
+    }
+  ]
+}

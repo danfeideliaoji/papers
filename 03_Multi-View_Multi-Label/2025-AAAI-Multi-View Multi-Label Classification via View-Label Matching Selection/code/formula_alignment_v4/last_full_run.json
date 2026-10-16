@@ -1,0 +1,9 @@
+{
+  "run": "results_paper_aligned_v4_5fold_80epochs",
+  "status": "complete_verified",
+  "folds": 5,
+  "outer_folds": 5,
+  "epochs_per_fold": 80,
+  "total_epochs": 400,
+  "test_rows": 593
+}

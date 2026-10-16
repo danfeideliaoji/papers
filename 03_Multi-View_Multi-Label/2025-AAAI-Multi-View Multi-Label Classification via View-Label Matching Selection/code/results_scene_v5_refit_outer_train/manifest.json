@@ -1,0 +1,108 @@
+{
+  "protocol": "vams_v5_deterministic_outer_train_refit",
+  "status": "complete",
+  "args": {
+    "device": "cuda",
+    "checkpoint_dir": "./results_corrected/checkpoints",
+    "fresh_start": false,
+    "dataset": "scene.mat",
+    "data_root": "./data",
+    "batch_size": 64,
+    "category_num": 6,
+    "k": 5,
+    "GPUS": 1,
+    "k_fold": 5,
+    "start_epoch": 0,
+    "end_epochs": 120,
+    "lr": 0.001,
+    "nhidden": 128,
+    "target_dim": 128,
+    "dropout": 0.4,
+    "threshold": 0.5,
+    "resume": "",
+    "warmup": 0,
+    "t": 0.85,
+    "at": 0.4,
+    "seed": 2020,
+    "output_dir": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\Multi-View Multi-Label Classification via View-Label Matching Selection\\code\\results_scene_v5_refit_outer_train",
+    "fold_index": null,
+    "dev_fraction": 0.2,
+    "beta": 1.0,
+    "conv_layers": 3,
+    "weight_decay": 0.0,
+    "norm_regularizer": 0.0
+  },
+  "source_sha256": {
+    "deterministic_search.py": "08261eadc6f5b255832462653de5e8aabb967b343dfbad710901bfb080944f32",
+    "runtime_config.py": "7653007c501cb9d68707b373fe3c7b9211706bb341951e1506c1de04f5f7f9a5",
+    "demo.py": "b6197094e39531bdd30348fc6708e8d9254d15da81f1e2c3781606b084262da2",
+    "strict_training.py": "c8aa8fe8fb891e6c1587770f67743ef3ef3b9add645a75a19c271a368cefdde5",
+    "paper_gn.py": "1461bfc64ddbd5544ffbbfa6a5280af73a52f87f57fef22c5f0136a879faf42c",
+    "paper_graph.py": "1d94f7e4bda15ccbfbdabc67ffb426c5a3687e1b72cf6124116945a791751c70",
+    "GNBlock_model.py": "7c6cba750177ab78ed34180f4894170c42c0a8711033aa34d9fd650bf41ca6d4",
+    "conv_layer.py": "cb0791fb9b8617a1fe960fba3b4f4a274a1f91ea1d129ea8d64b4d80f08708ec",
+    "build_graph.py": "f2531c1e623bdf420bbf59db2df674663fcff716340ec261f7d3419da2c60014",
+    "MLP.py": "aa7bcff9b07b63ddb7f2363ffbbc6d9e9dbdd34c8aa026be6ceefe1859972a6e",
+    "util.py": "a832ecb8b95c432135726df4cc74401463bc24dc5567e9bbe40201d2f87de787",
+    "search_base_args.json": "c4d393587ef1096cdfb0b5ecd11339c8b09d094d1feba9ac190d38b4ab1d49c8",
+    "refit_selected_models.py": "2735fbee2f08a9db30037aff78300036829151004fa50cfd3be76ff0748c4027"
+  },
+  "data_sha256": "b1ebfbfed7690e78ffb8c0caf2e57b886d9ec2e19feacf7fe13e5a8f9216472a",
+  "runtime": {
+    "torch": "2.12.1+cu126",
+    "cuda": "12.6",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "samples": 2407,
+  "parent_run": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\Multi-View Multi-Label Classification via View-Label Matching Selection\\code\\results_scene_v5_deterministic_search",
+  "candidate_metrics_sha256": "0860315b57a67ff0c3da54110c9c9890a6bb5e9e90de6db07ad01f144f7c143f",
+  "refit_plan": [
+    {
+      "fold": 1,
+      "candidate": "sgd",
+      "epochs": 101,
+      "selection_dev_LRAP": 0.849393904209137,
+      "initial_state_sha256": "e7025d8be940bdd5508d941b7a573ff7ff8ccd49b9ad1ea907785c3413a2a067"
+    },
+    {
+      "fold": 2,
+      "candidate": "sgd",
+      "epochs": 91,
+      "selection_dev_LRAP": 0.8148052096366882,
+      "initial_state_sha256": "1410dbd346c7ae1181143e85039bbb813dff20d2a618a2c242cd5358dd702f1f"
+    },
+    {
+      "fold": 3,
+      "candidate": "sgd",
+      "epochs": 103,
+      "selection_dev_LRAP": 0.8517270088195801,
+      "initial_state_sha256": "0c96290a366f71528d47fa8bec70009478765211bf0397fe841d942cf2a2a6c0"
+    },
+    {
+      "fold": 4,
+      "candidate": "sgd",
+      "epochs": 82,
+      "selection_dev_LRAP": 0.8387306332588196,
+      "initial_state_sha256": "8e0183c923957c2312fcb42887aa7dc72dea8caff5dd9ef16216a5cd2291d54c"
+    },
+    {
+      "fold": 5,
+      "candidate": "sgd",
+      "epochs": 114,
+      "selection_dev_LRAP": 0.8518998026847839,
+      "initial_state_sha256": "d6a04ba43e7f2a703823da1d350e2a8be7b416b77cb107792c46b6aac0620246"
+    }
+  ],
+  "total_planned_epochs": 491,
+  "selection": "fixed_from_parent_inner_dev_only",
+  "test_evaluations_per_fold": 1,
+  "gamma": 0.933,
+  "threshold": 0.5,
+  "refit_data": "all_outer_train_no_outer_test",
+  "hard_stop": "one_refit_per_fold_no_new_configs_or_epoch_selection_after_refit",
+  "claim_scope": "exploratory_protocol_alignment_on_previously_evaluated_dataset"
+}

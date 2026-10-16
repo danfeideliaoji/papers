@@ -1,0 +1,1 @@
+﻿Title      : Incongruent Multimodal Federated Learning for Medical Vision and Language-based Multi-label Disease Detection Venue      : CCF-A会议 / AAAI (2025) Scope      : 相关(多模态+多标签) Publisher  : AAAI(开放获取) DOI        : https://doi.org/10.1609/aaai.v39i27.35054 arXiv      : -  Local PDF  : paper.pdf Local code : 未找到公开仓库

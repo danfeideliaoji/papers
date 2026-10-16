@@ -1,0 +1,17 @@
+{
+  "run": "results_scene_v5_refit_outer_train",
+  "parent_run": "results_scene_v5_deterministic_search",
+  "status": "complete_verified",
+  "folds": 5,
+  "epochs": 491,
+  "test_rows": 2407,
+  "paper_mean_targets_met": {
+    "LRAP": false,
+    "Micro_F1": false,
+    "Macro_F1": false,
+    "Hamming": false,
+    "Ranking": false,
+    "Coverage": false
+  },
+  "strict_reproduction": "not_established"
+}

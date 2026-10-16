@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "folds": 2,
+  "epochs": 4,
+  "test_rows": 593,
+  "source_snapshot_hashes": "verified",
+  "train_only_scalers": "verified",
+  "dev_selection_and_scores": "replayed",
+  "test_predictions_and_metrics": "replayed"
+}

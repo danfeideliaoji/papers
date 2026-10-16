@@ -1,0 +1,11 @@
+{
+  "status": "diagnosis_complete",
+  "new_test_evaluations": 0,
+  "main_fivefold_results": "unchanged",
+  "confirmed_local_issue": "same_initial_state_cuda_training_diverges_under_standard_configuration",
+  "standard_one_epoch_max_probability_delta": 0.11671911180019379,
+  "deterministic_one_epoch_max_probability_delta": 0,
+  "schedule_experiment": "no_observed_validation_improvement; causal_comparison_inconclusive_due_training_nondeterminism",
+  "paper_assessment": "reporting_and_reproducibility_problems_identified; fabrication_not_established",
+  "next_priority": "deterministic_training_repeatability_before_further_score_comparison"
+}

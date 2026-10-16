@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "selected_epoch": 32,
+  "test_used": false,
+  "replayed_dev": {
+    "LRAP": 0.8555555939674377,
+    "Hamming": 0.17894736842105263,
+    "Ranking": 0.11807017543859649,
+    "Coverage": 1.6105263157894738,
+    "Micro_F1": 0.711864406779661,
+    "Macro_F1": 0.7000511391136174
+  }
+}

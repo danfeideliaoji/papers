@@ -1,0 +1,480 @@
+{
+  "protocol": "vams_train_dev_test_v2",
+  "source_run": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\Multi-View Multi-Label Classification via View-Label Matching Selection\\code\\results_corrected_5fold_fold1_80epochs",
+  "test_used": false,
+  "train_label_frequency": [
+    0.2955145239830017,
+    0.279683381319046,
+    0.44327178597450256,
+    0.25329816341400146,
+    0.28496044874191284,
+    0.31926122307777405
+  ],
+  "optimal_constant_per_label": [
+    0.38703835010528564,
+    0.376272588968277,
+    0.4714217782020569,
+    0.3571639358997345,
+    0.37991514801979065,
+    0.40234795212745667
+  ],
+  "optimal_shared_constant": 0.3967459797859192,
+  "initial": {
+    "model": "initial_seed_2020",
+    "classification_loss": 1.0817480087280273,
+    "explicit_regularization_loss": 4.999452114105225,
+    "score_min": 0.2622728943824768,
+    "score_max": 0.7231364846229553,
+    "score_sample_std": 0.06761214137077332,
+    "score_label_std": 0.09237566590309143,
+    "stages": {
+      "initial_cross_edges": {
+        "label_rms_std": 0.4972868263721466,
+        "sample_rms_std": 0.25861191749572754,
+        "rms": 0.9999485015869141
+      },
+      "layer_1_label_nodes": {
+        "label_rms_std": 0.6667551398277283,
+        "sample_rms_std": 0.27636703848838806
+      },
+      "layer_1_cross_edges": {
+        "label_rms_std": 0.5553840398788452,
+        "sample_rms_std": 0.47097283601760864,
+        "rms": 0.9999573230743408
+      },
+      "layer_2_label_nodes": {
+        "label_rms_std": 0.7226986289024353,
+        "sample_rms_std": 0.4943956136703491
+      },
+      "layer_2_cross_edges": {
+        "label_rms_std": 0.5723389983177185,
+        "sample_rms_std": 0.6212095618247986,
+        "rms": 0.9999542832374573
+      },
+      "decoder_logits": {
+        "label_rms_std": 0.4631584584712982,
+        "sample_rms_std": 0.39251306653022766,
+        "rms": 0.573143720626831
+      }
+    },
+    "gradient_groups": {
+      "input_projections.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 2.613475354716563,
+        "reg_norm": 0.009999999964638845,
+        "weight_decay_norm": 0.057037956106550734,
+        "reg_to_task_ratio": 0.0038263226575264058,
+        "reg_task_cosine": -0.006662890122622645
+      },
+      "input_projections.1": {
+        "missing_task_tensors": 0,
+        "task_norm": 2.8136932563684303,
+        "reg_norm": 0.009999999691790431,
+        "weight_decay_norm": 0.058679000491109204,
+        "reg_to_task_ratio": 0.003554047574004994,
+        "reg_task_cosine": 0.0013741530204072724
+      },
+      "label_projection": {
+        "missing_task_tensors": 0,
+        "task_norm": 4.555062471596283,
+        "reg_norm": 0.009999999873689375,
+        "weight_decay_norm": 0.05921285958299505,
+        "reg_to_task_ratio": 0.0021953595446924704,
+        "reg_task_cosine": 0.010038042974192675
+      },
+      "graph.red_edge_ins.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 2.7622612146596492,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.04636887463791917,
+        "reg_to_task_ratio": 0.0025598837955742118,
+        "reg_task_cosine": 0.006464644313264341
+      },
+      "graph.red_edge_ins.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.11839774764000642,
+        "reg_norm": 0.0049999999368446875,
+        "weight_decay_norm": 0.079999998989515,
+        "reg_to_task_ratio": 0.042230532560867694,
+        "reg_task_cosine": -0.0031495264196028535
+      },
+      "graph.red_edge_ins.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 2.236206090504298,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.03267951062723629,
+        "reg_to_task_ratio": 0.0031620823110072756,
+        "reg_task_cosine": 0.00414307522708254
+      },
+      "graph.red_edge_ins.5": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.09183654029645114,
+        "reg_norm": 0.004999999754945742,
+        "weight_decay_norm": 0.056568541780403006,
+        "reg_to_task_ratio": 0.054444557022788435,
+        "reg_task_cosine": 0.01787199150361926
+      },
+      "graph.red_edge_label.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 3.2517324378477195,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.04625783954086456,
+        "reg_to_task_ratio": 0.002174553982439781,
+        "reg_task_cosine": -0.022401822508742356
+      },
+      "graph.red_edge_label.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.15300119805957735,
+        "reg_norm": 0.0049999999368446875,
+        "weight_decay_norm": 0.079999998989515,
+        "reg_to_task_ratio": 0.03267948225410451,
+        "reg_task_cosine": -0.002434290499279089
+      },
+      "graph.red_edge_label.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 2.5807217799304576,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.03278295659599084,
+        "reg_to_task_ratio": 0.0027399573939120704,
+        "reg_task_cosine": 0.0038329834714900743
+      },
+      "graph.red_edge_label.5": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.12118931621744262,
+        "reg_norm": 0.004999999754945742,
+        "weight_decay_norm": 0.056568541780403006,
+        "reg_to_task_ratio": 0.04125776026307918,
+        "reg_task_cosine": 0.022902370162312766
+      },
+      "graph.red_edge_cross.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 4.115478305620898,
+        "reg_norm": 0.00707106746530642,
+        "weight_decay_norm": 0.046379774534184716,
+        "reg_to_task_ratio": 0.0017181641938553763,
+        "reg_task_cosine": 0.01536531035643575
+      },
+      "graph.red_edge_cross.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.18055016819596942,
+        "reg_norm": 0.0049999999368446875,
+        "weight_decay_norm": 0.079999998989515,
+        "reg_to_task_ratio": 0.027693133641491157,
+        "reg_task_cosine": 0.003682034157705449
+      },
+      "graph.red_edge_cross.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 3.3037358936220826,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.03276543705098335,
+        "reg_to_task_ratio": 0.0021403247566493407,
+        "reg_task_cosine": -0.005012468796831119
+      },
+      "graph.red_edge_cross.5": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.1363528669143328,
+        "reg_norm": 0.004999999754945742,
+        "weight_decay_norm": 0.056568541780403006,
+        "reg_to_task_ratio": 0.036669560883432845,
+        "reg_task_cosine": -0.016989564941586703
+      },
+      "graph.pro_layer1.edge_model": {
+        "missing_task_tensors": 0,
+        "task_norm": 2.805718306870327,
+        "reg_norm": 0.02121320299615516,
+        "weight_decay_norm": 0.19601881039636854,
+        "reg_to_task_ratio": 0.007560703062816625,
+        "reg_task_cosine": -0.000660524411798721
+      },
+      "graph.pro_layer1.node_model": {
+        "missing_task_tensors": 0,
+        "task_norm": 6.814783833235789,
+        "reg_norm": 0.029999999166320766,
+        "weight_decay_norm": 0.27722129074789165,
+        "reg_to_task_ratio": 0.004402193804007455,
+        "reg_task_cosine": -0.0005877144287661891
+      },
+      "graph.pro_layer2.edge_model": {
+        "missing_task_tensors": 16,
+        "task_norm": 2.137857963003914,
+        "reg_norm": 0.02121320286753318,
+        "weight_decay_norm": 0.1960862542408253,
+        "reg_to_task_ratio": 0.009922643709092073,
+        "reg_task_cosine": 0.001248471415546321
+      },
+      "graph.pro_layer2.node_model": {
+        "missing_task_tensors": 0,
+        "task_norm": 3.326755955973493,
+        "reg_norm": 0.02999999901473831,
+        "weight_decay_norm": 0.27722642536079056,
+        "reg_to_task_ratio": 0.009017793734124254,
+        "reg_task_cosine": -0.0010820115594477808
+      },
+      "graph.decoder_edge_cross.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.8863084123032449,
+        "reg_norm": 0.00707106746530642,
+        "weight_decay_norm": 0.03269749525489195,
+        "reg_to_task_ratio": 0.007978111645054653,
+        "reg_task_cosine": -0.00012064581548354341
+      },
+      "graph.decoder_edge_cross.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.08117232920103794,
+        "reg_norm": 0.004999999754945742,
+        "weight_decay_norm": 0.056568541780403006,
+        "reg_to_task_ratio": 0.061597342396844855,
+        "reg_task_cosine": 0.054717192460563814
+      },
+      "graph.decoder_edge_cross.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.7845484417627354,
+        "reg_norm": 0.007071067593928399,
+        "weight_decay_norm": 0.003009749275086702,
+        "reg_to_task_ratio": 0.009012913948361196,
+        "reg_task_cosine": -0.032197539212695914
+      }
+    }
+  },
+  "selected": {
+    "model": "dev_selected_epoch_33",
+    "classification_loss": 1.034954309463501,
+    "explicit_regularization_loss": 4.799132347106934,
+    "score_min": 0.39619284868240356,
+    "score_max": 0.39912909269332886,
+    "score_sample_std": 0.0005180182633921504,
+    "score_label_std": 0.0002834313490893692,
+    "stages": {
+      "initial_cross_edges": {
+        "label_rms_std": 0.11282938718795776,
+        "sample_rms_std": 0.049865443259477615,
+        "rms": 0.9634668827056885
+      },
+      "layer_1_label_nodes": {
+        "label_rms_std": 0.047602199018001556,
+        "sample_rms_std": 0.011689728125929832
+      },
+      "layer_1_cross_edges": {
+        "label_rms_std": 0.04816637933254242,
+        "sample_rms_std": 0.024249915033578873,
+        "rms": 0.9633587002754211
+      },
+      "layer_2_label_nodes": {
+        "label_rms_std": 0.022494494915008545,
+        "sample_rms_std": 0.008185353130102158
+      },
+      "layer_2_cross_edges": {
+        "label_rms_std": 0.009251391515135765,
+        "sample_rms_std": 0.009883430786430836,
+        "rms": 0.9631281495094299
+      },
+      "decoder_logits": {
+        "label_rms_std": 0.0014220980228856206,
+        "sample_rms_std": 0.0026849890127778053,
+        "rms": 0.41532671451568604
+      }
+    },
+    "gradient_groups": {
+      "input_projections.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0014748131597380658,
+        "reg_norm": 0.010000000055588315,
+        "weight_decay_norm": 0.05479505266342588,
+        "reg_to_task_ratio": 6.780519952347296,
+        "reg_task_cosine": 0.019298365928948378
+      },
+      "input_projections.1": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0005864205588870739,
+        "reg_norm": 0.009999999600840958,
+        "weight_decay_norm": 0.05635905317397703,
+        "reg_to_task_ratio": 17.052607466251267,
+        "reg_task_cosine": 0.010916062673861625
+      },
+      "label_projection": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0013404629762378184,
+        "reg_norm": 0.009999999964638845,
+        "weight_decay_norm": 0.05688260986018187,
+        "reg_to_task_ratio": 7.460109038375032,
+        "reg_task_cosine": 0.007899114007177284
+      },
+      "graph.red_edge_ins.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.001618772997248102,
+        "reg_norm": 0.00707106746530642,
+        "weight_decay_norm": 0.04460533326081056,
+        "reg_to_task_ratio": 4.368164947974277,
+        "reg_task_cosine": 0.037145079384516604
+      },
+      "graph.red_edge_ins.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 8.441663402468639e-05,
+        "reg_norm": 0.00707106823703826,
+        "weight_decay_norm": 0.07698462998349247,
+        "reg_to_task_ratio": 83.76392068618172,
+        "reg_task_cosine": 0.08773186766054457
+      },
+      "graph.red_edge_ins.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.001717671196564423,
+        "reg_norm": 0.007071067593928399,
+        "weight_decay_norm": 0.031393749765949754,
+        "reg_to_task_ratio": 4.116659584250757,
+        "reg_task_cosine": -0.0014411256163364972
+      },
+      "graph.red_edge_ins.5": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0001056762847815458,
+        "reg_norm": 0.007071067851172351,
+        "weight_decay_norm": 0.054383313205354764,
+        "reg_to_task_ratio": 66.91253260643744,
+        "reg_task_cosine": -0.05371070506184302
+      },
+      "graph.red_edge_label.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0009626833327528775,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.044476655354596634,
+        "reg_to_task_ratio": 7.34516479300627,
+        "reg_task_cosine": -0.004608477057555704
+      },
+      "graph.red_edge_label.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 5.218162191730732e-05,
+        "reg_norm": 0.007071067851172351,
+        "weight_decay_norm": 0.07698446364250282,
+        "reg_to_task_ratio": 135.50877859599564,
+        "reg_task_cosine": -0.03293660613147676
+      },
+      "graph.red_edge_label.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.001017877855026746,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.03147913467071778,
+        "reg_to_task_ratio": 6.946872542348979,
+        "reg_task_cosine": 0.005856010172571558
+      },
+      "graph.red_edge_label.5": {
+        "missing_task_tensors": 0,
+        "task_norm": 5.369039124660223e-05,
+        "reg_norm": 0.00707106823703826,
+        "weight_decay_norm": 0.05438279516700722,
+        "reg_to_task_ratio": 131.7008141095591,
+        "reg_task_cosine": -0.09488435153774606
+      },
+      "graph.red_edge_cross.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0016362454258252953,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.04466040540164943,
+        "reg_to_task_ratio": 4.321520238312566,
+        "reg_task_cosine": 0.010655047873071704
+      },
+      "graph.red_edge_cross.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 8.632301584382254e-05,
+        "reg_norm": 0.007071067979794322,
+        "weight_decay_norm": 0.07698420354496678,
+        "reg_to_task_ratio": 81.9140516659827,
+        "reg_task_cosine": 0.09323444156910146
+      },
+      "graph.red_edge_cross.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0017722275171853047,
+        "reg_norm": 0.007071067722550376,
+        "weight_decay_norm": 0.03152820258693931,
+        "reg_to_task_ratio": 3.9899322485302675,
+        "reg_task_cosine": -0.00016115160549342724
+      },
+      "graph.red_edge_cross.5": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.00010762660530859643,
+        "reg_norm": 0.007071067851172351,
+        "weight_decay_norm": 0.05438296641990847,
+        "reg_to_task_ratio": 65.69999890731074,
+        "reg_task_cosine": 0.11399887664463529
+      },
+      "graph.pro_layer1.edge_model": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.00589921221457502,
+        "reg_norm": 0.024494896858525437,
+        "weight_decay_norm": 0.18850438749485196,
+        "reg_to_task_ratio": 4.152231851908391,
+        "reg_task_cosine": -0.00013567543950408434
+      },
+      "graph.pro_layer1.node_model": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.004694444010848962,
+        "reg_norm": 0.034641015451276194,
+        "weight_decay_norm": 0.26662130975048925,
+        "reg_to_task_ratio": 7.379151901954748,
+        "reg_task_cosine": 0.003034201883527451
+      },
+      "graph.pro_layer2.edge_model": {
+        "missing_task_tensors": 16,
+        "task_norm": 0.009179972467520782,
+        "reg_norm": 0.022360679411211073,
+        "weight_decay_norm": 0.18857551611898413,
+        "reg_to_task_ratio": 2.4358111628683328,
+        "reg_task_cosine": 0.016479672925063367
+      },
+      "graph.pro_layer2.node_model": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.006449951121141403,
+        "reg_norm": 0.03464101532000194,
+        "weight_decay_norm": 0.2665862634549817,
+        "reg_to_task_ratio": 5.370740749717768,
+        "reg_task_cosine": 0.0009537687284731888
+      },
+      "graph.decoder_edge_cross.0": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.011877448853573898,
+        "reg_norm": 0.00707106746530642,
+        "weight_decay_norm": 0.03140482737999508,
+        "reg_to_task_ratio": 0.5953355432196832,
+        "reg_task_cosine": 0.0020556556457715226
+      },
+      "graph.decoder_edge_cross.2": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.0016282765746078185,
+        "reg_norm": 0.007071067336684438,
+        "weight_decay_norm": 0.054299643843899355,
+        "reg_to_task_ratio": 4.342669695648943,
+        "reg_task_cosine": 0.4541516894830761
+      },
+      "graph.decoder_edge_cross.3": {
+        "missing_task_tensors": 0,
+        "task_norm": 0.036990314636473565,
+        "reg_norm": 0.007071067593928399,
+        "weight_decay_norm": 0.0018962187126771158,
+        "reg_to_task_ratio": 0.19115997426407705,
+        "reg_task_cosine": -0.14989269205950898
+      }
+    }
+  },
+  "dev_metrics": {
+    "LRAP": 0.6272807717323303,
+    "Hamming": 0.3263157894736842,
+    "Ranking": 0.33888888888888885,
+    "Coverage": 2.6842105263157894,
+    "Micro_F1": 0.0,
+    "Macro_F1": 0.0
+  },
+  "dev_scores_per_label_mean": [
+    0.3976026475429535,
+    0.39755475521087646,
+    0.3981271982192993,
+    0.39747855067253113,
+    0.3981087803840637,
+    0.39752182364463806
+  ],
+  "dev_scores_per_label_std": [
+    0.0005039742100052536,
+    0.0005720476619899273,
+    0.0006454797694459558,
+    0.0006182214710861444,
+    0.0006272218888625503,
+    0.00042505335295572877
+  ]
+}

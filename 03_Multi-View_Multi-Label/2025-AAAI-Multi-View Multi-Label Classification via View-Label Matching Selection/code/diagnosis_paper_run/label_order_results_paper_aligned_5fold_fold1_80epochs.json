@@ -1,0 +1,37 @@
+{
+  "run": "results_paper_aligned_5fold_fold1_80epochs",
+  "source_verified": true,
+  "implementation": "snapshot",
+  "no_training": true,
+  "test_evaluations": 0,
+  "label_permutations": [
+    {
+      "permutation": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "max_abs_change": 0.6716361045837402,
+      "mean_abs_change": 0.10782309621572495,
+      "changed_threshold_positions": 80,
+      "invariance_at_1e_5": false
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "max_abs_change": 0.7122294902801514,
+      "mean_abs_change": 0.08819465339183807,
+      "changed_threshold_positions": 71,
+      "invariance_at_1e_5": false
+    }
+  ]
+}

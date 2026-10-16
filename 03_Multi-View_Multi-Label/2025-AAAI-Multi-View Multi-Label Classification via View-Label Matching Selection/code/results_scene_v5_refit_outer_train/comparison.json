@@ -1,0 +1,64 @@
+{
+  "paper_sha256": "96229a213ddb7fb71502fdcfe582f5094ee3edfd055db150018caa2d3d983590",
+  "paper_table": 1,
+  "paper_metrics": {
+    "LRAP": {
+      "mean": 0.878,
+      "std": 0.014
+    },
+    "Micro_F1": {
+      "mean": 0.748,
+      "std": 0.016
+    },
+    "Macro_F1": {
+      "mean": 0.758,
+      "std": 0.014
+    },
+    "Hamming": {
+      "mean": 0.086,
+      "std": 0.007
+    },
+    "Ranking": {
+      "mean": 0.07,
+      "std": 0.01
+    },
+    "Coverage": {
+      "mean": 0.434,
+      "std": 0.058
+    }
+  },
+  "difference_from_v4": {
+    "LRAP": -0.03960483074188237,
+    "Micro_F1": -0.15551731877425323,
+    "Macro_F1": -0.17721686144290028,
+    "Hamming": 0.021746275480715282,
+    "Ranking": 0.01804618614784588,
+    "Coverage": 0.09056857687563069
+  },
+  "difference_from_inner_selection_model": {
+    "LRAP": -0.04053609371185307,
+    "Micro_F1": -0.1613572747443609,
+    "Macro_F1": -0.18199879772712002,
+    "Hamming": 0.02181960128018219,
+    "Ranking": 0.0193264378326619,
+    "Coverage": 0.09725157650468841
+  },
+  "difference_from_paper": {
+    "LRAP": -0.07681665706634522,
+    "Micro_F1": -0.20812342481889168,
+    "Macro_F1": -0.2304437803838184,
+    "Hamming": 0.04833674657741047,
+    "Ranking": 0.03874191858631691,
+    "Coverage": 0.1962542248600339
+  },
+  "paper_mean_targets_met": {
+    "LRAP": false,
+    "Micro_F1": false,
+    "Macro_F1": false,
+    "Hamming": false,
+    "Ranking": false,
+    "Coverage": false
+  },
+  "strict_reproduction": "not_established",
+  "independent_confirmation": "not_established_previously_evaluated_dataset"
+}

@@ -1,0 +1,32 @@
+{
+  "dataset": "Scene",
+  "source_url": "https://sourceforge.net/projects/mulan/files/datasets/scene.rar/download",
+  "catalog": "https://mulan.sourceforge.net/datasets-mlc.html",
+  "rows": 2407,
+  "official_train_rows": 1211,
+  "official_test_rows": 1196,
+  "labels": [
+    "Beach",
+    "Sunset",
+    "FallFoliage",
+    "Field",
+    "Mountain",
+    "Urban"
+  ],
+  "view_dimensions": [
+    98,
+    196
+  ],
+  "feature_grouping": "first_98_and_remaining_196_from_author_demo_scene_loader",
+  "paper_view_definition": "not_explicitly_specified",
+  "preprocessing_at_conversion": "none",
+  "union_matches_train_then_test": true,
+  "source_sha256": {
+    "scene-test.arff": "ea38d20296b3ff7e220f477a3b802a9bcb2d768881fe6ee163efbc97ea527a42",
+    "scene-train.arff": "b53ba93bdf412de922e3960389bcee24744fa3e872ce610511fc1d750888b64d",
+    "scene.arff": "5905548975b69b639ab31a295f7bf1ab7379a3f016450012722d28f660f4b143",
+    "scene.rar": "8dae3b1bb244544ff478dd85980fc92d8e6472b4b68dbc2fc915ceeb4d5f1bcc",
+    "scene.xml": "9de52ca3d3368a831f574de365b94d55679d8d7e35496d13b353983e7d8ad576"
+  },
+  "mat_sha256": "b1ebfbfed7690e78ffb8c0caf2e57b886d9ec2e19feacf7fe13e5a8f9216472a"
+}

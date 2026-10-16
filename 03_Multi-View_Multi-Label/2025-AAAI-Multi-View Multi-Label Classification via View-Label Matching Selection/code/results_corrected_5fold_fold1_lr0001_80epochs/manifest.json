@@ -1,0 +1,51 @@
+{
+  "protocol": "vams_train_dev_test_v2",
+  "args": {
+    "device": "cuda",
+    "checkpoint_dir": "./results_corrected/checkpoints",
+    "fresh_start": false,
+    "dataset": "emotions.mat",
+    "data_root": "./data",
+    "batch_size": 64,
+    "category_num": 6,
+    "k": 5,
+    "GPUS": 1,
+    "k_fold": 5,
+    "start_epoch": 0,
+    "end_epochs": 80,
+    "lr": 0.001,
+    "nhidden": 128,
+    "target_dim": 128,
+    "dropout": 0.4,
+    "threshold": 0.5,
+    "resume": "",
+    "warmup": 0,
+    "t": 0.85,
+    "at": 0.4,
+    "seed": 2020,
+    "output_dir": "./results_corrected_5fold_fold1_lr0001_80epochs",
+    "fold_index": 1,
+    "dev_fraction": 0.2,
+    "beta": 1.0
+  },
+  "source_sha256": {
+    "demo.py": "9c9b220cb3b4c7291e8aaf33ca1a2afac429cb3e6d37798e6e567771d06bba19",
+    "strict_training.py": "ac87215cc116391197d67b90b7a552d901f08d2f95ed27c5a25ef88a2687925b",
+    "GNBlock_model.py": "bf2d9ef790e8308e7f26db26d6c18f0cd4666926cbf6e768bb78b177c11f2d65",
+    "conv_layer.py": "cb0791fb9b8617a1fe960fba3b4f4a274a1f91ea1d129ea8d64b4d80f08708ec",
+    "build_graph.py": "de4c82c3bb4223fb46d2a7105068640c1470ac1540df3e566fcdbfa1f3e41c40",
+    "MLP.py": "aa7bcff9b07b63ddb7f2363ffbbc6d9e9dbdd34c8aa026be6ceefe1859972a6e"
+  },
+  "data_sha256": "173e1288a327681207bd8b1eef7f7635ea0727c7cd48921d0e8d6e07f0c01520",
+  "device": "cuda",
+  "samples": 593,
+  "selection": "dev_LRAP",
+  "outer_folds": 5,
+  "selected_folds": [
+    1
+  ],
+  "test_evaluations_per_fold": 1,
+  "neighbor_reference": "inner_train_only",
+  "knn_refresh": "each training epoch and each evaluation",
+  "status": "complete"
+}

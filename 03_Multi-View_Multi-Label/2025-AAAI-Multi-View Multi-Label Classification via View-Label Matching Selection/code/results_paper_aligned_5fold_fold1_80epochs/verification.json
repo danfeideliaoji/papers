@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "folds": 1,
+  "outer_folds": 5,
+  "selected_folds": [
+    1
+  ],
+  "epochs": 80,
+  "test_rows": 119,
+  "source_snapshot_hashes": "verified",
+  "train_only_scalers": "verified",
+  "dev_selection_and_scores": "replayed",
+  "test_predictions_and_metrics": "replayed",
+  "prediction_atol": 5e-06,
+  "prediction_rtol": 1e-06,
+  "max_prediction_abs_error": 1.4603137969970703e-06,
+  "threshold_and_label_order": "identical"
+}

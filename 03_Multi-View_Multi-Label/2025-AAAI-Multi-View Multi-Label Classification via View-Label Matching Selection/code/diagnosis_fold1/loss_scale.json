@@ -1,0 +1,9 @@
+{
+  "same_initial_model": true,
+  "legacy_task_loss": 0.27907341718673706,
+  "frequency_task_loss": 1.0817480087280273,
+  "legacy_task_gradient_norm": 5.75057836427254,
+  "frequency_task_gradient_norm": 12.832871631245721,
+  "gradient_norm_ratio": 2.231579298349255,
+  "test_used": false
+}

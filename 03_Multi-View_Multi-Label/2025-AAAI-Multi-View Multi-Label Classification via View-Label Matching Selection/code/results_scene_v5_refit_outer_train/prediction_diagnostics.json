@@ -1,0 +1,283 @@
+{
+  "threshold": 0.5,
+  "descriptive_only": true,
+  "configuration_or_model_selection": false,
+  "causal_explanation_established": false,
+  "folds": [
+    {
+      "fold": 1,
+      "inner_selected_model": {
+        "rows": 482,
+        "true_positive_labels_per_row": 1.062240663900415,
+        "predicted_positive_labels_per_row": 1.1493775933609958,
+        "rows_without_predicted_labels_fraction": 0.07468879668049792,
+        "true_positive_count": 362,
+        "false_positive_count": 192,
+        "false_negative_count": 150,
+        "label_probability_mean": [
+          0.2100231945514679,
+          0.1754726767539978,
+          0.19670599699020386,
+          0.2035880833864212,
+          0.2851938009262085,
+          0.24591456353664398
+        ],
+        "label_probability_std": [
+          0.2924007773399353,
+          0.30045151710510254,
+          0.31120872497558594,
+          0.31667521595954895,
+          0.24548158049583435,
+          0.2855413556098938
+        ],
+        "mean_within_label_probability_std": 0.29195988178253174
+      },
+      "outer_train_refit": {
+        "rows": 482,
+        "true_positive_labels_per_row": 1.062240663900415,
+        "predicted_positive_labels_per_row": 1.2344398340248963,
+        "rows_without_predicted_labels_fraction": 0.0995850622406639,
+        "true_positive_count": 362,
+        "false_positive_count": 233,
+        "false_negative_count": 150,
+        "label_probability_mean": [
+          0.2436285763978958,
+          0.19378824532032013,
+          0.23048333823680878,
+          0.22482360899448395,
+          0.308184951543808,
+          0.2805190980434418
+        ],
+        "label_probability_std": [
+          0.22536006569862366,
+          0.2786252200603485,
+          0.27023106813430786,
+          0.2495497167110443,
+          0.21340304613113403,
+          0.23552078008651733
+        ],
+        "mean_within_label_probability_std": 0.2454483062028885
+      }
+    },
+    {
+      "fold": 2,
+      "inner_selected_model": {
+        "rows": 482,
+        "true_positive_labels_per_row": 1.0871369294605808,
+        "predicted_positive_labels_per_row": 1.1244813278008299,
+        "rows_without_predicted_labels_fraction": 0.08921161825726141,
+        "true_positive_count": 372,
+        "false_positive_count": 170,
+        "false_negative_count": 152,
+        "label_probability_mean": [
+          0.2072463035583496,
+          0.1743176281452179,
+          0.18194977939128876,
+          0.20791371166706085,
+          0.2980217933654785,
+          0.24359948933124542
+        ],
+        "label_probability_std": [
+          0.2754219174385071,
+          0.29576265811920166,
+          0.3015514016151428,
+          0.33355221152305603,
+          0.24119101464748383,
+          0.2760498821735382
+        ],
+        "mean_within_label_probability_std": 0.28725484013557434
+      },
+      "outer_train_refit": {
+        "rows": 482,
+        "true_positive_labels_per_row": 1.0871369294605808,
+        "predicted_positive_labels_per_row": 1.1493775933609958,
+        "rows_without_predicted_labels_fraction": 0.06431535269709543,
+        "true_positive_count": 364,
+        "false_positive_count": 190,
+        "false_negative_count": 160,
+        "label_probability_mean": [
+          0.22063875198364258,
+          0.1687707006931305,
+          0.1858752965927124,
+          0.22061379253864288,
+          0.2950458824634552,
+          0.24740256369113922
+        ],
+        "label_probability_std": [
+          0.2752552926540375,
+          0.28253671526908875,
+          0.2945551574230194,
+          0.3301253318786621,
+          0.24905680119991302,
+          0.27991312742233276
+        ],
+        "mean_within_label_probability_std": 0.28524041175842285
+      }
+    },
+    {
+      "fold": 3,
+      "inner_selected_model": {
+        "rows": 481,
+        "true_positive_labels_per_row": 1.0748440748440748,
+        "predicted_positive_labels_per_row": 1.106029106029106,
+        "rows_without_predicted_labels_fraction": 0.07276507276507277,
+        "true_positive_count": 381,
+        "false_positive_count": 151,
+        "false_negative_count": 136,
+        "label_probability_mean": [
+          0.17842762172222137,
+          0.1481335163116455,
+          0.20202679932117462,
+          0.21624748408794403,
+          0.25883156061172485,
+          0.21146045625209808
+        ],
+        "label_probability_std": [
+          0.294960081577301,
+          0.29593193531036377,
+          0.3519221246242523,
+          0.35996466875076294,
+          0.28392493724823,
+          0.3089247941970825
+        ],
+        "mean_within_label_probability_std": 0.3159380853176117
+      },
+      "outer_train_refit": {
+        "rows": 481,
+        "true_positive_labels_per_row": 1.0748440748440748,
+        "predicted_positive_labels_per_row": 1.1746361746361746,
+        "rows_without_predicted_labels_fraction": 0.06444906444906445,
+        "true_positive_count": 381,
+        "false_positive_count": 184,
+        "false_negative_count": 136,
+        "label_probability_mean": [
+          0.1969587206840515,
+          0.155445396900177,
+          0.2039707452058792,
+          0.22126714885234833,
+          0.27629515528678894,
+          0.24498528242111206
+        ],
+        "label_probability_std": [
+          0.2980261743068695,
+          0.30095213651657104,
+          0.33558201789855957,
+          0.35135841369628906,
+          0.25188952684402466,
+          0.2918725311756134
+        ],
+        "mean_within_label_probability_std": 0.30494678020477295
+      }
+    },
+    {
+      "fold": 4,
+      "inner_selected_model": {
+        "rows": 481,
+        "true_positive_labels_per_row": 1.0810810810810811,
+        "predicted_positive_labels_per_row": 1.3534303534303533,
+        "rows_without_predicted_labels_fraction": 0.0498960498960499,
+        "true_positive_count": 398,
+        "false_positive_count": 253,
+        "false_negative_count": 122,
+        "label_probability_mean": [
+          0.23907190561294556,
+          0.18111741542816162,
+          0.22803443670272827,
+          0.22327320277690887,
+          0.3248894512653351,
+          0.29079174995422363
+        ],
+        "label_probability_std": [
+          0.24854052066802979,
+          0.2617949843406677,
+          0.2937026023864746,
+          0.3060467839241028,
+          0.2192051261663437,
+          0.2581360936164856
+        ],
+        "mean_within_label_probability_std": 0.26457104086875916
+      },
+      "outer_train_refit": {
+        "rows": 481,
+        "true_positive_labels_per_row": 1.0810810810810811,
+        "predicted_positive_labels_per_row": 0.1704781704781705,
+        "rows_without_predicted_labels_fraction": 0.8336798336798337,
+        "true_positive_count": 71,
+        "false_positive_count": 11,
+        "false_negative_count": 449,
+        "label_probability_mean": [
+          0.20637936890125275,
+          0.12858617305755615,
+          0.16682113707065582,
+          0.1416388601064682,
+          0.30475109815597534,
+          0.2555972635746002
+        ],
+        "label_probability_std": [
+          0.16943013668060303,
+          0.17033733427524567,
+          0.21148601174354553,
+          0.1932610720396042,
+          0.20502439141273499,
+          0.21533259749412537
+        ],
+        "mean_within_label_probability_std": 0.19414526224136353
+      }
+    },
+    {
+      "fold": 5,
+      "inner_selected_model": {
+        "rows": 481,
+        "true_positive_labels_per_row": 1.0644490644490645,
+        "predicted_positive_labels_per_row": 1.1787941787941787,
+        "rows_without_predicted_labels_fraction": 0.056133056133056136,
+        "true_positive_count": 390,
+        "false_positive_count": 177,
+        "false_negative_count": 122,
+        "label_probability_mean": [
+          0.22361789643764496,
+          0.21907885372638702,
+          0.20166015625,
+          0.18363730609416962,
+          0.2895376980304718,
+          0.26175016164779663
+        ],
+        "label_probability_std": [
+          0.278054803609848,
+          0.3129383623600006,
+          0.29546600580215454,
+          0.3044128119945526,
+          0.21794156730175018,
+          0.2595680058002472
+        ],
+        "mean_within_label_probability_std": 0.27806356549263
+      },
+      "outer_train_refit": {
+        "rows": 481,
+        "true_positive_labels_per_row": 1.0644490644490645,
+        "predicted_positive_labels_per_row": 0.49272349272349275,
+        "rows_without_predicted_labels_fraction": 0.5405405405405406,
+        "true_positive_count": 161,
+        "false_positive_count": 76,
+        "false_negative_count": 351,
+        "label_probability_mean": [
+          0.183832585811615,
+          0.15714210271835327,
+          0.19082623720169067,
+          0.13856816291809082,
+          0.2656216621398926,
+          0.2489347755908966
+        ],
+        "label_probability_std": [
+          0.168477401137352,
+          0.19876863062381744,
+          0.2208421528339386,
+          0.18628846108913422,
+          0.18088869750499725,
+          0.2134660929441452
+        ],
+        "mean_within_label_probability_std": 0.19478857517242432
+      }
+    }
+  ]
+}

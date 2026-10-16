@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "protocol": "vams_paper_alignment_train_dev_test_v4",
+  "seconds": 46.67316818237305,
+  "folds": 1,
+  "outer_folds": 5,
+  "selected_folds": [
+    5
+  ],
+  "epochs": 80,
+  "scope": "selected_folds",
+  "mean": {
+    "LRAP": 0.8011535406112671,
+    "Hamming": 0.2019774011299435,
+    "Ranking": 0.15275423728813559,
+    "Coverage": 1.7457627118644066,
+    "Micro_F1": 0.6884531590413944,
+    "Macro_F1": 0.6743253657130212
+  },
+  "std": {
+    "LRAP": null,
+    "Hamming": null,
+    "Ranking": null,
+    "Coverage": null,
+    "Micro_F1": null,
+    "Macro_F1": null
+  }
+}
