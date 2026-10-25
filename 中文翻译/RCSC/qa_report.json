@@ -1,0 +1,21 @@
+{
+  "pdf_sha256": "2a5f164fbb8d498e2386af2c1233261d625a826e8ce1a386116e3118dfd98c2b",
+  "pages": 16,
+  "source_han_blocks_checked": 126,
+  "missing_han_blocks": [],
+  "formula_assets": 34,
+  "other_assets": 7,
+  "all_assets_present": true,
+  "all_reference_page_text_streams_preserved": true,
+  "chinese_and_math_fonts_embedded": [
+    "/AAAAAA+Cambria-0",
+    "/AAAAAA+MicrosoftYaHei-0",
+    "/AAAAAB+MicrosoftYaHei-0",
+    "/AAAAAC+MicrosoftYaHei-0"
+  ],
+  "original_unchanged": true,
+  "extraction_replacement_characters": 0,
+  "visual_review_required": true,
+  "visual_review_status": "passed",
+  "visual_review_pdf_sha256": "2a5f164fbb8d498e2386af2c1233261d625a826e8ce1a386116e3118dfd98c2b"
+}

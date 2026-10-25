@@ -1,0 +1,412 @@
+{
+  "eq01": {
+    "source_page": 3,
+    "bbox_points": [
+      60,
+      608,
+      292,
+      661
+    ],
+    "path": "assets/eq01.png"
+  },
+  "eq02": {
+    "source_page": 3,
+    "bbox_points": [
+      310,
+      211,
+      543,
+      231
+    ],
+    "path": "assets/eq02.png"
+  },
+  "eq03": {
+    "source_page": 3,
+    "bbox_points": [
+      310,
+      346,
+      543,
+      391
+    ],
+    "path": "assets/eq03.png"
+  },
+  "eq04": {
+    "source_page": 3,
+    "bbox_points": [
+      310,
+      542,
+      543,
+      596
+    ],
+    "path": "assets/eq04.png"
+  },
+  "eq05": {
+    "source_page": 3,
+    "bbox_points": [
+      310,
+      655,
+      543,
+      722
+    ],
+    "path": "assets/eq05.png"
+  },
+  "eq06": {
+    "source_page": 4,
+    "bbox_points": [
+      60,
+      142,
+      292,
+      196
+    ],
+    "path": "assets/eq06.png"
+  },
+  "eq07": {
+    "source_page": 4,
+    "bbox_points": [
+      60,
+      321,
+      292,
+      375
+    ],
+    "path": "assets/eq07.png"
+  },
+  "eq08": {
+    "source_page": 4,
+    "bbox_points": [
+      110,
+      395,
+      292,
+      429
+    ],
+    "path": "assets/eq08.png"
+  },
+  "eq09": {
+    "source_page": 4,
+    "bbox_points": [
+      130,
+      482,
+      292,
+      516
+    ],
+    "path": "assets/eq09.png"
+  },
+  "eq10": {
+    "source_page": 4,
+    "bbox_points": [
+      85,
+      564,
+      292,
+      585
+    ],
+    "path": "assets/eq10.png"
+  },
+  "eq11": {
+    "source_page": 4,
+    "bbox_points": [
+      85,
+      589,
+      292,
+      609
+    ],
+    "path": "assets/eq11.png"
+  },
+  "eq12": {
+    "source_page": 4,
+    "bbox_points": [
+      59,
+      628,
+      292,
+      657
+    ],
+    "path": "assets/eq12.png"
+  },
+  "eq13": {
+    "source_page": 4,
+    "bbox_points": [
+      115,
+      658,
+      292,
+      678
+    ],
+    "path": "assets/eq13.png"
+  },
+  "eq14": {
+    "source_page": 4,
+    "bbox_points": [
+      128,
+      700,
+      292,
+      720
+    ],
+    "path": "assets/eq14.png"
+  },
+  "eq15": {
+    "source_page": 4,
+    "bbox_points": [
+      310,
+      94,
+      543,
+      125
+    ],
+    "path": "assets/eq15.png"
+  },
+  "eq16": {
+    "source_page": 4,
+    "bbox_points": [
+      380,
+      150,
+      543,
+      189
+    ],
+    "path": "assets/eq16.png"
+  },
+  "eq17": {
+    "source_page": 4,
+    "bbox_points": [
+      316,
+      380,
+      543,
+      399
+    ],
+    "path": "assets/eq17.png"
+  },
+  "lemma01": {
+    "source_page": 4,
+    "bbox_points": [
+      307,
+      588,
+      527,
+      624
+    ],
+    "path": "assets/lemma01.png"
+  },
+  "eq18": {
+    "source_page": 5,
+    "bbox_points": [
+      54,
+      94,
+      292,
+      139
+    ],
+    "path": "assets/eq18.png"
+  },
+  "eq19": {
+    "source_page": 5,
+    "bbox_points": [
+      64,
+      230,
+      292,
+      263
+    ],
+    "path": "assets/eq19.png"
+  },
+  "eq20": {
+    "source_page": 5,
+    "bbox_points": [
+      62,
+      297,
+      292,
+      376
+    ],
+    "path": "assets/eq20.png"
+  },
+  "eq21": {
+    "source_page": 5,
+    "bbox_points": [
+      60,
+      582,
+      292,
+      688
+    ],
+    "path": "assets/eq21.png"
+  },
+  "eq22": {
+    "source_page": 5,
+    "bbox_points": [
+      309,
+      205,
+      543,
+      255
+    ],
+    "path": "assets/eq22.png"
+  },
+  "eq23": {
+    "source_page": 5,
+    "bbox_points": [
+      320,
+      288,
+      543,
+      312
+    ],
+    "path": "assets/eq23.png"
+  },
+  "eq24": {
+    "source_page": 5,
+    "bbox_points": [
+      308,
+      387,
+      543,
+      454
+    ],
+    "path": "assets/eq24.png"
+  },
+  "eq25": {
+    "source_page": 5,
+    "bbox_points": [
+      310,
+      487,
+      543,
+      526
+    ],
+    "path": "assets/eq25.png"
+  },
+  "eq26": {
+    "source_page": 5,
+    "bbox_points": [
+      312,
+      605,
+      543,
+      642
+    ],
+    "path": "assets/eq26.png"
+  },
+  "eq27": {
+    "source_page": 5,
+    "bbox_points": [
+      345,
+      663,
+      543,
+      687
+    ],
+    "path": "assets/eq27.png"
+  },
+  "eq28": {
+    "source_page": 6,
+    "bbox_points": [
+      85,
+      97,
+      292,
+      157
+    ],
+    "path": "assets/eq28.png"
+  },
+  "eq29": {
+    "source_page": 6,
+    "bbox_points": [
+      54,
+      190,
+      292,
+      228
+    ],
+    "path": "assets/eq29.png"
+  },
+  "eq30": {
+    "source_page": 6,
+    "bbox_points": [
+      108,
+      251,
+      292,
+      275
+    ],
+    "path": "assets/eq30.png"
+  },
+  "eq31": {
+    "source_page": 6,
+    "bbox_points": [
+      88,
+      315,
+      292,
+      339
+    ],
+    "path": "assets/eq31.png"
+  },
+  "eq32": {
+    "source_page": 6,
+    "bbox_points": [
+      95,
+      361,
+      292,
+      385
+    ],
+    "path": "assets/eq32.png"
+  },
+  "eq33": {
+    "source_page": 6,
+    "bbox_points": [
+      63,
+      450,
+      292,
+      488
+    ],
+    "path": "assets/eq33.png"
+  },
+  "eq34": {
+    "source_page": 6,
+    "bbox_points": [
+      110,
+      524,
+      292,
+      562
+    ],
+    "path": "assets/eq34.png"
+  },
+  "fig01": {
+    "source_page": 7,
+    "bbox_points": [
+      54,
+      66,
+      543,
+      260
+    ],
+    "path": "assets/fig01.png"
+  },
+  "tab01": {
+    "source_page": 7,
+    "bbox_points": [
+      54,
+      318,
+      543,
+      408
+    ],
+    "path": "assets/tab01.png"
+  },
+  "fig02": {
+    "source_page": 7,
+    "bbox_points": [
+      54,
+      416,
+      296,
+      485
+    ],
+    "path": "assets/fig02.png"
+  },
+  "fig03": {
+    "source_page": 7,
+    "bbox_points": [
+      60,
+      510,
+      286,
+      631
+    ],
+    "path": "assets/fig03.png"
+  },
+  "tab02": {
+    "source_page": 8,
+    "bbox_points": [
+      54,
+      88,
+      543,
+      177
+    ],
+    "path": "assets/tab02.png"
+  },
+  "tab03": {
+    "source_page": 8,
+    "bbox_points": [
+      54,
+      200,
+      543,
+      290
+    ],
+    "path": "assets/tab03.png"
+  }
+}

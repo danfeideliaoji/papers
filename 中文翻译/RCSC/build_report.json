@@ -1,0 +1,17 @@
+{
+  "source_sha256": "923aabbbcdd7605a235c49cc0bd607731cc5c9ccd5e581d99478bed6369b4d9d",
+  "pdf_sha256": "2a5f164fbb8d498e2386af2c1233261d625a826e8ce1a386116e3118dfd98c2b",
+  "source_pages": 11,
+  "body_pages": 13,
+  "bibliography_pages": 3,
+  "output_pages": 16,
+  "assets": 41,
+  "numbered_equations": 34,
+  "figures": 3,
+  "tables": 3,
+  "source_blocks": 122,
+  "source_characters": 15002,
+  "omissions": [],
+  "unreadable_regions": [],
+  "visual_review": "passed_2026-10-25_all_16_pages"
+}
