@@ -1,7 +1,7 @@
 {
   "baseline_commit": "c9839663157a00ec3160ae1521757d5a4184caba",
   "branch": "translations/zh-pdf-audit-20261025",
-  "updated_utc": "2026-10-25T16:12:14.479808+00:00",
+  "updated_utc": "2026-10-25T16:16:37.430609+00:00",
   "counts": {
     "entries": 174,
     "primary_present": 138,
@@ -12,12 +12,11 @@
     "pdf_errors": 2,
     "existing_chinese_pdfs": 2
   },
-  "phase": "first_sample_complete_ready_for_checkpoint",
+  "phase": "first_sample_pushed_draft_pr_blocked",
   "next": [
-    "Commit and push first checkpoint; create draft PR; verify remote downloadable PDF",
-    "Review figures and supplementary scope for licensed queue",
-    "Compare P065/P082 to official PMLR versions",
-    "Continue article-specific licensing review for unverified entries; request only necessary permissions"
+    "Continue licensed queue after figure and source-scope checks",
+    "Resolve current GitHub integration PR write permission or have user create draft PR",
+    "Compare P065/P082 official versions; continue pending-rights review"
   ],
   "rights_counts": {
     "pending_permission_or_license": 150,
@@ -37,5 +36,14 @@
   "completed_samples": [
     "P004"
   ],
-  "sample_pdf_sha256": "2a5f164fbb8d498e2386af2c1233261d625a826e8ce1a386116e3118dfd98c2b"
+  "sample_pdf_sha256": "2a5f164fbb8d498e2386af2c1233261d625a826e8ce1a386116e3118dfd98c2b",
+  "artifact_commit": "2365d8e6664ffb7703b2dc188da2dab2cf1154c3",
+  "draft_pr": {
+    "status": "blocked_denied",
+    "http_status": 403,
+    "reason": "Resource not accessible by integration",
+    "head": "translations/zh-pdf-audit-20261025",
+    "base": "main",
+    "url": null
+  }
 }

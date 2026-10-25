@@ -1,0 +1,24 @@
+{
+  "artifact_commit": "2365d8e6664ffb7703b2dc188da2dab2cf1154c3",
+  "branch": "translations/zh-pdf-audit-20261025",
+  "base": "main",
+  "pdf_path": "中文翻译/RCSC/RCSC_中文全文译文.pdf",
+  "pdf_sha256": "2a5f164fbb8d498e2386af2c1233261d625a826e8ce1a386116e3118dfd98c2b",
+  "remote_pdf_downloaded_and_byte_identical": true,
+  "draft_pr": {
+    "status": "blocked_denied",
+    "http_status": 403,
+    "reason": "Resource not accessible by integration",
+    "head": "translations/zh-pdf-audit-20261025",
+    "base": "main",
+    "url": null
+  },
+  "open_pr_search_after_denial": [],
+  "initial_push_gh007": "resolved by using verified noreply author/committer already present in baseline; account privacy settings unchanged",
+  "rights_blocked_ids": [
+    "P123",
+    "P141",
+    "P149",
+    "P175"
+  ]
+}

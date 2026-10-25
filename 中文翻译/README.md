@@ -4,6 +4,8 @@
 
 所有新文件集中在本目录；原始论文、已有译本、源码与数据均保留。当前基线 `main@c9839663157a00ec3160ae1521757d5a4184caba`，工作分支 `translations/zh-pdf-audit-20261025`。本检查点不表示其余 173 篇已经翻译。
 
+分支已推送，精确提交的 PDF 已重新下载核验。创建草稿 PR 的连接操作被 GitHub 以 `403 Resource not accessible by integration` 拒绝，当前没有 PR；没有换工具或关闭保护绕过。待当前连接具备 PR 写权限后再执行，或由用户在 GitHub 手动建立草稿。预备说明见 `pr_draft.md`，准确状态见 `remote_status.json`。
+
 ## 盘点
 
 | 范围 | 数量 |
