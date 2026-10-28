@@ -1,0 +1,413 @@
+{
+  "dataset": "3Sources",
+  "source_path": "E:\\论文资料库_GitHub\\数据集\\3Sources\\3sources.mat",
+  "source_sha256": "0d5875e0fd4b7fef5c6a1b00d42d7b886d56a868bde45eeda5de9ed5afe24191",
+  "source_bytes": 231246,
+  "protocol": "multilabel_grouped_iterative_holdout_v1",
+  "seed": 20261026,
+  "outer_folds": 5,
+  "outer_target_test_fraction": 0.2,
+  "inner_validation_fraction_of_outer_train": 0.2,
+  "inner_seeds": [
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031
+  ],
+  "index_base": 0,
+  "index_reference": "original MAT sample rows, before any shuffle or filtering",
+  "samples": 169,
+  "labels": 6,
+  "view_dimensions": [
+    1000,
+    1000,
+    1000
+  ],
+  "exact_feature_groups": 169,
+  "duplicate_extra_rows": 0,
+  "largest_group": 1,
+  "duplicate_groups_with_label_disagreement": 0,
+  "group_identity_limit": "Exact equality over all stored raw feature views only; no claim of original image identity or near-duplicate detection.",
+  "labels_in_fewer_than_five_groups": [],
+  "outer_target_fold_sample_counts": [
+    34,
+    34,
+    34,
+    34,
+    33
+  ],
+  "folds": [
+    {
+      "dataset": "3Sources",
+      "fold": 0,
+      "samples": 169,
+      "views": 3,
+      "labels": 6,
+      "groups": 169,
+      "train": 108,
+      "validation": 27,
+      "test": 34,
+      "outer_train": 135
+    },
+    {
+      "dataset": "3Sources",
+      "fold": 1,
+      "samples": 169,
+      "views": 3,
+      "labels": 6,
+      "groups": 169,
+      "train": 108,
+      "validation": 27,
+      "test": 34,
+      "outer_train": 135
+    },
+    {
+      "dataset": "3Sources",
+      "fold": 2,
+      "samples": 169,
+      "views": 3,
+      "labels": 6,
+      "groups": 169,
+      "train": 108,
+      "validation": 27,
+      "test": 34,
+      "outer_train": 135
+    },
+    {
+      "dataset": "3Sources",
+      "fold": 3,
+      "samples": 169,
+      "views": 3,
+      "labels": 6,
+      "groups": 169,
+      "train": 108,
+      "validation": 27,
+      "test": 34,
+      "outer_train": 135
+    },
+    {
+      "dataset": "3Sources",
+      "fold": 4,
+      "samples": 169,
+      "views": 3,
+      "labels": 6,
+      "groups": 169,
+      "train": 109,
+      "validation": 27,
+      "test": 33,
+      "outer_train": 136
+    }
+  ],
+  "label_supports": {
+    "0": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          30,
+          22,
+          7,
+          18,
+          24,
+          24
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          7,
+          5,
+          2,
+          4,
+          6,
+          6
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          10,
+          6,
+          3,
+          6,
+          6,
+          7
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          37,
+          27,
+          9,
+          22,
+          30,
+          30
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "1": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          30,
+          21,
+          8,
+          18,
+          21,
+          23
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          8,
+          5,
+          2,
+          4,
+          6,
+          6
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          9,
+          7,
+          2,
+          6,
+          9,
+          8
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          38,
+          26,
+          10,
+          22,
+          27,
+          29
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "2": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          30,
+          21,
+          7,
+          18,
+          23,
+          24
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          8,
+          5,
+          2,
+          5,
+          6,
+          6
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          9,
+          7,
+          3,
+          5,
+          7,
+          7
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          38,
+          26,
+          9,
+          23,
+          29,
+          30
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "3": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          30,
+          22,
+          8,
+          18,
+          18,
+          24
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          7,
+          5,
+          2,
+          4,
+          11,
+          6
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          10,
+          6,
+          2,
+          6,
+          7,
+          7
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          37,
+          27,
+          10,
+          22,
+          29,
+          30
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "4": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          30,
+          21,
+          8,
+          18,
+          25,
+          23
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          8,
+          5,
+          2,
+          5,
+          4,
+          6
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          9,
+          7,
+          2,
+          5,
+          7,
+          8
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          38,
+          26,
+          10,
+          23,
+          29,
+          29
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    }
+  },
+  "files": [
+    {
+      "file": "fold_0.npz",
+      "sha256": "fdb76fb0ad7325a4014f3cefff266c31801b50ef73eb81d6506d0b4383241511"
+    },
+    {
+      "file": "fold_1.npz",
+      "sha256": "225159c4d50bae505d516a0c3b0173eb7db0437f346d6cfb82b932b80e7195ed"
+    },
+    {
+      "file": "fold_2.npz",
+      "sha256": "46241e6cdbbb1a95c88c3218f8e7c754560c5fe1e0a0ff0ad7b2e3193909e62c"
+    },
+    {
+      "file": "fold_3.npz",
+      "sha256": "a34c735d3700c359804a0c5b5da632f97521d20b941a0f5321848319ec8f7199"
+    },
+    {
+      "file": "fold_4.npz",
+      "sha256": "75799f88ee13b9437d014725c8203495c18bf3efaf81e78ae04ba0a405981027"
+    }
+  ],
+  "missing_masks": {
+    "protocol": "nested_group_consistent_missingness_v1",
+    "path": "masks/fold_<0..4>/",
+    "view_rates": [
+      0.0,
+      0.1,
+      0.3,
+      0.5
+    ],
+    "label_rates": [
+      0.0,
+      0.1,
+      0.3,
+      0.5,
+      0.7
+    ]
+  },
+  "feature_preprocessing": "NOT_FITTED; train-only fit for selection, outer-train-only refit for final evaluation",
+  "full_label_access": "Preparation-only stratification and label-support summaries; no model training or evaluation.",
+  "source_coding": {
+    "label_key": "label",
+    "view_key": "view",
+    "raw_label_values": [
+      0,
+      1
+    ]
+  },
+  "versions": {
+    "python": "3.13.0",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1"
+  },
+  "training_protocol": {
+    "needs_validation": "Train on train_idx (~64%), select on val_idx (~16%), directly evaluate on test_idx (~20%).",
+    "no_validation": "Train on outer_train_idx (~80%), directly evaluate on the same test_idx (~20%).",
+    "outer_train_idx": "Outer training pool; refitting a model selected on val_idx is optional, not required."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "checked": {
+    "datasets": 9,
+    "folds": 45,
+    "view_masks": 180,
+    "label_masks": 225,
+    "replay_files": 81
+  },
+  "max_absolute_missing_rate_error": {
+    "view": 0.006172839506172867,
+    "label_outer_train": 0.000490196078431343,
+    "label_inner_train": 0.011728395061728458
+  },
+  "main_50pct_label_mask_all_unknown_outer_train_rows_per_fold": {
+    "3Sources": [
+      0,
+      1,
+      2,
+      0,
+      2
+    ],
+    "Corel5k": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Emotions": [
+      8,
+      3,
+      4,
+      8,
+      6
+    ],
+    "ESPGame": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "IAPRTC12": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "MIRFlickr": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Pascal07": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Scene": [
+      35,
+      23,
+      29,
+      31,
+      36
+    ],
+    "Yeast": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "checks": [
+    "all splits unchanged by SHA256",
+    "each sample test exactly once",
+    "indices and groups disjoint",
+    "405 masks shape/dtype/binary/hash readback",
+    "nested missingness for every rate",
+    "at least one observed view per sample",
+    "same masks within duplicate groups",
+    "recorded actual rates and counts",
+    "outer80 label-mask consistency with inner64",
+    "validation/test full-label evaluation API",
+    "unknown labels are -1 and invariant to hidden truth",
+    "deterministic full fold0 mask replay on all 9 datasets",
+    "all 9 raw sources retain original SHA256"
+  ],
+  "training_or_metrics_evaluation_run": false
+}

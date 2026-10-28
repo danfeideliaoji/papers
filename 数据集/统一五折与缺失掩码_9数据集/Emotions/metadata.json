@@ -1,0 +1,412 @@
+{
+  "dataset": "Emotions",
+  "source_path": "E:\\论文资料库_GitHub\\数据集\\Emotions\\emotions.mat",
+  "source_sha256": "6beebbc50400c7034223f47df882e317cb43ca14cc51723072563cd7f91e434b",
+  "source_bytes": 356648,
+  "protocol": "multilabel_grouped_iterative_holdout_v1",
+  "seed": 20261026,
+  "outer_folds": 5,
+  "outer_target_test_fraction": 0.2,
+  "inner_validation_fraction_of_outer_train": 0.2,
+  "inner_seeds": [
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031
+  ],
+  "index_base": 0,
+  "index_reference": "original MAT sample rows, before any shuffle or filtering",
+  "samples": 593,
+  "labels": 6,
+  "view_dimensions": [
+    8,
+    64
+  ],
+  "exact_feature_groups": 593,
+  "duplicate_extra_rows": 0,
+  "largest_group": 1,
+  "duplicate_groups_with_label_disagreement": 0,
+  "group_identity_limit": "Exact equality over all stored raw feature views only; no claim of original image identity or near-duplicate detection.",
+  "labels_in_fewer_than_five_groups": [],
+  "outer_target_fold_sample_counts": [
+    119,
+    119,
+    119,
+    118,
+    118
+  ],
+  "folds": [
+    {
+      "dataset": "Emotions",
+      "fold": 0,
+      "samples": 593,
+      "views": 2,
+      "labels": 6,
+      "groups": 593,
+      "train": 379,
+      "validation": 95,
+      "test": 119,
+      "outer_train": 474
+    },
+    {
+      "dataset": "Emotions",
+      "fold": 1,
+      "samples": 593,
+      "views": 2,
+      "labels": 6,
+      "groups": 593,
+      "train": 379,
+      "validation": 95,
+      "test": 119,
+      "outer_train": 474
+    },
+    {
+      "dataset": "Emotions",
+      "fold": 2,
+      "samples": 593,
+      "views": 2,
+      "labels": 6,
+      "groups": 593,
+      "train": 379,
+      "validation": 95,
+      "test": 119,
+      "outer_train": 474
+    },
+    {
+      "dataset": "Emotions",
+      "fold": 3,
+      "samples": 593,
+      "views": 2,
+      "labels": 6,
+      "groups": 593,
+      "train": 380,
+      "validation": 95,
+      "test": 118,
+      "outer_train": 475
+    },
+    {
+      "dataset": "Emotions",
+      "fold": 4,
+      "samples": 593,
+      "views": 2,
+      "labels": 6,
+      "groups": 593,
+      "train": 380,
+      "validation": 95,
+      "test": 118,
+      "outer_train": 475
+    }
+  ],
+  "label_supports": {
+    "0": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          110,
+          106,
+          169,
+          94,
+          107,
+          119
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          28,
+          26,
+          42,
+          24,
+          27,
+          32
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          35,
+          34,
+          53,
+          30,
+          34,
+          38
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          138,
+          132,
+          211,
+          118,
+          134,
+          151
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "1": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          111,
+          106,
+          170,
+          94,
+          108,
+          122
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          28,
+          27,
+          42,
+          24,
+          27,
+          29
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          34,
+          33,
+          52,
+          30,
+          33,
+          38
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          139,
+          133,
+          212,
+          118,
+          135,
+          151
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "2": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          110,
+          106,
+          169,
+          94,
+          107,
+          120
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          28,
+          27,
+          42,
+          24,
+          27,
+          31
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          35,
+          33,
+          53,
+          30,
+          34,
+          38
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          138,
+          133,
+          211,
+          118,
+          134,
+          151
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "3": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          111,
+          106,
+          169,
+          95,
+          107,
+          115
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          28,
+          27,
+          42,
+          24,
+          27,
+          35
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          34,
+          33,
+          53,
+          29,
+          34,
+          39
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          139,
+          133,
+          211,
+          119,
+          134,
+          150
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    },
+    "4": {
+      "train_idx": {
+        "positive_samples_per_label": [
+          110,
+          106,
+          169,
+          95,
+          108,
+          122
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "val_idx": {
+        "positive_samples_per_label": [
+          28,
+          27,
+          42,
+          24,
+          27,
+          31
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "test_idx": {
+        "positive_samples_per_label": [
+          35,
+          33,
+          53,
+          29,
+          33,
+          36
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      },
+      "outer_train_idx": {
+        "positive_samples_per_label": [
+          138,
+          133,
+          211,
+          119,
+          135,
+          153
+        ],
+        "labels_without_positive": [],
+        "empty_label_rows": 0
+      }
+    }
+  },
+  "files": [
+    {
+      "file": "fold_0.npz",
+      "sha256": "1812301291ab09da7a7f6ec06991540e3355fde08f9d707624bbb23c659c74b8"
+    },
+    {
+      "file": "fold_1.npz",
+      "sha256": "7c8223818abbd35fe5382c1a5795f1cd9bc39132708a10ca4c9cdcd37ef74813"
+    },
+    {
+      "file": "fold_2.npz",
+      "sha256": "297145d0e06f4485280046f0e17469e4f0cdc91709c40c19744c9abe39541afa"
+    },
+    {
+      "file": "fold_3.npz",
+      "sha256": "cc0cf4e9c473b284b7c2136029ffae612546762cc60451d0b1f8b46365bf16c6"
+    },
+    {
+      "file": "fold_4.npz",
+      "sha256": "06facd6f7f6023dd2467a1ed1d3642f9ddaf0dfd424fc8c32c3450acc0de2594"
+    }
+  ],
+  "missing_masks": {
+    "protocol": "nested_group_consistent_missingness_v1",
+    "path": "masks/fold_<0..4>/",
+    "view_rates": [
+      0.0,
+      0.1,
+      0.3,
+      0.5
+    ],
+    "label_rates": [
+      0.0,
+      0.1,
+      0.3,
+      0.5,
+      0.7
+    ]
+  },
+  "feature_preprocessing": "NOT_FITTED; train-only fit for selection, outer-train-only refit for final evaluation",
+  "full_label_access": "Preparation-only stratification and label-support summaries; no model training or evaluation.",
+  "source_coding": {
+    "label_key": "label",
+    "view_key": "view",
+    "raw_label_values": [
+      0,
+      1
+    ]
+  },
+  "versions": {
+    "python": "3.13.0",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1"
+  },
+  "training_protocol": {
+    "needs_validation": "Train on train_idx (~64%), select on val_idx (~16%), directly evaluate on test_idx (~20%).",
+    "no_validation": "Train on outer_train_idx (~80%), directly evaluate on the same test_idx (~20%).",
+    "outer_train_idx": "Outer training pool; refitting a model selected on val_idx is optional, not required."
+  }
+}

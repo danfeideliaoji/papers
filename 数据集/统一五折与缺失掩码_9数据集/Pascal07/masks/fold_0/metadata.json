@@ -1,0 +1,646 @@
+{
+  "dataset": "Pascal07",
+  "fold": 0,
+  "split_sha256": "c97a1b32b3447a3f4552cf0b7eb2fa1bc9122e1f29888b9606baf79c27cf5f47",
+  "group_file_sha256": "fc54966017a8a3244bb5e7b551d80aa06d749eb1a8bdb91a41f5b8792aa22008",
+  "view_masks": [
+    {
+      "file": "view_mask_0.0.npz",
+      "sha256": "9341997968e41627475f54ebe40f1db426a2f15b8befe7f11857b943d8c7a9bf",
+      "shape": [
+        9963,
+        6
+      ],
+      "rate": 0.0,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376
+          ]
+        },
+        "val16": {
+          "rows": 1594,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            1594,
+            1594,
+            1594,
+            1594,
+            1594,
+            1594
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970
+          ]
+        },
+        "test20": {
+          "rows": 1993,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            1993,
+            1993,
+            1993,
+            1993,
+            1993,
+            1993
+          ]
+        }
+      }
+    },
+    {
+      "file": "view_mask_0.1.npz",
+      "sha256": "31ddadc6c2e6f799969d31874b73198b99609bb85c60aaf698a228bcdc3a512b",
+      "shape": [
+        9963,
+        6
+      ],
+      "rate": 0.1,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.10001045587620239,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            5695,
+            5766,
+            5736,
+            5756,
+            5741,
+            5736
+          ]
+        },
+        "val16": {
+          "rows": 1594,
+          "actual_missing_rate": 0.09995817649519034,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 3,
+          "visible_per_column": [
+            1440,
+            1422,
+            1417,
+            1440,
+            1454,
+            1435
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.09999999999999998,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            7135,
+            7188,
+            7153,
+            7196,
+            7195,
+            7171
+          ]
+        },
+        "test20": {
+          "rows": 1993,
+          "actual_missing_rate": 0.1000167252048838,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            1813,
+            1798,
+            1787,
+            1773,
+            1797,
+            1794
+          ]
+        }
+      }
+    },
+    {
+      "file": "view_mask_0.3.npz",
+      "sha256": "be60e7695e7765cf1e0b15622055c3990c30caac251d7cca2229f33bb3b580e9",
+      "shape": [
+        9963,
+        6
+      ],
+      "rate": 0.3,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.30000522793810125,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            4460,
+            4492,
+            4432,
+            4459,
+            4436,
+            4500
+          ]
+        },
+        "val16": {
+          "rows": 1594,
+          "actual_missing_rate": 0.2999790882475951,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            1125,
+            1116,
+            1111,
+            1100,
+            1116,
+            1127
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.30000000000000004,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            5585,
+            5608,
+            5543,
+            5559,
+            5552,
+            5627
+          ]
+        },
+        "test20": {
+          "rows": 1993,
+          "actual_missing_rate": 0.2999665495902325,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            1412,
+            1409,
+            1408,
+            1369,
+            1397,
+            1376
+          ]
+        }
+      }
+    },
+    {
+      "file": "view_mask_0.5.npz",
+      "sha256": "49478c80a7a472aff4a24721d998304b5fee67558e0333dacfa2edd567d676c4",
+      "shape": [
+        9963,
+        6
+      ],
+      "rate": 0.5,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            3187,
+            3188,
+            3173,
+            3206,
+            3168,
+            3206
+          ]
+        },
+        "val16": {
+          "rows": 1594,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            795,
+            779,
+            816,
+            817,
+            781,
+            794
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            3982,
+            3967,
+            3989,
+            4023,
+            3949,
+            4000
+          ]
+        },
+        "test20": {
+          "rows": 1993,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            1021,
+            1004,
+            1002,
+            972,
+            1010,
+            970
+          ]
+        }
+      }
+    }
+  ],
+  "label_masks": [
+    {
+      "file": "label_mask_0.0.npz",
+      "sha256": "f3ab57f0cd6fa85981d925894273139a4fe93c1be7a497425f3878b2522ab1d5",
+      "shape": [
+        9963,
+        20
+      ],
+      "rate": 0.0,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 20,
+          "visible_per_column": [
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376,
+            6376
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 20,
+          "visible_per_column": [
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970,
+            7970
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.1.npz",
+      "sha256": "229f1da6f709c3554cbf555fcec07eea39324647500f91e06d149f0db33f3aac",
+      "shape": [
+        9963,
+        20
+      ],
+      "rate": 0.1,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.10047835633626101,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 12,
+          "visible_per_column": [
+            5772,
+            5769,
+            5748,
+            5719,
+            5718,
+            5705,
+            5721,
+            5738,
+            5716,
+            5712,
+            5738,
+            5793,
+            5741,
+            5732,
+            5707,
+            5709,
+            5740,
+            5744,
+            5746,
+            5739
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.09999999999999998,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 12,
+          "visible_per_column": [
+            7218,
+            7204,
+            7163,
+            7159,
+            7176,
+            7139,
+            7147,
+            7182,
+            7159,
+            7139,
+            7172,
+            7237,
+            7173,
+            7170,
+            7157,
+            7175,
+            7190,
+            7169,
+            7166,
+            7165
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.3.npz",
+      "sha256": "20d70280c5212885f453ea790a1107ac8b6ba2a8db107fedf3533fecb5b13e68",
+      "shape": [
+        9963,
+        20
+      ],
+      "rate": 0.3,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.2995765370138017,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 5,
+          "visible_per_column": [
+            4557,
+            4479,
+            4440,
+            4447,
+            4513,
+            4447,
+            4407,
+            4479,
+            4416,
+            4431,
+            4497,
+            4505,
+            4512,
+            4440,
+            4431,
+            4447,
+            4445,
+            4450,
+            4485,
+            4490
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.30000000000000004,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 5,
+          "visible_per_column": [
+            5685,
+            5602,
+            5541,
+            5553,
+            5627,
+            5562,
+            5506,
+            5593,
+            5541,
+            5527,
+            5587,
+            5634,
+            5649,
+            5542,
+            5533,
+            5577,
+            5592,
+            5561,
+            5581,
+            5587
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.5.npz",
+      "sha256": "745bf67d3a122f80ed7438725a5b75daeb566d01cf1776107ad1c67bafc1441a",
+      "shape": [
+        9963,
+        20
+      ],
+      "rate": 0.5,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.4998117942283563,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            3263,
+            3198,
+            3157,
+            3176,
+            3219,
+            3174,
+            3131,
+            3201,
+            3168,
+            3064,
+            3229,
+            3207,
+            3231,
+            3216,
+            3229,
+            3182,
+            3176,
+            3151,
+            3176,
+            3236
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            4060,
+            3999,
+            3910,
+            3955,
+            4014,
+            3981,
+            3898,
+            3990,
+            3980,
+            3870,
+            4014,
+            4037,
+            4039,
+            4023,
+            4015,
+            3993,
+            3988,
+            3932,
+            3978,
+            4024
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.7.npz",
+      "sha256": "30235c4f85a478d0903ddca4eec7703577982e6d75138a7a350c9787989fcac7",
+      "shape": [
+        9963,
+        20
+      ],
+      "rate": 0.7,
+      "partitions": {
+        "train64": {
+          "rows": 6376,
+          "actual_missing_rate": 0.69974121706399,
+          "all_unknown_or_missing_rows": 3,
+          "min_visible_per_row": 0,
+          "visible_per_column": [
+            1988,
+            1936,
+            1919,
+            1896,
+            1910,
+            1950,
+            1887,
+            1942,
+            1943,
+            1830,
+            1913,
+            1868,
+            1995,
+            1899,
+            1947,
+            1856,
+            1907,
+            1868,
+            1906,
+            1929
+          ]
+        },
+        "outer_train80": {
+          "rows": 7970,
+          "actual_missing_rate": 0.7,
+          "all_unknown_or_missing_rows": 5,
+          "min_visible_per_row": 0,
+          "visible_per_column": [
+            2456,
+            2420,
+            2376,
+            2349,
+            2410,
+            2413,
+            2343,
+            2422,
+            2429,
+            2307,
+            2386,
+            2358,
+            2475,
+            2383,
+            2416,
+            2334,
+            2402,
+            2334,
+            2394,
+            2413
+          ]
+        }
+      }
+    }
+  ],
+  "rng": "numpy.default_rng/PCG64",
+  "rng_seed_words": {
+    "view:train64": [
+      20261026,
+      4017018182,
+      2186929669,
+      1153711282,
+      769529432
+    ],
+    "view:val16": [
+      20261026,
+      225358595,
+      621985991,
+      4287049215,
+      2874402473
+    ],
+    "view:test20": [
+      20261026,
+      2856244853,
+      1056889118,
+      2761326804,
+      211788040
+    ],
+    "label:outer_train80": [
+      20261026,
+      195851344,
+      1493126484,
+      3949621902,
+      1277392624
+    ]
+  },
+  "source_label_values_used": false,
+  "evaluation_labels": "Validation/test use full labels in evaluator; stored training known_mask is NOT an evaluation mask."
+}

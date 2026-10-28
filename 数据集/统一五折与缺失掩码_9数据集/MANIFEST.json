@@ -1,0 +1,2614 @@
+{
+  "files": [
+    {
+      "path": "3Sources/fold_0.npz",
+      "sha256": "fdb76fb0ad7325a4014f3cefff266c31801b50ef73eb81d6506d0b4383241511",
+      "bytes": 1405
+    },
+    {
+      "path": "3Sources/fold_1.npz",
+      "sha256": "225159c4d50bae505d516a0c3b0173eb7db0437f346d6cfb82b932b80e7195ed",
+      "bytes": 1400
+    },
+    {
+      "path": "3Sources/fold_2.npz",
+      "sha256": "46241e6cdbbb1a95c88c3218f8e7c754560c5fe1e0a0ff0ad7b2e3193909e62c",
+      "bytes": 1403
+    },
+    {
+      "path": "3Sources/fold_3.npz",
+      "sha256": "a34c735d3700c359804a0c5b5da632f97521d20b941a0f5321848319ec8f7199",
+      "bytes": 1404
+    },
+    {
+      "path": "3Sources/fold_4.npz",
+      "sha256": "75799f88ee13b9437d014725c8203495c18bf3efaf81e78ae04ba0a405981027",
+      "bytes": 1404
+    },
+    {
+      "path": "3Sources/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "0fbd8f91258c286b743f3d8cfd019f708de1cc0efe6e9a158f5ae34d4d1c5473",
+      "bytes": 280
+    },
+    {
+      "path": "3Sources/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "4a2c8de2a2812624534b13706ba1bb8254e74fbef03622dcf21052dcda86318e",
+      "bytes": 365
+    },
+    {
+      "path": "3Sources/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "18861561872505dcbdf7868054d02317a3a0bd6f0f6bfac88dceee88c9319505",
+      "bytes": 429
+    },
+    {
+      "path": "3Sources/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "cd7d406b9ddb009aaa460e849ac0e9940693362b8f717844785f16af02c49957",
+      "bytes": 441
+    },
+    {
+      "path": "3Sources/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "1337d310180a841f9fde1a1e11da31f8ac8bc5721571bf5c2704ee2488ba0ac7",
+      "bytes": 420
+    },
+    {
+      "path": "3Sources/masks/fold_0/metadata.json",
+      "sha256": "debe7a2b58bf9e9cfa6d5313265041cd08799ca356f69723c0a4287b2b3360b3",
+      "bytes": 11182
+    },
+    {
+      "path": "3Sources/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "a8948720c8f7ab3b6816a69ed84daf68536281303b86c6336c2b8bd93e666066",
+      "bytes": 227
+    },
+    {
+      "path": "3Sources/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "d4ab3188cdb24c65b2537d420afef199da8bf320971df343e9613c8812be9829",
+      "bytes": 293
+    },
+    {
+      "path": "3Sources/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "0642ff94dc1d5ade8c55bacf7f2a56e681e9c44912f62fa1355983c9fcbe0175",
+      "bytes": 340
+    },
+    {
+      "path": "3Sources/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "6f63fe69abd4ebe9a7e86add41702cfd8a343a8caf4369e17a9cb5a78fb9ff02",
+      "bytes": 352
+    },
+    {
+      "path": "3Sources/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "e3c284b768f1579030641ef6b24374b04c2dfa524d92392bced9d4e79ef849c4",
+      "bytes": 274
+    },
+    {
+      "path": "3Sources/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "bb4c7b1c9c1ce4791618b92ae5edf622c7af3244fe1a458337ef63bfa34901a9",
+      "bytes": 381
+    },
+    {
+      "path": "3Sources/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "db794dd2b09aec89ad4641224834a01b3e2823ec9a478cfcd30d4c200205aea7",
+      "bytes": 434
+    },
+    {
+      "path": "3Sources/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "3c0921e19ee3c6a58016af3dd76d8001e633911ae4e18a2fbdd525166256ad69",
+      "bytes": 442
+    },
+    {
+      "path": "3Sources/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "0211defbb7c1e806ab06dd791576de0835d35873141921b2279c3336d2b7c733",
+      "bytes": 420
+    },
+    {
+      "path": "3Sources/masks/fold_1/metadata.json",
+      "sha256": "f54ca50d8731eaad65e112311581ccca01e50e41dabc940527676864f172bf26",
+      "bytes": 11179
+    },
+    {
+      "path": "3Sources/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "a8948720c8f7ab3b6816a69ed84daf68536281303b86c6336c2b8bd93e666066",
+      "bytes": 227
+    },
+    {
+      "path": "3Sources/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "153a129fc91037679e2631c8c8e53a10055b616a86d2da122e68ada82bb40b28",
+      "bytes": 291
+    },
+    {
+      "path": "3Sources/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "e9a98c83668d8f5dcafd7d69d0a4678ea61a3e39e08fb862deed7fd8c51167ca",
+      "bytes": 341
+    },
+    {
+      "path": "3Sources/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "057a1f323ddb1663ea9d7ea7ad8f1e5b6d4c3f9759c6dbc688c2267a16b18833",
+      "bytes": 354
+    },
+    {
+      "path": "3Sources/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "a7393a4f40e371f58211e3ac20e5bb21a393989f0864f452b17bacf2e958f2be",
+      "bytes": 274
+    },
+    {
+      "path": "3Sources/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "6dcc0a04b6a624227360fbb454d72c61f2cb8a69445698c0d0b3b9aa54bb1e54",
+      "bytes": 372
+    },
+    {
+      "path": "3Sources/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "0068810b4ef392c805e8976e5d50b6742f8325287c3e18a14993388c5157f02d",
+      "bytes": 437
+    },
+    {
+      "path": "3Sources/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "94ca289636357122e859d3ca4f9a5fa9f03e59349b7656b41305e83517021801",
+      "bytes": 443
+    },
+    {
+      "path": "3Sources/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "35ee0724c41f368315c9a15b28f9e2a74f615f5c0730b575b7f7bcb8c4c5993f",
+      "bytes": 407
+    },
+    {
+      "path": "3Sources/masks/fold_2/metadata.json",
+      "sha256": "2922296cc64e9fa4e8335a1d28568614a908b70633820eb1d1a7658d0f57697d",
+      "bytes": 11170
+    },
+    {
+      "path": "3Sources/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "a8948720c8f7ab3b6816a69ed84daf68536281303b86c6336c2b8bd93e666066",
+      "bytes": 227
+    },
+    {
+      "path": "3Sources/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "f8b924c74bd9fdaaf6827ed047d3abd2b318cf89eb3b5dd6ad68c659293ae931",
+      "bytes": 293
+    },
+    {
+      "path": "3Sources/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "ddd6ac03126a1dd66f2d86b8a8f99352a23bd1de885b75b218c15e145f31e1cf",
+      "bytes": 345
+    },
+    {
+      "path": "3Sources/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "5dc50f6b370825d4a705c47b54e0d3c8d63d5b273cca9db6508f7f2a48e63ed9",
+      "bytes": 352
+    },
+    {
+      "path": "3Sources/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "5b3f8fb8dcffea7af0fc74665c18aa0db23ba45a85d316b3075121aff18f1b5b",
+      "bytes": 279
+    },
+    {
+      "path": "3Sources/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "42f785a3f34965046d2a755d3e34cca1a2d8b90c5ba6816602a4cce7e028a8ca",
+      "bytes": 371
+    },
+    {
+      "path": "3Sources/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "d0b14c5c2f7c498e66294c4a4bc11c53745f78317cdb22e8b2b998a69dcf468e",
+      "bytes": 425
+    },
+    {
+      "path": "3Sources/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "2d286750514932ce1daa79a041025e01286c664293b2e1a9981891fb73042722",
+      "bytes": 436
+    },
+    {
+      "path": "3Sources/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "dba0b2de48d42ed090c07249dec7e3c33c2e5e991b4340b25562b4c15c8b9226",
+      "bytes": 408
+    },
+    {
+      "path": "3Sources/masks/fold_3/metadata.json",
+      "sha256": "9e9d9fc96e0d9b3d9b282bd036972630717fb6366a49fb4c869c4c5b93aacc69",
+      "bytes": 11185
+    },
+    {
+      "path": "3Sources/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "a8948720c8f7ab3b6816a69ed84daf68536281303b86c6336c2b8bd93e666066",
+      "bytes": 227
+    },
+    {
+      "path": "3Sources/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "99b12e558558a9f715bd0e52f418c2c003b64dcc9cad48b21b9f0f34e6a082c1",
+      "bytes": 295
+    },
+    {
+      "path": "3Sources/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "a04cbfee9d1aa5bd9bb87d9d837100229513752ae02977be69b0ec1e361f0c2f",
+      "bytes": 343
+    },
+    {
+      "path": "3Sources/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "a2ba98f7e831500ad2717b5d91e966db4ec8d0e3020a7b47e041f6784af2387e",
+      "bytes": 349
+    },
+    {
+      "path": "3Sources/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "d040eb8976d5bdfd81181eebbf1be57380bcc7ab315df44259778b4862a4fb5d",
+      "bytes": 278
+    },
+    {
+      "path": "3Sources/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "071167857c92572b4b1ead52de417bdb8e5c4f0a2f007926cea09f3f418b424b",
+      "bytes": 366
+    },
+    {
+      "path": "3Sources/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "171f2181a8e3e33b354437bf684d3d8071d45e90596e5e91c9d9074244f23374",
+      "bytes": 428
+    },
+    {
+      "path": "3Sources/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "6be4215573075b9d185832d4205b68a31bdb7bcc41c15bf16081dd6633caec11",
+      "bytes": 441
+    },
+    {
+      "path": "3Sources/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "4461d05003cc834928427218c0d34118894083dc100184bf6cf3efcda5d36719",
+      "bytes": 414
+    },
+    {
+      "path": "3Sources/masks/fold_4/metadata.json",
+      "sha256": "c781472046ededdb4c79ad6d0aaa3d724e784320c494fc057c36020c8ff25bcc",
+      "bytes": 11229
+    },
+    {
+      "path": "3Sources/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "a8948720c8f7ab3b6816a69ed84daf68536281303b86c6336c2b8bd93e666066",
+      "bytes": 227
+    },
+    {
+      "path": "3Sources/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "88ee014a3e6e6a201ce359d01ee757867600005f71cde350001cfbcaf4c8e86b",
+      "bytes": 295
+    },
+    {
+      "path": "3Sources/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "a9e079f6e4978be0b07984b765982058e1c7ce11cef5253285447b0e080672df",
+      "bytes": 345
+    },
+    {
+      "path": "3Sources/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "fe18d8e56aff7d3bb3a8745543b4109ce2b82dac460891044fc081ae0cbd2396",
+      "bytes": 347
+    },
+    {
+      "path": "3Sources/metadata.json",
+      "sha256": "ec446e7c35d1585cb434c1fcfdcdc9f81be3b84feed42277b8fc3d3797d30544",
+      "bytes": 9096
+    },
+    {
+      "path": "3Sources/sample_group_ids.npy",
+      "sha256": "446313b1ebd39b0eca405b1f285775fb5c13fa706f6d795ff36178bcf93787ba",
+      "bytes": 1480
+    },
+    {
+      "path": "Corel5k/fold_0.npz",
+      "sha256": "a039349ac76a114e0f2229c9f12be3cfb7478722e0ea4f8fc9600c4b36809dd2",
+      "bytes": 14748
+    },
+    {
+      "path": "Corel5k/fold_1.npz",
+      "sha256": "63e11d8b641aeafcc2c87f7d39aea5610f4fedcf94bfe9fc4479e653106f67df",
+      "bytes": 14747
+    },
+    {
+      "path": "Corel5k/fold_2.npz",
+      "sha256": "aa8485bb7845f8fdf4ce99440a609fd564d3cf023fe128a19e02c31fa26ec4d3",
+      "bytes": 14742
+    },
+    {
+      "path": "Corel5k/fold_3.npz",
+      "sha256": "0508607271f4d356534e07d997ce11ead735816ead1028fe316cfbe5ba4d0f07",
+      "bytes": 14731
+    },
+    {
+      "path": "Corel5k/fold_4.npz",
+      "sha256": "acb8e3c6c4b98a924b7466ae9ec9e35ab85c5a4377d8abdefa695f0165e0eab0",
+      "bytes": 14733
+    },
+    {
+      "path": "Corel5k/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "9638c1d9d8370fb4248a61775593e50294dab47ccd98ab4f5e92dc81bd478ea8",
+      "bytes": 6439
+    },
+    {
+      "path": "Corel5k/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "13bc0a985c5f34884884ac3dbee64aea4f92c64a7fd587ceb852259abc9a8c91",
+      "bytes": 104654
+    },
+    {
+      "path": "Corel5k/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "d905477cad4de3998d445d47e2e7b7d95aff28a16cd57a819a99f53972f31172",
+      "bytes": 165711
+    },
+    {
+      "path": "Corel5k/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "4745b0d70475870eff808877c727904f1274c23f6a54cf74ededd2b5e2ce8344",
+      "bytes": 175196
+    },
+    {
+      "path": "Corel5k/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "b5f0d73c1bc2967da7ff654e6f45031dfb1b03c1f30172f268f818b8b6b7cbb2",
+      "bytes": 166213
+    },
+    {
+      "path": "Corel5k/masks/fold_0/metadata.json",
+      "sha256": "83622ee543e7a5bf1af9bbc6630f83743dd5b4ede28b16a04ce2390ebad462e6",
+      "bytes": 60294
+    },
+    {
+      "path": "Corel5k/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "e28edf8c8570b9e75b86827ff50297d9b6da6a3af007e66f4a5da5b7aed58797",
+      "bytes": 279
+    },
+    {
+      "path": "Corel5k/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "e34dea64034e2db69622c8a7dc1857fc1e76a1fabaf65b7c80b565e1d2d281d2",
+      "bytes": 3160
+    },
+    {
+      "path": "Corel5k/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "ea09a8da06d8797a4c96b943adbedba06f8bf69c48b4e3d21460b15afbfb2780",
+      "bytes": 4880
+    },
+    {
+      "path": "Corel5k/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "12040f16c5948c588fe7f3d82d18c915cf2c55a943f6aaedbc69f1b2ac276eb7",
+      "bytes": 5119
+    },
+    {
+      "path": "Corel5k/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "efac114406d693190f7acfccdd5df1f7a03a32a5dc983aa4d09546fe6a7e0531",
+      "bytes": 6393
+    },
+    {
+      "path": "Corel5k/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "f3049d63e1df155f248b59c58a801890474d81b1cfd46bb931751b15eacbac35",
+      "bytes": 104658
+    },
+    {
+      "path": "Corel5k/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "fffbe59b8b936051e1c92251d8da107f91664e836da679efd406730547788800",
+      "bytes": 165645
+    },
+    {
+      "path": "Corel5k/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "2ea700d8cb34dbd4631b7eabb6846ddf6125b10d5535ae3c3d89bd866fbf9edf",
+      "bytes": 175202
+    },
+    {
+      "path": "Corel5k/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "df9530d370000c2ea6a4095adc3342ab3be14dcd3a844b5ed414d8c32519b23c",
+      "bytes": 166073
+    },
+    {
+      "path": "Corel5k/masks/fold_1/metadata.json",
+      "sha256": "7191881af5c6d9187d3f0e78d2c851ce5e9942505d6175f294de08fd7f74f27d",
+      "bytes": 60295
+    },
+    {
+      "path": "Corel5k/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "e28edf8c8570b9e75b86827ff50297d9b6da6a3af007e66f4a5da5b7aed58797",
+      "bytes": 279
+    },
+    {
+      "path": "Corel5k/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "e22651d0db85ecf6efa2aa188d267e1b70e9abb9bd1d689e0470f0d3822f2450",
+      "bytes": 3174
+    },
+    {
+      "path": "Corel5k/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "67855ca7c620f78bef200f1470d3ceea5f8c122fba38ef63651dbd8e41814317",
+      "bytes": 4894
+    },
+    {
+      "path": "Corel5k/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "2f0f644902da3336299ba84466c7842309e7dec3a3f898d80b224117cd022b18",
+      "bytes": 5128
+    },
+    {
+      "path": "Corel5k/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "53060c839eee4b38fdaa112e40e59b6fe77017fffbcaae87d1bfecd74c1baf1d",
+      "bytes": 6532
+    },
+    {
+      "path": "Corel5k/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "b464e050739ee1baaf61f077b8a7d89dd91eaa1e88f817394b2af666d973da81",
+      "bytes": 104656
+    },
+    {
+      "path": "Corel5k/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "4fe8683fb0b32cd983940eed29575816b45ea933c43fd99aa385410bd46ae785",
+      "bytes": 165869
+    },
+    {
+      "path": "Corel5k/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "33e974b22caa3157ca79c5af5d69fa3f1c4ead3b3d5def4deae1fec3e7d357dd",
+      "bytes": 175081
+    },
+    {
+      "path": "Corel5k/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "24fb9d37be0673e87e5e2df23a99bd056ddda6214c2e1ee3b9c4b103f52aaaf7",
+      "bytes": 166179
+    },
+    {
+      "path": "Corel5k/masks/fold_2/metadata.json",
+      "sha256": "e48acbe24baa70fcd5bec6d45203d657176d6804d25a558564af7ab3fe002063",
+      "bytes": 60292
+    },
+    {
+      "path": "Corel5k/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "e28edf8c8570b9e75b86827ff50297d9b6da6a3af007e66f4a5da5b7aed58797",
+      "bytes": 279
+    },
+    {
+      "path": "Corel5k/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "19bd21e73d58bf17a0b33e6bc0b4447e4fbbb5dd11a8be17d3235a73d6ccdbaa",
+      "bytes": 3163
+    },
+    {
+      "path": "Corel5k/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "0e3f40176af43c90acbd5c367821fe15e978feb41c8cfab80e0e860bbc4ccdc2",
+      "bytes": 4910
+    },
+    {
+      "path": "Corel5k/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "334a0f2f5014094aa0a5811106683dae7369252c4af709b89ef4299cbcb671fa",
+      "bytes": 5146
+    },
+    {
+      "path": "Corel5k/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "c2a243d784439e76ae1db4b283dc7b0a91ca4be8356af4402255a61e9d84c5cf",
+      "bytes": 6387
+    },
+    {
+      "path": "Corel5k/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "deeb41a065a3ed7f00615873fc2c6f336bd88806582709cac73fca9e1f104b98",
+      "bytes": 104615
+    },
+    {
+      "path": "Corel5k/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "fb92153ea41f1e40d159bd8cb36fdba1c0240931037233c6ddf2f4d6f09b1c47",
+      "bytes": 165767
+    },
+    {
+      "path": "Corel5k/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "0db93c23f61aeacf7bd187fdb7257f2144c40d33bd3f344166301388e9dbc86b",
+      "bytes": 175220
+    },
+    {
+      "path": "Corel5k/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "72130b70f446eba1e362c32992ab763568d93635a152677cb848f51b48bfb781",
+      "bytes": 166339
+    },
+    {
+      "path": "Corel5k/masks/fold_3/metadata.json",
+      "sha256": "aa033054719aaf973c7555f526b171c3adf1a3304437884db13f589592c95245",
+      "bytes": 60292
+    },
+    {
+      "path": "Corel5k/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "e28edf8c8570b9e75b86827ff50297d9b6da6a3af007e66f4a5da5b7aed58797",
+      "bytes": 279
+    },
+    {
+      "path": "Corel5k/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "4c903ca5a1c45b86ebdca424b389e636410fe1ed17c313fd50be7f2fdacb0c20",
+      "bytes": 3132
+    },
+    {
+      "path": "Corel5k/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "b50932f8ed1acdcc463fbd2da5fd305909ae5258eaf79f794f4ee2cf063840de",
+      "bytes": 4914
+    },
+    {
+      "path": "Corel5k/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "751117794e0ed170812b77fb9787ce120112524c07361cd20fa10e111fa767b7",
+      "bytes": 5110
+    },
+    {
+      "path": "Corel5k/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "2310c64f1253166424ebf318f47bef26af7a7e438c5e5566ddbd8e4a28149569",
+      "bytes": 6462
+    },
+    {
+      "path": "Corel5k/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "efad82a617b992676e030cb046b28213b0b683d3bf1c6e56ca6a7e6329108eb8",
+      "bytes": 104920
+    },
+    {
+      "path": "Corel5k/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "29ca22f8cedbd0d93d98376ae2ed4addc0816bb498579991bf44e15726f5c303",
+      "bytes": 165762
+    },
+    {
+      "path": "Corel5k/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "afb24828339fcf2632c23f01c05f90dee21e811e9c43c0f087fbc1fd4edb15f7",
+      "bytes": 175262
+    },
+    {
+      "path": "Corel5k/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "eb0bc5042f7fa33368f951341e37a5bca672224b8b9dd340b911bb9cb8ebd335",
+      "bytes": 166309
+    },
+    {
+      "path": "Corel5k/masks/fold_4/metadata.json",
+      "sha256": "cca91a49ef1b16ae62e5aea4448947ac7091943af82b072a24de44ad883b4e02",
+      "bytes": 60276
+    },
+    {
+      "path": "Corel5k/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "e28edf8c8570b9e75b86827ff50297d9b6da6a3af007e66f4a5da5b7aed58797",
+      "bytes": 279
+    },
+    {
+      "path": "Corel5k/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "1eec62e3824fb05e872bbaed324bd0b9194b347c493accbd507336dc51173886",
+      "bytes": 3172
+    },
+    {
+      "path": "Corel5k/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "f9b256d60a8c15cac9ec0be81c83c9ded7dcb07da1a7735bced9d2b475814365",
+      "bytes": 4905
+    },
+    {
+      "path": "Corel5k/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "6cf2bba343f5865b1209a9a18c786a3a736cf6f4f18c78ebd26b9628db62c993",
+      "bytes": 5116
+    },
+    {
+      "path": "Corel5k/metadata.json",
+      "sha256": "7e5e24ad95a1ff7b09118845b30f71cb56039af4b4965da2d9dba9c0d4bff6e9",
+      "bytes": 84280
+    },
+    {
+      "path": "Corel5k/sample_group_ids.npy",
+      "sha256": "73f3e468e2eb5cfb78ff021e8b7e49b3be9a4898a83ce184246a94f49bf5795a",
+      "bytes": 40120
+    },
+    {
+      "path": "Emotions/fold_0.npz",
+      "sha256": "1812301291ab09da7a7f6ec06991540e3355fde08f9d707624bbb23c659c74b8",
+      "bytes": 2694
+    },
+    {
+      "path": "Emotions/fold_1.npz",
+      "sha256": "7c8223818abbd35fe5382c1a5795f1cd9bc39132708a10ca4c9cdcd37ef74813",
+      "bytes": 2695
+    },
+    {
+      "path": "Emotions/fold_2.npz",
+      "sha256": "297145d0e06f4485280046f0e17469e4f0cdc91709c40c19744c9abe39541afa",
+      "bytes": 2685
+    },
+    {
+      "path": "Emotions/fold_3.npz",
+      "sha256": "cc0cf4e9c473b284b7c2136029ffae612546762cc60451d0b1f8b46365bf16c6",
+      "bytes": 2689
+    },
+    {
+      "path": "Emotions/fold_4.npz",
+      "sha256": "06facd6f7f6023dd2467a1ed1d3642f9ddaf0dfd424fc8c32c3450acc0de2594",
+      "bytes": 2686
+    },
+    {
+      "path": "Emotions/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "08fc989c1d6c3af3a0bb44ec993d6c09231f8d9fe7186b131fcfaa48508a2d30",
+      "bytes": 397
+    },
+    {
+      "path": "Emotions/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "eceda8fad201cb3a8a14132eedc99f1e7f7a02cdee4bf7dff739d1cbc6654842",
+      "bytes": 671
+    },
+    {
+      "path": "Emotions/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "081c191debe1ef99cabf7a931fb0428814f5ede798930ac12959351158121431",
+      "bytes": 841
+    },
+    {
+      "path": "Emotions/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "65ab8f6dba2538df1ea1c9c90ad239a652fcfe1cec72765c9b0e3f780b820ec2",
+      "bytes": 860
+    },
+    {
+      "path": "Emotions/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "7278f539ba358f7cd7c7b569cdc7e6b899f6c0528e579c166b8b32646d44189a",
+      "bytes": 800
+    },
+    {
+      "path": "Emotions/masks/fold_0/metadata.json",
+      "sha256": "efa423476060d0a5d55e8ad2e9abd3419b6a85cd141f231adc7e75651fd4b547",
+      "bytes": 10952
+    },
+    {
+      "path": "Emotions/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "f3544847ac25e5e02ad318fb4abd092c280386364027a54985a83a648dfe8b60",
+      "bytes": 232
+    },
+    {
+      "path": "Emotions/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "77e6d20e843567b5012a2c99cd9c24f3b973113dc6cc308e967e1220399e4222",
+      "bytes": 381
+    },
+    {
+      "path": "Emotions/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "12572805dd7044a635ba4b8e6ab96462267310e62dc7430d1a5ec9aab633ed8d",
+      "bytes": 450
+    },
+    {
+      "path": "Emotions/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "0dcce10887e490202f1fb9a2e14e408ebcdf6763862749cb5dbd3e11ff580c97",
+      "bytes": 394
+    },
+    {
+      "path": "Emotions/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "614b87c0ca25bb1351b359db6a293f30550f67e8983a2157f73e28fa63ac7156",
+      "bytes": 394
+    },
+    {
+      "path": "Emotions/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "c874aca3c3c7594231997ada1d299153b39eca4c1b35f0dfe29bc30a411f4a2b",
+      "bytes": 678
+    },
+    {
+      "path": "Emotions/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "42a201ed24ea5fe77959021f1a04e23a0afcbc9841923cafebbaf8be77e707bf",
+      "bytes": 839
+    },
+    {
+      "path": "Emotions/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "28a373e788d47e11bf1626da6f37518edb51ade01d7c9d25f7d02b0c24aa37be",
+      "bytes": 868
+    },
+    {
+      "path": "Emotions/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "bba79ab174ddaa7edbbc3983eb9a8c939bb3d476996049bf73d22eda1ef4e8c1",
+      "bytes": 803
+    },
+    {
+      "path": "Emotions/masks/fold_1/metadata.json",
+      "sha256": "ceba877857ae8aee532d1b2d2ac92d5b7325734c13512b10610450f6f66ca9b1",
+      "bytes": 10948
+    },
+    {
+      "path": "Emotions/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "f3544847ac25e5e02ad318fb4abd092c280386364027a54985a83a648dfe8b60",
+      "bytes": 232
+    },
+    {
+      "path": "Emotions/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "3fb96d5604990db84a3bba9bde5895029850d2e2a983b4b3945f8c85f1ff6710",
+      "bytes": 377
+    },
+    {
+      "path": "Emotions/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "98ba22584649aeac69ffc366cea6930b5c2dc7e94c0f8b842487f810562db128",
+      "bytes": 450
+    },
+    {
+      "path": "Emotions/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "10fe38755766f7fa40c292d99e46404dbf87f0416c8c1f118e1e4e4e17262cc9",
+      "bytes": 399
+    },
+    {
+      "path": "Emotions/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "7b467519950ce4214e202377469c8963749a6647c66f4e9cdba32a81826d957f",
+      "bytes": 393
+    },
+    {
+      "path": "Emotions/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "a8cc893411284ff1c764a1f34bff3008b6a51cfb99769fb5438dc1d1d033d49e",
+      "bytes": 657
+    },
+    {
+      "path": "Emotions/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "a18d4fdb4df8a3a591583f1cfb6d74a70f8daa13c68c3ad6035c3cd4a21140bb",
+      "bytes": 829
+    },
+    {
+      "path": "Emotions/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "937e8b0988dbd96b0436aab0ad88a9bcf7e426f0b4535442cf263139017382d5",
+      "bytes": 867
+    },
+    {
+      "path": "Emotions/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "e2803ca7cea77ef090a49923100e9c77344af349c96ceccce3a91b62d92857f0",
+      "bytes": 793
+    },
+    {
+      "path": "Emotions/masks/fold_2/metadata.json",
+      "sha256": "216d4e1b4ff889e724db14c4f54434a5f3391db59c7a1b51aae17ba70532c0d6",
+      "bytes": 10952
+    },
+    {
+      "path": "Emotions/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "f3544847ac25e5e02ad318fb4abd092c280386364027a54985a83a648dfe8b60",
+      "bytes": 232
+    },
+    {
+      "path": "Emotions/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "c66a4e4d1d8d4f5a3e91ffca9cfe6c3a78bdb50e51a46a0151c789c40139088c",
+      "bytes": 382
+    },
+    {
+      "path": "Emotions/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "cce7d6a3adabee191e1b58f1c5cc1556cb1959ea0ddebe2b1c41d1a3e441862e",
+      "bytes": 447
+    },
+    {
+      "path": "Emotions/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "b746dddf17eb4302e888ec5be766b6d64d5eba4831d70a74377b0983430edbe6",
+      "bytes": 399
+    },
+    {
+      "path": "Emotions/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "3e82ef728eb8d65190fce0fcbbe687f95fef7cc0c2e4965f5169ec27fdfcc082",
+      "bytes": 388
+    },
+    {
+      "path": "Emotions/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "9884ea0f0dc189250b57ca066a3ce94e96554bf20e65e6a127496d1cba6e3949",
+      "bytes": 668
+    },
+    {
+      "path": "Emotions/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "4bed1be8e33cc8bfee25864b182471eec0115169311bc3b30a6819d648a58ade",
+      "bytes": 838
+    },
+    {
+      "path": "Emotions/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "2681c8f382efa6ea85c7e5843840c60c95263939ccc778919caedc874cf2f190",
+      "bytes": 863
+    },
+    {
+      "path": "Emotions/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "34f0f5e43a846729896be8855f95c27eb9f719e332b587b5ed2da07204bb5507",
+      "bytes": 805
+    },
+    {
+      "path": "Emotions/masks/fold_3/metadata.json",
+      "sha256": "bb4c69fd9fd5758f158189ce3aee8d51b6582c953a7f5339f8bfc4f4a6bcce8a",
+      "bytes": 10941
+    },
+    {
+      "path": "Emotions/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "f3544847ac25e5e02ad318fb4abd092c280386364027a54985a83a648dfe8b60",
+      "bytes": 232
+    },
+    {
+      "path": "Emotions/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "cc74042e3f49aec61d3b25330f97e6e70065022ae58cb7054ab625448da40a54",
+      "bytes": 380
+    },
+    {
+      "path": "Emotions/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "f62e0a7270a9c0c737ee853cd60fec1440cc2a67894bb1623a4325cd6f82438c",
+      "bytes": 452
+    },
+    {
+      "path": "Emotions/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "cb906dd40690bf0d109ae965fcffad5578ebc46c84e5376f169843314381a690",
+      "bytes": 394
+    },
+    {
+      "path": "Emotions/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "becb54f4f1666460066dd2615e06120a48abd590a203bf6096877f8f1d77ad26",
+      "bytes": 397
+    },
+    {
+      "path": "Emotions/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "0aa29bbf533ff7bcea55b9380054b196d49b149785900566d4d10434c9820c8c",
+      "bytes": 658
+    },
+    {
+      "path": "Emotions/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "9caedfea7c159863a560a6e7b9be9f77944cd4defe7cca2515968486fb445da0",
+      "bytes": 835
+    },
+    {
+      "path": "Emotions/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "c3e373305d63c54fd356f05dbe2cd9e397af1311a29c41ec22dc8140fb6398e8",
+      "bytes": 862
+    },
+    {
+      "path": "Emotions/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "fcc27af47c8444a13203b66632732c8290d2efda314cf284605f52c316a39835",
+      "bytes": 807
+    },
+    {
+      "path": "Emotions/masks/fold_4/metadata.json",
+      "sha256": "8ff55b17d633fc43c58b8d75006edd67166cfd30b3531f29eac7ed9c5e18ae76",
+      "bytes": 10942
+    },
+    {
+      "path": "Emotions/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "f3544847ac25e5e02ad318fb4abd092c280386364027a54985a83a648dfe8b60",
+      "bytes": 232
+    },
+    {
+      "path": "Emotions/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "28bfc483ed9771293043c75f00cce07f1c9c28689b7325fb86854fcdb26e819b",
+      "bytes": 374
+    },
+    {
+      "path": "Emotions/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "9d2ebf9cf1cf055929df9fcbca9b4c1e8bfce17250944e32eb88082e790e5f7b",
+      "bytes": 448
+    },
+    {
+      "path": "Emotions/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "ca81e79dc942106bc1d9a1a9b78331dcbb7e799e2f53471c3b900f8f9a945713",
+      "bytes": 395
+    },
+    {
+      "path": "Emotions/metadata.json",
+      "sha256": "24f297cf6ba85e185852677f9d4c91de1d99acc0adebf5443f460b2a4c433c75",
+      "bytes": 9209
+    },
+    {
+      "path": "Emotions/sample_group_ids.npy",
+      "sha256": "cc297ab3cb14f505b56f9bb39655060328ab46cc87b83920a0749fabfcd18189",
+      "bytes": 4872
+    },
+    {
+      "path": "ESPGame/fold_0.npz",
+      "sha256": "37c144d846f1a29a1973c965f4a2d48b896472b1c7394502fe9024bd801716f0",
+      "bytes": 57980
+    },
+    {
+      "path": "ESPGame/fold_1.npz",
+      "sha256": "aba323f66da04f6ed82ec3e5f61175e41a5df3f3c621a3ee7f6deaf2aa300183",
+      "bytes": 57985
+    },
+    {
+      "path": "ESPGame/fold_2.npz",
+      "sha256": "7c803ec3ecc68a05085e7ae4ce2299e5563de8a1ee178428fcb940c85b881c5c",
+      "bytes": 57979
+    },
+    {
+      "path": "ESPGame/fold_3.npz",
+      "sha256": "cbaa756017b669be5d16c9132d2f9b3af70b8554e38c4ef98ce343e6cfd07b9f",
+      "bytes": 57978
+    },
+    {
+      "path": "ESPGame/fold_4.npz",
+      "sha256": "dddfedd2add44504e18c7ddc25212c564089b4d561409da5c163c93d1d3b2902",
+      "bytes": 57954
+    },
+    {
+      "path": "ESPGame/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "4b381fb1b600a72f9fbd75be34ac4263d65064731168e13dd11f35564b36f177",
+      "bytes": 26089
+    },
+    {
+      "path": "ESPGame/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "6dbb9693508bee71718d53530747b6c4756be2ee9492ac7f939c1cd81a7f71c6",
+      "bytes": 447945
+    },
+    {
+      "path": "ESPGame/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "2a57febebf0258efc72abfd5358b71dcc2ce8a2e9b7a65a5fc0cd2d07f52fc65",
+      "bytes": 709711
+    },
+    {
+      "path": "ESPGame/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "84e2e18d357091a758eb357f97d016088d017c1eb199696f8faf767ce5ca123c",
+      "bytes": 750344
+    },
+    {
+      "path": "ESPGame/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "c97de36cb1975a5d983be287aa0b768b0706c77091e17b891ce2b9dd2c4ef847",
+      "bytes": 711242
+    },
+    {
+      "path": "ESPGame/masks/fold_0/metadata.json",
+      "sha256": "ef59cdf25f8a65499b3049bccdd082d80049598f75d575848d9d32b979037043",
+      "bytes": 63509
+    },
+    {
+      "path": "ESPGame/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "47542427c104446b7b8aae9be69c11d5497348b0b2ef2678e6c9042b3521f797",
+      "bytes": 371
+    },
+    {
+      "path": "ESPGame/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "ef0d81bd4cb4583d44aaf34133790814b9556b54429983602642cab96991530b",
+      "bytes": 12196
+    },
+    {
+      "path": "ESPGame/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "5f5ded58127f1ec1023d7a53eacd135e284ffaa0f9da35fcdd46cbae8495d114",
+      "bytes": 19370
+    },
+    {
+      "path": "ESPGame/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "f4befba5905c60c5a47c89e01072bf21fc2b94dec4aeacca0e9fcf9364ccda7e",
+      "bytes": 20169
+    },
+    {
+      "path": "ESPGame/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "1b94f98f03c39170a392261ca19445db04ee01459d68657558db6df2af5c8503",
+      "bytes": 26156
+    },
+    {
+      "path": "ESPGame/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "aeb216a65387ddbf41e78e1fba5efe6d85d69676334eec8ff7622807fb90c88a",
+      "bytes": 447826
+    },
+    {
+      "path": "ESPGame/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "8737f6c3e97cbb52741d2a148157dbf7ab5e2dce18c8830a33e41b0ae310463f",
+      "bytes": 709673
+    },
+    {
+      "path": "ESPGame/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "3325a63ceb8ca4531caa77a0fd7e08c5c156fac540242e6c6e930f8b8506ae99",
+      "bytes": 750586
+    },
+    {
+      "path": "ESPGame/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "871e336afacaae1eb8ad5bec4b111b8be2906abee593fb384eced9150e28d1ad",
+      "bytes": 711301
+    },
+    {
+      "path": "ESPGame/masks/fold_1/metadata.json",
+      "sha256": "4fe5109f9ad8638a0bf297f353a73c8d67bcb03d32362fc9fc5496de5b2a4e22",
+      "bytes": 63544
+    },
+    {
+      "path": "ESPGame/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "47542427c104446b7b8aae9be69c11d5497348b0b2ef2678e6c9042b3521f797",
+      "bytes": 371
+    },
+    {
+      "path": "ESPGame/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "f0cd069b1ab96e06994e9cdef529ae2cc5cd11424845693c129bf9aabbf91c55",
+      "bytes": 12154
+    },
+    {
+      "path": "ESPGame/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "0c156e9719c8c23e4d096dc023ea1bed58de6d7a865c3918cb486df4edcb1abd",
+      "bytes": 19314
+    },
+    {
+      "path": "ESPGame/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "26ddb9e48ed3de26d763c08e61c39e0e0e12cd8930745e896831bc4720ce2779",
+      "bytes": 20154
+    },
+    {
+      "path": "ESPGame/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "f5e3a1ebd31d072782245d310312964167e5bb3b3ba55c0524a5365313b5439e",
+      "bytes": 26158
+    },
+    {
+      "path": "ESPGame/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "03fdfee3e2a66805a6d8f42aec0914a4d77b993b0a7be9c0723cc5ee62743486",
+      "bytes": 447695
+    },
+    {
+      "path": "ESPGame/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "fb4181eea1699420c5e956bb5857fb53a9f4ffefaf7229b07abfff98d06e5bae",
+      "bytes": 709483
+    },
+    {
+      "path": "ESPGame/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "799594d80514cd74981c1fd58929222aa678b19351c1450bfe807a2b100b7be9",
+      "bytes": 750553
+    },
+    {
+      "path": "ESPGame/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "8e42d2dc69cf5f181358d54b5999efc23e6526856fc333d09f33df5c8a00dab8",
+      "bytes": 711226
+    },
+    {
+      "path": "ESPGame/masks/fold_2/metadata.json",
+      "sha256": "d46aa2c387107eba19173120d0132828b13ab9b27e3072283f45e78f90c9baba",
+      "bytes": 63512
+    },
+    {
+      "path": "ESPGame/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "47542427c104446b7b8aae9be69c11d5497348b0b2ef2678e6c9042b3521f797",
+      "bytes": 371
+    },
+    {
+      "path": "ESPGame/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "acdfdba8d0e63eb2294fcf2e2dfd206f22371be017fc1144dd6da378f6e9bdbf",
+      "bytes": 12203
+    },
+    {
+      "path": "ESPGame/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "9f63e3038e23064360307796014df3bb4c9db3ac07a8c682deaf840bb2ced1c8",
+      "bytes": 19336
+    },
+    {
+      "path": "ESPGame/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "e42ae7e6e2fa1c83e003f774a23aba25ed2f758d059424e0c72a2782176d1e18",
+      "bytes": 20174
+    },
+    {
+      "path": "ESPGame/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "8fff8bf01858f2d6c4be5b12b7f26a2382f77bd0e683bda7d49bfecad9c1101c",
+      "bytes": 25943
+    },
+    {
+      "path": "ESPGame/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "14464b1c790c8544df09ba45e71fd1aeb4cdd2f4069a07ebba54e77fed158736",
+      "bytes": 447542
+    },
+    {
+      "path": "ESPGame/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "81147e50cc134588598f7b3c9f949affa160a0a6b20abca29c40c7f6895059fb",
+      "bytes": 709664
+    },
+    {
+      "path": "ESPGame/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "674d2971d84bf86c8347bf3c59e847771f900676f78820be8b8e9ccb45817c04",
+      "bytes": 750238
+    },
+    {
+      "path": "ESPGame/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "dec18e326f4da637f319f296fdb70371a06e53ef7a075c88390378577e6e243d",
+      "bytes": 711124
+    },
+    {
+      "path": "ESPGame/masks/fold_3/metadata.json",
+      "sha256": "8c052700db8959501ab45576cec8fcae23f0973b1d9a921a271ad298e203ef52",
+      "bytes": 63510
+    },
+    {
+      "path": "ESPGame/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "47542427c104446b7b8aae9be69c11d5497348b0b2ef2678e6c9042b3521f797",
+      "bytes": 371
+    },
+    {
+      "path": "ESPGame/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "ced09e737bfc4f170a7dbbdb469eaf37e58b6ccef1b49322f185223f3c6a325e",
+      "bytes": 12162
+    },
+    {
+      "path": "ESPGame/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "b0c4d7788103629d6cd45b32b8e3dc166adbfe9448199c87d80ef6ebdc6c7014",
+      "bytes": 19288
+    },
+    {
+      "path": "ESPGame/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "98cda2dee2d135fb52aed72d3f68baef814a4a15ef149849d24fbf3302f04d55",
+      "bytes": 20163
+    },
+    {
+      "path": "ESPGame/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "9e687d39923a82fbabc0ee59010473748b04a12a5f58e9d5138aaebbe92c4409",
+      "bytes": 26301
+    },
+    {
+      "path": "ESPGame/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "c94092bbf81901fd164a2aa574ef810e868505803e00a4f8904a388e6efc03c5",
+      "bytes": 447794
+    },
+    {
+      "path": "ESPGame/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "a86b36c87fc2e9bfe5b5ef6d537541b5a1651f0d2f3abe84c49c9419e6c07415",
+      "bytes": 709618
+    },
+    {
+      "path": "ESPGame/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "22fcdda24a3ae8c552712dbbfd2919a9332b9ff9fe3911282332abc45c5bd4b7",
+      "bytes": 750384
+    },
+    {
+      "path": "ESPGame/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "817c3bb1f486363180204d11bc8fcd877190ad5b00db15140aa78fbeebac0f69",
+      "bytes": 710928
+    },
+    {
+      "path": "ESPGame/masks/fold_4/metadata.json",
+      "sha256": "50b156cded9a78ad144b52f555a17dea9f2b96315c4bd5b7c6ac53c62603c4c2",
+      "bytes": 63525
+    },
+    {
+      "path": "ESPGame/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "47542427c104446b7b8aae9be69c11d5497348b0b2ef2678e6c9042b3521f797",
+      "bytes": 371
+    },
+    {
+      "path": "ESPGame/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "b7d812a3976fe396df4ae359ac762ff6da9e99788be03e316ac38aba008d8c7c",
+      "bytes": 12148
+    },
+    {
+      "path": "ESPGame/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "bef1b1174074277dddbc980c5725217ee1faa480fcb994c3dd167392e685c277",
+      "bytes": 19412
+    },
+    {
+      "path": "ESPGame/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "a83ae1163e27832de74c1cde6f5e2dcdc8d244d552cb45472452888e8e7b114a",
+      "bytes": 20171
+    },
+    {
+      "path": "ESPGame/metadata.json",
+      "sha256": "4b88945162108ab13083c9bb13cf80cbc41e8067e97545287e61b2130f97c081",
+      "bytes": 90103
+    },
+    {
+      "path": "ESPGame/sample_group_ids.npy",
+      "sha256": "59c86eb3fb80b4db152af64a7d0832ac4fc1c394f67a9f985ca498a90004b8c6",
+      "bytes": 166288
+    },
+    {
+      "path": "IAPRTC12/fold_0.npz",
+      "sha256": "9f18df0a47e67d1f12da62b93bf7eba7866fe4ea5a86acb57a7ddbb800c2f8bc",
+      "bytes": 14745
+    },
+    {
+      "path": "IAPRTC12/fold_1.npz",
+      "sha256": "d013b964d0df06a48dd901ce97a041c985c4dcfb3bd9737724904e036f64b700",
+      "bytes": 14751
+    },
+    {
+      "path": "IAPRTC12/fold_2.npz",
+      "sha256": "321b41268cf1f9ea36ad66edd9611f4e75e89d79e41ea0f007b6a013d6e6adf9",
+      "bytes": 14732
+    },
+    {
+      "path": "IAPRTC12/fold_3.npz",
+      "sha256": "19e097d5baa33331e2a451e9619f2dff520bd4d98b4181fe35263901149a0d2c",
+      "bytes": 14746
+    },
+    {
+      "path": "IAPRTC12/fold_4.npz",
+      "sha256": "ba1cba90d8c1ff336eed05c6ba0bba51ef4de123cbd5d34935b932a0be667b11",
+      "bytes": 14743
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "4cb5fee19951050ce23172e2815cd2108c255b5cd9c07c36ca9e551334311d83",
+      "bytes": 6723
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "0737c1fe1edd7621ca9a49fce329773ad7a8ada30ce1dac2096ee7536313fb99",
+      "bytes": 116992
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "38afe6ea221005e9e18b31b1d1d987f49620f3cc236282d77e7e521cd73217e2",
+      "bytes": 185972
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "9bf9709f0021fc09a71b0bc58575f9e71530eb230623ea66fd2315e491ac00f8",
+      "bytes": 196760
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "5a775c4b2ad7682c5e8eda5707e79700f1f4a26d40d915ccb91ecdaf6189a2dc",
+      "bytes": 186550
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/metadata.json",
+      "sha256": "394f8b5fd3f93e470f5213fb67a2da8eb65a60d56e4206c138f35785e7926dee",
+      "bytes": 65924
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "8764e9c1f4356f2a91f26cc6b242c3ea973df31582fb3077127c7453193aeba4",
+      "bytes": 274
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "af858e52ed0299c5f456d392b9f9e9b58cd38e64ae89a25c1f0ad3e51c4e3d35",
+      "bytes": 2684
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "7e81f53e07ac987a963a5571549e81852fec77b2d500646faa2dffe6178c17d7",
+      "bytes": 4127
+    },
+    {
+      "path": "IAPRTC12/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "c2b12b1d9325f3e1f52c85f248887c8ad533cbd44129cfbab9fb814c32023723",
+      "bytes": 4317
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "e950c782ef4246a1b2dcfdb3257dda282d9e8c16c489a22f8a7f595d477ccc57",
+      "bytes": 6751
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "f17c60a01e21eac77fdbff0a67bb64717b1592227554587a72c29c5f66924fdb",
+      "bytes": 116972
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "3444c56be374c20f789a9f234da29dcf3544614763e81f14c0fe34384113c4fd",
+      "bytes": 185883
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "e1d0fd699d96874ada8ad68ff1e55e07d8ad6f4c81f9486d8f29b1d8ecd40d57",
+      "bytes": 196796
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "becf38909452dc709af3f3242bd8107d5393ae0fd1d2bf7ecc55f565cd7c4485",
+      "bytes": 186348
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/metadata.json",
+      "sha256": "4ae0bcd93f87d2d41ff6c9325941acf2a95aeb3e47e085e4a2b90818da602c69",
+      "bytes": 65917
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "8764e9c1f4356f2a91f26cc6b242c3ea973df31582fb3077127c7453193aeba4",
+      "bytes": 274
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "1a8ba6cc8b028b8f541f11b5fb91de3460b97f1dac5a4c57fa1d80583a63965b",
+      "bytes": 2682
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "26f2cb87fb40cd430301a233852432bbbfc49553b501d48e1fe68a47cb49ab66",
+      "bytes": 4121
+    },
+    {
+      "path": "IAPRTC12/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "adbe4a1a119593257ac6d32db887b2b9b233c4ff95aeebb91ffcd7180c4ff2c3",
+      "bytes": 4312
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "defd6bfebb2057c5035bcdb29e81735ec7c7f227e77f2b94db2442fbfe5f383a",
+      "bytes": 6645
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "0797b8f8042cf7c43143ddede50f2eef8be462202aaead2ef210de8aa058f78a",
+      "bytes": 116890
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "bced7f901243c265e62e2f2112a1abd1563bfd0d98b9b0d3c363c576a4a11cb9",
+      "bytes": 185823
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "be0bd7d41d1b19c0ae1e148e5e2b6bf5a4c5583fe87b74493317ba0e85f0584b",
+      "bytes": 196693
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "d87bb2b8e343c0b35c349c1cbc3c1b2f672c930fbff59258c66d096f5a8bd773",
+      "bytes": 186455
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/metadata.json",
+      "sha256": "a26316500276fe4788827dc7115665e03ab0b70d972a14353a797625998ae2d5",
+      "bytes": 65914
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "8764e9c1f4356f2a91f26cc6b242c3ea973df31582fb3077127c7453193aeba4",
+      "bytes": 274
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "8ff184b675a1ef5db66dff47b3c319c085cfb62fbb8d7ed4b221898433e238dc",
+      "bytes": 2693
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "735c5fbe7c8ea8e63a8b4d6f8139331565e970b1bffcc8c7d1d9472e9cd2f539",
+      "bytes": 4149
+    },
+    {
+      "path": "IAPRTC12/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "2364230598a531c088922007d90ea189805137a7736f2878ddbf60b6a1ad310f",
+      "bytes": 4303
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "01abaff9747b6b3da4c99b7af9289cfd741bfed68697d73ca71fd0229100a1c0",
+      "bytes": 6725
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "952d766157ed04f407d9abd4ad31d96ccc8178c24ffcf5f403fb1817d5905122",
+      "bytes": 117124
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "d7d6da766c23c18462d0d8df52109c759196c9088ab2176128b8aa31ff86f004",
+      "bytes": 186004
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "807b0461001c7fbcd28905d4c5c808b1ec47943655a4fd6963bcc29f1593336c",
+      "bytes": 196694
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "e3a54e0d1a937f4093cbfd365d4d42d5449d2f4d9c35ee8aa2619be0ed963f1a",
+      "bytes": 186456
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/metadata.json",
+      "sha256": "2a2b7e144371436dc7d911dec60e015dd1481f1ed21ba0e9fed744b3badcbf1f",
+      "bytes": 65918
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "8764e9c1f4356f2a91f26cc6b242c3ea973df31582fb3077127c7453193aeba4",
+      "bytes": 274
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "20751cf32f748e221e2a92828b918dd78b378cd29b111ee14e5d0ce9831e9bca",
+      "bytes": 2679
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "9d499a1fc546df29cfb8891b5a2e33ca2c64b86981876a90dab3345a9d8ab4f2",
+      "bytes": 4142
+    },
+    {
+      "path": "IAPRTC12/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "692cd3a1a3aec627193de4de3e1f0ff6a26ab608b3bd39ce7432893a424b585c",
+      "bytes": 4312
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "6ea35940b4721ea9e22b7f64cf937ab33271c020aa20ea0f52de982618e48ba4",
+      "bytes": 6787
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "7c835cab875e29798fc9c4c61afefaa029b89c9ebc217b1a54ca24b94af6ff23",
+      "bytes": 117155
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "49404b9bcd03ace2808147e694e63d167d804738be7615a0710b72a1a51284bd",
+      "bytes": 185958
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "f79e4f45f44c9484e715ffb6684557bd742619a1021fb6d99cc52d18ef21bf06",
+      "bytes": 196997
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "a2854e3e046d2eeb9e222239d02e34604e33df6ce999bb137a9275e4200f478d",
+      "bytes": 186465
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/metadata.json",
+      "sha256": "68d75e4aef801b5c68395adff973e578f9f525707af8774a207072d452a3d315",
+      "bytes": 65862
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "8764e9c1f4356f2a91f26cc6b242c3ea973df31582fb3077127c7453193aeba4",
+      "bytes": 274
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "bb18fcd4b5f85b6541a4afdd498e6d877a5104550aacfd747e0b8e6fdc8f6204",
+      "bytes": 2690
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "660fb2fe74249959d523c2ad310730c704f6aceeb54e876faf4d0187850a005d",
+      "bytes": 4109
+    },
+    {
+      "path": "IAPRTC12/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "edd6b3f027cce1868780999c2b8987c7e6d6c94f6356bb3bbc98a4baeeec3ff5",
+      "bytes": 4332
+    },
+    {
+      "path": "IAPRTC12/metadata.json",
+      "sha256": "6a9d91fc558f80aa078c03d6048feec5613116e1076a534c343ee722aaee343e",
+      "bytes": 97349
+    },
+    {
+      "path": "IAPRTC12/sample_group_ids.npy",
+      "sha256": "26dcf88733c454fdac7e2644b396867926e59973883576087c187231dbebc870",
+      "bytes": 40120
+    },
+    {
+      "path": "MIRFlickr/fold_0.npz",
+      "sha256": "4323f0b7770ad7f928d3bfa8ef490a648f615022bcb492a0237c697724465662",
+      "bytes": 69517
+    },
+    {
+      "path": "MIRFlickr/fold_1.npz",
+      "sha256": "623903dcfcaab28b122ecb1dfe97edf5c65da850db1b7d1552d973ac7124f716",
+      "bytes": 69519
+    },
+    {
+      "path": "MIRFlickr/fold_2.npz",
+      "sha256": "336c8d9ebccb8ebd477d951e88278c08a0a4e7ad6cea372e47190c3e735b53ba",
+      "bytes": 69509
+    },
+    {
+      "path": "MIRFlickr/fold_3.npz",
+      "sha256": "3f8a2d06bb9977de80b12df360eebb29798e216811e9c882c0a20dceeea45ddf",
+      "bytes": 69509
+    },
+    {
+      "path": "MIRFlickr/fold_4.npz",
+      "sha256": "6e1cc6df90d93841050cb9a813bf351e5e7eb8d7b534808ce6b8945853d550d5",
+      "bytes": 69517
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "2f2b4aa8c3076ae8bed39c21e2e664f28926c16c9eb85797fe5a9696fd1ca2d9",
+      "bytes": 11044
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "4eb30561ab4f139258032beaa0104fd835a731afda9c54531bd6f9be4ed78a9f",
+      "bytes": 83749
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "98a7b0857ca0360d90d16aaf046cf4b6c94288a0ea967bf08d3434f15ae74f98",
+      "bytes": 128228
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "1e9b469464d3b66a780174678529beea2fb60effaebed6ea55c78a80d40d2eab",
+      "bytes": 135294
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "1458b269fbf0ef67fc26ba6f98507e172d21aefa1eacb613f0775d2cc2f3292a",
+      "bytes": 128603
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/metadata.json",
+      "sha256": "8731a052fca57a999e9c6472bdd9bed0fd7e9c88322838590f775cf86da998dd",
+      "bytes": 18703
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "a4eb710a9082d502e4111ad3b023b152bfcb25f47dc28e19afd5fef6a0b884ec",
+      "bytes": 397
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "76c1c42fd22924fbc000494d33f6205370af84ba95bb8d953ecf8ef1f4586794",
+      "bytes": 14629
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "fed4e88b6484b26e8ddf89f2da5d78924b6dd09eaa53624b1e3c72ae29d6fec6",
+      "bytes": 23196
+    },
+    {
+      "path": "MIRFlickr/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "97f4610a7e9c88da97d0b79a9ccd936cd99661d34969fa150d68e512388a3fa7",
+      "bytes": 24255
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "5805ce49bed4a5c4d23b635e3aa6136182d77a747c4c9186410c2a0b8e8cbff6",
+      "bytes": 11221
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "713005094d4d3f05093eeb63306f63ea5a3dd0819b5597d977609b95d6a34c9d",
+      "bytes": 83879
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "66f83bc1bb85f0266a5a9d73de395f70db63706be280d3cc464223d0abdf3d28",
+      "bytes": 128084
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "f05b4adce7fb012ab51da564d97fbe4228cb1c439d638df8cce9f7e1432b906a",
+      "bytes": 135328
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "16c2fae32d0342550e69e7254bacfce3126d33306315522e2515f0cdbf86c69c",
+      "bytes": 128551
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/metadata.json",
+      "sha256": "36f3108f003fa64ddcfc0efb6bb4f8b1d456297dbb9b72cab24883c38901f70a",
+      "bytes": 18703
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "a4eb710a9082d502e4111ad3b023b152bfcb25f47dc28e19afd5fef6a0b884ec",
+      "bytes": 397
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "a50814d4f3452365073d25a65a1517f949a40bf8b98e165abcaf44846750aa76",
+      "bytes": 14535
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "f8094ed3174900e3434143d2a6cd366946b9a79d736e299a19aea785b21f73f1",
+      "bytes": 23167
+    },
+    {
+      "path": "MIRFlickr/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "9dc3d42152d0eada7ae8674ac1dab1e8da03d2ac7650d376c7e051c5d2bc8bc7",
+      "bytes": 24187
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "825831783441f291f1e13d0db0f3e6b340f54ca5a4552739e3b005ff7c3f19a3",
+      "bytes": 11227
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "c4521954986919939625a4855d800b5aca5387d090bc8ef7c086ff8b22ab1170",
+      "bytes": 83995
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "45d23546d3b9f59af7cd6076b7659390227387166ecc379e925442e1f17cbdde",
+      "bytes": 128183
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "ae7f5eb71267635765af64110ec594ef8c90ac6e805bfb3bceace3bff46b0cdc",
+      "bytes": 135421
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "d2d3921086e4aaa0801ba0c1c0f901dd115ebc47c4a31b68efbc9f40e514ffab",
+      "bytes": 128576
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/metadata.json",
+      "sha256": "df60674c832244b49e0c035849cf4fc227d62759755589c2bbcc24ca4ea59102",
+      "bytes": 18706
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "a4eb710a9082d502e4111ad3b023b152bfcb25f47dc28e19afd5fef6a0b884ec",
+      "bytes": 397
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "feb468a2b11e85b714bccca6b7a10821c1531032627a428c8c007be81fdfe8b5",
+      "bytes": 14575
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "510eeb61cfa8facc41c3efdf1d9d4105f85ba9066f65562d35f0c6c2453d2183",
+      "bytes": 23167
+    },
+    {
+      "path": "MIRFlickr/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "495b673b53e8c34dab1dd1635f7d2c8dcd1226ea8bc8c26d963e09037d6ef543",
+      "bytes": 24220
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "644763944c37ee8e5e55b210359c1ba66dd8a0e76a003fa6cf3bcc2d9bc2e2af",
+      "bytes": 11144
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "1df98ce8584f562a7e5388d1932a74bfa830c1dc11e259e1296fe2ebd06b4d5d",
+      "bytes": 84053
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "abff50a100e053a57bcd4da3d858a0a5acef2b0112bf33b2382bbb47e91f7947",
+      "bytes": 128049
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "391d9e4a7a60d0a5e7b92528745441bce870a180c424a7d2b97abfe60dec69f3",
+      "bytes": 135418
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "abfcc0a0a431675a1a05ea5eeaf10f61fb1126bcc68633abf69f9e77e3a95d41",
+      "bytes": 128695
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/metadata.json",
+      "sha256": "75d80a8ab16813b31e5edae8a2eef5a3118950971213cb40827952721ac0793c",
+      "bytes": 18704
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "a4eb710a9082d502e4111ad3b023b152bfcb25f47dc28e19afd5fef6a0b884ec",
+      "bytes": 397
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "aea41e17cd30d80e85d17608d7448a0c17ccfcf33b551d52a3460020158a098e",
+      "bytes": 14598
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "ed9fcdc799d957ea5909b07b1f6603fb8c8bf02cd7713175b75453cd07a886bd",
+      "bytes": 23154
+    },
+    {
+      "path": "MIRFlickr/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "837a2118dd5d41b79dfb16ae6106e891bd9dc35a4658c77f690baac23d462077",
+      "bytes": 24194
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "1abf1dd4040de0c8afeda457f3219b6ac772675b2638228612102bf2e822d730",
+      "bytes": 11207
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "3dcf54edb8efdb49d70678d9525d7c4c314afc5188676660f2c3b25c367845a4",
+      "bytes": 83899
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "ddb536f84c459e3dc8446f9c94befc7f3f3ae2f0f580a5d4532e51657af0d1c9",
+      "bytes": 128134
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "8628a9337018986d5a98a7ddb19a8b51f620ec958a9f6eda497cc586cb87df69",
+      "bytes": 135228
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "07ee9f2aacf25f64f1cc99f967a71b98a8ea172d1cbc0c354d0c8a21c6586b48",
+      "bytes": 128647
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/metadata.json",
+      "sha256": "77ee882fe70568119588e042ef12791f739c3fff6ffb897bd7ad8780307ad331",
+      "bytes": 18701
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "a4eb710a9082d502e4111ad3b023b152bfcb25f47dc28e19afd5fef6a0b884ec",
+      "bytes": 397
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "daef42aac7c1fa6d21954d32db624869b3fc8990f550479c2979eb960ee105d6",
+      "bytes": 14556
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "c6b0cacd299e28b919b92b992f0f2ad602f44e303414a454dacc4596692f054f",
+      "bytes": 23146
+    },
+    {
+      "path": "MIRFlickr/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "c36833c9ad781ccd5ec3392d3c93c4237494b883d7a5c9287724480154bf60c5",
+      "bytes": 24178
+    },
+    {
+      "path": "MIRFlickr/metadata.json",
+      "sha256": "bafc81fc9d5662f52bcaa03ad3ca78ac8eadf4df283ae3d21af5719940344628",
+      "bytes": 20000
+    },
+    {
+      "path": "MIRFlickr/sample_group_ids.npy",
+      "sha256": "6c988410c5c1abbb7b119a8c5d0cc6823ae2ecfc1be2a3d6d1a6619357963983",
+      "bytes": 200128
+    },
+    {
+      "path": "Pascal07/fold_0.npz",
+      "sha256": "c97a1b32b3447a3f4552cf0b7eb2fa1bc9122e1f29888b9606baf79c27cf5f47",
+      "bytes": 28295
+    },
+    {
+      "path": "Pascal07/fold_1.npz",
+      "sha256": "35e16e2113dc7391b7371b7a99041c6d98f58ec1f95189f04e2c84676a4981b6",
+      "bytes": 28292
+    },
+    {
+      "path": "Pascal07/fold_2.npz",
+      "sha256": "a897ddda71f665c6f1400a21b19eb57fcc06df82a17ca9c0db5c34e9bbe6f167",
+      "bytes": 28305
+    },
+    {
+      "path": "Pascal07/fold_3.npz",
+      "sha256": "9c732508b5961d8923a69bbebded41959ce4be95b727ddc91c0b2fe25eee9025",
+      "bytes": 28314
+    },
+    {
+      "path": "Pascal07/fold_4.npz",
+      "sha256": "8fe25afaa1d241b05fed4abd7a84bd66fd7e12395eb5e9a9e4ce73989c326afd",
+      "bytes": 28299
+    },
+    {
+      "path": "Pascal07/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "f3ab57f0cd6fa85981d925894273139a4fe93c1be7a497425f3878b2522ab1d5",
+      "bytes": 3609
+    },
+    {
+      "path": "Pascal07/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "229f1da6f709c3554cbf555fcec07eea39324647500f91e06d149f0db33f3aac",
+      "bytes": 18845
+    },
+    {
+      "path": "Pascal07/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "20d70280c5212885f453ea790a1107ac8b6ba2a8db107fedf3533fecb5b13e68",
+      "bytes": 28185
+    },
+    {
+      "path": "Pascal07/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "745bf67d3a122f80ed7438725a5b75daeb566d01cf1776107ad1c67bafc1441a",
+      "bytes": 29795
+    },
+    {
+      "path": "Pascal07/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "30235c4f85a478d0903ddca4eec7703577982e6d75138a7a350c9787989fcac7",
+      "bytes": 28036
+    },
+    {
+      "path": "Pascal07/masks/fold_0/metadata.json",
+      "sha256": "efee45a00ae07adc484e4ccd47cf4fe56f75e8d9d82bb9c67502038b35b7e528",
+      "bytes": 14951
+    },
+    {
+      "path": "Pascal07/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "9341997968e41627475f54ebe40f1db426a2f15b8befe7f11857b943d8c7a9bf",
+      "bytes": 309
+    },
+    {
+      "path": "Pascal07/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "31ddadc6c2e6f799969d31874b73198b99609bb85c60aaf698a228bcdc3a512b",
+      "bytes": 5998
+    },
+    {
+      "path": "Pascal07/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "be60e7695e7765cf1e0b15622055c3990c30caac251d7cca2229f33bb3b580e9",
+      "bytes": 9443
+    },
+    {
+      "path": "Pascal07/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "49478c80a7a472aff4a24721d998304b5fee67558e0333dacfa2edd567d676c4",
+      "bytes": 9852
+    },
+    {
+      "path": "Pascal07/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "6c9308f3e56fb86a9fc7811cfc8de6f4b68e89f4add95c5cc8b94f07bf151990",
+      "bytes": 3658
+    },
+    {
+      "path": "Pascal07/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "7dfebe4615db3c96a41b0271b5c85a5486e6082661ab38071138f0df89408d54",
+      "bytes": 18791
+    },
+    {
+      "path": "Pascal07/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "e8371f226053634a7a4299f9956df74463f6e2ac2b7574b8b2b605e105a228d3",
+      "bytes": 28216
+    },
+    {
+      "path": "Pascal07/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "54204466e4edfddae50738cb48ffbb7d3d9d90fadfae09432e5b763ac9bd0e1f",
+      "bytes": 29779
+    },
+    {
+      "path": "Pascal07/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "5b51509a19f50069c1dadb74d77b6bb87dca9e4544fe9f583cd582fb9689a70c",
+      "bytes": 28061
+    },
+    {
+      "path": "Pascal07/masks/fold_1/metadata.json",
+      "sha256": "cb3945f37809c859770a59112151c795539516fa8229497ac3418a1217c02eb9",
+      "bytes": 14956
+    },
+    {
+      "path": "Pascal07/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "9341997968e41627475f54ebe40f1db426a2f15b8befe7f11857b943d8c7a9bf",
+      "bytes": 309
+    },
+    {
+      "path": "Pascal07/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "dc6ae92b5e13afb15c752237149459b1026aa36943c40ecac8970049ceffc01e",
+      "bytes": 6024
+    },
+    {
+      "path": "Pascal07/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "5104e6247fe85ff1c57f3e74b905eb8ce30c4e03c06d6c8e335fbc4735606e29",
+      "bytes": 9469
+    },
+    {
+      "path": "Pascal07/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "07e97327e1de5783da23f13e2430115e0ea95d1ef4af9f82dc594756949a0f8b",
+      "bytes": 9877
+    },
+    {
+      "path": "Pascal07/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "2b97a1638fbe203b06615b6acb08a57b1c0477452f9cda15cf6347c236284831",
+      "bytes": 3620
+    },
+    {
+      "path": "Pascal07/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "696d4b7d1e070065e66d33b467f89574a5255c597188dbdde57d35bcdcd1b98b",
+      "bytes": 18754
+    },
+    {
+      "path": "Pascal07/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "fc88719bf225ff8d6b213674dc3f1fb094f8bafecb237f05f930d0fedfba4eba",
+      "bytes": 28196
+    },
+    {
+      "path": "Pascal07/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "f3678d0ae20f015da40c39a828db3245571b72241e324e22876ff23d81bd3791",
+      "bytes": 29746
+    },
+    {
+      "path": "Pascal07/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "7a4ca3c36862489bfc78650568cb0c107e943ed482f602962df26f121d0d028d",
+      "bytes": 28091
+    },
+    {
+      "path": "Pascal07/masks/fold_2/metadata.json",
+      "sha256": "829d361437b43222ef1c5518696b2c4e271e30ea5675f9ecfc4a7f6f93305704",
+      "bytes": 14956
+    },
+    {
+      "path": "Pascal07/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "9341997968e41627475f54ebe40f1db426a2f15b8befe7f11857b943d8c7a9bf",
+      "bytes": 309
+    },
+    {
+      "path": "Pascal07/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "0cad1eaa883386d8de5e58d4b03d0051f4401c6c0b9d8c86e635df730fc13856",
+      "bytes": 5959
+    },
+    {
+      "path": "Pascal07/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "b66257b485d496f91cf48a0bb098179c1ca139088e26a73b98d3b367019c1214",
+      "bytes": 9476
+    },
+    {
+      "path": "Pascal07/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "31f9830ea4f23b1540ed9725d1fb26e42830fbd5ffa85185bf14369cfbe72378",
+      "bytes": 9871
+    },
+    {
+      "path": "Pascal07/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "e99a641d134a082a02320db9fd2939be14f2f2be9f9a76f14ce8ad3ba432c56e",
+      "bytes": 3620
+    },
+    {
+      "path": "Pascal07/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "f08190a6eecf759e0d5baab9323c26ec783354bb89a22cf5f0af0e7ab13ba59e",
+      "bytes": 18794
+    },
+    {
+      "path": "Pascal07/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "839112cf12492cd24aa8fed4dc898e0a5f301eb74fa908fe03ce9945af2f97c4",
+      "bytes": 28225
+    },
+    {
+      "path": "Pascal07/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "32afd78e2f159aff85dc70e844020d93cbab3b5a5fd78e94beb9b5b5909c50ea",
+      "bytes": 29751
+    },
+    {
+      "path": "Pascal07/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "c9e1383903e8599eb357137ec2893f01d2aaa279ea457c0e845eb6fbc16d2b49",
+      "bytes": 28011
+    },
+    {
+      "path": "Pascal07/masks/fold_3/metadata.json",
+      "sha256": "c4c62305959ec86a88e9aeec71372615ef3e41c605fab5d279a2c38fc717e044",
+      "bytes": 14957
+    },
+    {
+      "path": "Pascal07/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "9341997968e41627475f54ebe40f1db426a2f15b8befe7f11857b943d8c7a9bf",
+      "bytes": 309
+    },
+    {
+      "path": "Pascal07/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "a596db9db305a97043f5aaeee7a586f64e150236e88d264a84717a944fa3e391",
+      "bytes": 5991
+    },
+    {
+      "path": "Pascal07/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "a15c55f8a02e24899630243e03c13a071d92051920484471070d5e0df677b933",
+      "bytes": 9422
+    },
+    {
+      "path": "Pascal07/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "2003321c249e737ce688f511d5392eaa9fedd2a488ba117a5140602a97514893",
+      "bytes": 9823
+    },
+    {
+      "path": "Pascal07/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "423dd1dc4f8365b41bb7c4a57b9665691328ecd9f1c5b5e6ece9cbb670e4072a",
+      "bytes": 3628
+    },
+    {
+      "path": "Pascal07/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "ff5ccc15703fdabc5751ab57101d36a0104c2e65b5c9892ed683dd8f07ec2872",
+      "bytes": 18864
+    },
+    {
+      "path": "Pascal07/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "1ca29899041bfef3619adac8afdf5d1aab504bb93eba74fbe3d4b6d94154790c",
+      "bytes": 28252
+    },
+    {
+      "path": "Pascal07/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "bad6648a9e92bcd8b0780c1072c25a512d00e909ee38375e331d7e63cc0c521a",
+      "bytes": 29775
+    },
+    {
+      "path": "Pascal07/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "ecc54e275145b4315ffe6b893928405c2904864ef7ddf0d741af672e3abf80ea",
+      "bytes": 28013
+    },
+    {
+      "path": "Pascal07/masks/fold_4/metadata.json",
+      "sha256": "3b9c34134fdf2b6813124f3fd70b70c66f64961f296b881378dcb956539898c7",
+      "bytes": 14953
+    },
+    {
+      "path": "Pascal07/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "9341997968e41627475f54ebe40f1db426a2f15b8befe7f11857b943d8c7a9bf",
+      "bytes": 309
+    },
+    {
+      "path": "Pascal07/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "2e2ddc1df72827c64f2d9be216c5c70b29751a370ca382c0c500a294ce513318",
+      "bytes": 5986
+    },
+    {
+      "path": "Pascal07/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "a0eac39be01db73f723b92d9c6ba16d4c99e12cd48d682ef2a334a6e126f01a5",
+      "bytes": 9437
+    },
+    {
+      "path": "Pascal07/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "bd0bf08ed39a9c8a3c5ef9db9da4232213e3184a933793adc487c5d12b80aec4",
+      "bytes": 9859
+    },
+    {
+      "path": "Pascal07/metadata.json",
+      "sha256": "4f4d569da876dffc0f7f5934779e83bf7f61a78fbd7dd5700eeead523165274b",
+      "bytes": 13872
+    },
+    {
+      "path": "Pascal07/sample_group_ids.npy",
+      "sha256": "fc54966017a8a3244bb5e7b551d80aa06d749eb1a8bdb91a41f5b8792aa22008",
+      "bytes": 79832
+    },
+    {
+      "path": "prepare_masks.py",
+      "sha256": "adc4dae0861ab62f735f245afdb72cd6b911ccd22a6dcb29b6b0184674a9ccc0",
+      "bytes": 12105
+    },
+    {
+      "path": "protocol_io.py",
+      "sha256": "2e4e4f5eeba833f57dc6840e92f0eec242e3af79dd719c1d46356b70aff65c8a",
+      "bytes": 1663
+    },
+    {
+      "path": "Scene/fold_0.npz",
+      "sha256": "c875ee6e2d0eafbfc4760d0ef021f0e45e98830c06ef08d06a83e11d2d52118e",
+      "bytes": 7678
+    },
+    {
+      "path": "Scene/fold_1.npz",
+      "sha256": "09dba8433b26cb5003abb0a18ffee948138f48e500c2aecfce491c8a35d93802",
+      "bytes": 7664
+    },
+    {
+      "path": "Scene/fold_2.npz",
+      "sha256": "6e9ea29615ce43899f194fc1d1fead269624da19a5ad62a4c634d0a23a499f69",
+      "bytes": 7671
+    },
+    {
+      "path": "Scene/fold_3.npz",
+      "sha256": "38917cbab8f781674c75d1de8555e13cefcf5aab0748a9003916095a337394b7",
+      "bytes": 7668
+    },
+    {
+      "path": "Scene/fold_4.npz",
+      "sha256": "aee667ca37352d43cbb5ac6b27f62c744cceb7d56d62d1179d0e526723c6d3d3",
+      "bytes": 7658
+    },
+    {
+      "path": "Scene/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "01b08402e73a6e9af3ba53140849c24665ceacc71edbc38a191ab21ff85f4f0e",
+      "bytes": 817
+    },
+    {
+      "path": "Scene/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "f533a85d6ac21ceea2d6e428600af0e2140cf8497a3d0435dce2ccb7155fd5a5",
+      "bytes": 1861
+    },
+    {
+      "path": "Scene/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "e2a7cf55a9fef7965666944cef3cdaf2fcf0b7c268d3341527a22e7e4d204129",
+      "bytes": 2483
+    },
+    {
+      "path": "Scene/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "cf5afa482c0ef14c5f8ccc113a890a6fdd164b21c2fa19549dad085adfc7c2a6",
+      "bytes": 2582
+    },
+    {
+      "path": "Scene/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "29667c4a5a4d1dda21083f4526a7df1a9498ae963c6e539d3fffc7c6562c5a1b",
+      "bytes": 2396
+    },
+    {
+      "path": "Scene/masks/fold_0/metadata.json",
+      "sha256": "d1366d6686ad2e8dd678ec6361659226f083f6d667d7f42c1baecb7b19a90f7b",
+      "bytes": 11030
+    },
+    {
+      "path": "Scene/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "d73781c5ff17492709d29e9fa54cf1e4b43b0c4229af40d96a2b4df2e0dda824",
+      "bytes": 256
+    },
+    {
+      "path": "Scene/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "5d12fc92aa66fc02c1a3ce95f398e4786125b024dca0847813d9f8983bfc94e3",
+      "bytes": 731
+    },
+    {
+      "path": "Scene/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "6c5d4626b15039334f08f2373150e089697baf66cbb0c48cb1dca7677b95b4f1",
+      "bytes": 990
+    },
+    {
+      "path": "Scene/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "d6f383ce9ecb76b9efcb32546fb9d93872c095b64ac10640df5dce1708235ef3",
+      "bytes": 774
+    },
+    {
+      "path": "Scene/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "170e385b6126e1888e0b80c1909398c647a5be0c7c5a010d6d00fafbe807cd18",
+      "bytes": 821
+    },
+    {
+      "path": "Scene/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "6a27a24e6b289f182ace8ad568cec87b65afa989fffd925ad0d322543002d834",
+      "bytes": 1854
+    },
+    {
+      "path": "Scene/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "f913ad156f396a3ce65ead549624d5b6a4c7569f4875c1eaf783b7024f7ac9e4",
+      "bytes": 2492
+    },
+    {
+      "path": "Scene/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "60c0b136e7950e0b192385e0401ac6175fc9ac1a1d932aae3250eb53505de519",
+      "bytes": 2578
+    },
+    {
+      "path": "Scene/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "ee989583ba4837b639b80eef297d7dfcae08feacaf9361fbb3c79779a3e5739f",
+      "bytes": 2389
+    },
+    {
+      "path": "Scene/masks/fold_1/metadata.json",
+      "sha256": "7c66a274cfec4a8a8e75edf4830573d32af0ca15e102b7c81aa4659998024f09",
+      "bytes": 11032
+    },
+    {
+      "path": "Scene/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "d73781c5ff17492709d29e9fa54cf1e4b43b0c4229af40d96a2b4df2e0dda824",
+      "bytes": 256
+    },
+    {
+      "path": "Scene/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "8e3e55ed705b62dacabe757bd1d70af5a79085ca173ed774cb15e74cd8c67774",
+      "bytes": 734
+    },
+    {
+      "path": "Scene/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "c8c68221a1bef4a275721d072861036cf4b56803882c075d55899e1fd038a92e",
+      "bytes": 1002
+    },
+    {
+      "path": "Scene/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "77166211f8809e781407ff7060277243d6ebed479e981dd894917d9347bcf6b5",
+      "bytes": 778
+    },
+    {
+      "path": "Scene/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "00f087550d614026db049f29fd552c2a57fc89922d7fbb6ddb8baf1b28de8537",
+      "bytes": 808
+    },
+    {
+      "path": "Scene/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "1a99b007f61dcc05b9aa4ea05b8a180a5b4eb8489b8b21fe3e151ea1edfbbbe4",
+      "bytes": 1888
+    },
+    {
+      "path": "Scene/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "6327e3dc1ee9d9a0b2c46c81b3ae6d06a0ca03dd130b97cc293b17ce7f5ee41f",
+      "bytes": 2511
+    },
+    {
+      "path": "Scene/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "e75f8b3a884bc64f97cb3f0a879660aaecb0d435bc7ddfa1a5aad68e9591a3c8",
+      "bytes": 2587
+    },
+    {
+      "path": "Scene/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "5a0bb45460e914da7b3ef4eb6870217c6e66ba3acad934ace6412f7095b32507",
+      "bytes": 2392
+    },
+    {
+      "path": "Scene/masks/fold_2/metadata.json",
+      "sha256": "5494f6f1d58ffc7473505037cabcddde1c27e2f7adeb57adcbef9eadbd471691",
+      "bytes": 11042
+    },
+    {
+      "path": "Scene/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "d73781c5ff17492709d29e9fa54cf1e4b43b0c4229af40d96a2b4df2e0dda824",
+      "bytes": 256
+    },
+    {
+      "path": "Scene/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "a46b0e94b971c2da5607b711428bd1127b50f781bcccb5b43786f10b9b145e84",
+      "bytes": 740
+    },
+    {
+      "path": "Scene/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "8c26fcfeccef3f48f32873a7120f6e320c875206ffea24cdf968a1101d1424e2",
+      "bytes": 980
+    },
+    {
+      "path": "Scene/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "ce354cb9309cd4c31322b4fdad6d0ae6329aba261d31bbccef385f40d1f92a6c",
+      "bytes": 772
+    },
+    {
+      "path": "Scene/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "7702cfd0b809c6f5d1b2d73acd8cf2ed4d51d287421bbe4241f2407b1d697a54",
+      "bytes": 803
+    },
+    {
+      "path": "Scene/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "2c2f2cce3f10f3a2646e0d97f17e9a6dd513645006dda58b5a52860665019260",
+      "bytes": 1877
+    },
+    {
+      "path": "Scene/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "b5d032efb81e3ae5e642fc0f0a6fd9e32bade2549f998d27e2d843408d213771",
+      "bytes": 2488
+    },
+    {
+      "path": "Scene/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "79c45213d0c3b4a749c04d3bc42b5a503fe775b55fb0cdcc2afd067f3b70a322",
+      "bytes": 2574
+    },
+    {
+      "path": "Scene/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "86699b7f2a345bfea09690b3093d5d59cddec9984e3b813fe9504da6cfd8c94c",
+      "bytes": 2374
+    },
+    {
+      "path": "Scene/masks/fold_3/metadata.json",
+      "sha256": "a8928a00da6bf7ad654c855e6a2551fe37e5ed650a6f8f93d76737690de20cb1",
+      "bytes": 11039
+    },
+    {
+      "path": "Scene/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "d73781c5ff17492709d29e9fa54cf1e4b43b0c4229af40d96a2b4df2e0dda824",
+      "bytes": 256
+    },
+    {
+      "path": "Scene/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "258b3d51f43f50875c77c497401a3309db80ca9fe2aaae281b1b3552e84508fa",
+      "bytes": 731
+    },
+    {
+      "path": "Scene/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "ecec74d5ec69725c732e8b1f5e97c0ed4b70b0902118e0aadd5f7f6ed8216b66",
+      "bytes": 991
+    },
+    {
+      "path": "Scene/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "3d8755f83c3fae419ee83dccf3b0c7a018897b1b6edf6dd9e38fdcfd0c2b744a",
+      "bytes": 776
+    },
+    {
+      "path": "Scene/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "f77d72e787f2da532bb4d076eaecf208bc044490423f2bb7550a54f1ec13d5d7",
+      "bytes": 820
+    },
+    {
+      "path": "Scene/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "3179b8a5538093c886ae78315c4c52685ad570ddbbfd9942a3ea48c72af1f210",
+      "bytes": 1889
+    },
+    {
+      "path": "Scene/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "8730fda52d6244a1049a285548f6d2a9b987c252105473c6b697d7001f1193b7",
+      "bytes": 2490
+    },
+    {
+      "path": "Scene/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "e29489710545be31293175887e7c075fa4f9744c5c1d845292ad51018d28864c",
+      "bytes": 2570
+    },
+    {
+      "path": "Scene/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "86ffcbb8f7c34583988783a79918d87d433df8b9faa54880e5d86774e9b324eb",
+      "bytes": 2364
+    },
+    {
+      "path": "Scene/masks/fold_4/metadata.json",
+      "sha256": "73a05bc15a5fdaed6e401b25050ea3cd23377ff9e3ac1c5c2009627b9ab4eda2",
+      "bytes": 11045
+    },
+    {
+      "path": "Scene/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "d73781c5ff17492709d29e9fa54cf1e4b43b0c4229af40d96a2b4df2e0dda824",
+      "bytes": 256
+    },
+    {
+      "path": "Scene/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "2db34cac11249a5eb3b364515e565b36d93c190519af72a9518258fc377ca0e1",
+      "bytes": 737
+    },
+    {
+      "path": "Scene/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "4dd0fb50cdda3872e1e567a221a574dd4a22ca1b485ccdf7c4046868347ad527",
+      "bytes": 977
+    },
+    {
+      "path": "Scene/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "833b84f36fbc75fc48dc51f2d0bfcbb3b3157790ff404706569e0c9e54f91a90",
+      "bytes": 773
+    },
+    {
+      "path": "Scene/metadata.json",
+      "sha256": "7dfd4370958eff46533c51fff25d62b95e0f7bdd2391c720a8e0f8e72186c461",
+      "bytes": 9226
+    },
+    {
+      "path": "Scene/sample_group_ids.npy",
+      "sha256": "6c59fd784de5138d5aaf3d086041372b656ed248d739bd4dad555f53c4b7f9ca",
+      "bytes": 19384
+    },
+    {
+      "path": "sources.json",
+      "sha256": "8e72387bc67ef4dc00a7ac0ef2bd29d6a4ee69090b43a51e4d40d473a0c2aa05",
+      "bytes": 5924
+    },
+    {
+      "path": "verify_masks.py",
+      "sha256": "7303d1cd74a9e191d2e300be2cb4b4450c22fd71c998cc3f232d316bc24b6ff1",
+      "bytes": 8395
+    },
+    {
+      "path": "Yeast/fold_0.npz",
+      "sha256": "37cb8ec0969ad9d46c6491649d9faf5e094d44278fc0f7dddc075e96bdfbcf68",
+      "bytes": 7699
+    },
+    {
+      "path": "Yeast/fold_1.npz",
+      "sha256": "5d3adcc79726fa7ab46331940078762f5696ba76d8c8920b0a71db1d3a522c47",
+      "bytes": 7692
+    },
+    {
+      "path": "Yeast/fold_2.npz",
+      "sha256": "86ae9ddbed2c64ac58c6e8425e1dbd807deb7c9d038a25139e20f85890c31aaa",
+      "bytes": 7694
+    },
+    {
+      "path": "Yeast/fold_3.npz",
+      "sha256": "4e4443277404267349ec13a242d7a91284f0cb47c173a16b14cd0c1a2c62b3b6",
+      "bytes": 7695
+    },
+    {
+      "path": "Yeast/fold_4.npz",
+      "sha256": "ac4caeae97611bb5c1658b5b669e254a7ed1ec29b150b77569374f56976d88cc",
+      "bytes": 7695
+    },
+    {
+      "path": "Yeast/masks/fold_0/label_mask_0.0.npz",
+      "sha256": "43815c514bebf7f2bd753d92afdab034eba6d3c42c86cc0e52ad8c9357da2e1e",
+      "bytes": 1014
+    },
+    {
+      "path": "Yeast/masks/fold_0/label_mask_0.1.npz",
+      "sha256": "8c561ae74dd9e3b0abc6a593b9be4ff4689a943db150f1f1b7c90ca5e49948c2",
+      "bytes": 3546
+    },
+    {
+      "path": "Yeast/masks/fold_0/label_mask_0.3.npz",
+      "sha256": "5c8249dae53459a56c7d74f02770b09f790cd29d8ed17a54a284c73cd3761929",
+      "bytes": 5204
+    },
+    {
+      "path": "Yeast/masks/fold_0/label_mask_0.5.npz",
+      "sha256": "e5431748cf6f00dc49a14af9c2c4c15d911191fd911784e4d4300ff289709246",
+      "bytes": 5444
+    },
+    {
+      "path": "Yeast/masks/fold_0/label_mask_0.7.npz",
+      "sha256": "04490a344bfd508c28ceed9286c260c665c496941fedbda10eb14170f9f679fa",
+      "bytes": 5117
+    },
+    {
+      "path": "Yeast/masks/fold_0/metadata.json",
+      "sha256": "5849ef2029ddee99e50664e79d96e0d9e4c2a5c7915a231634ce328ce944e836",
+      "bytes": 12530
+    },
+    {
+      "path": "Yeast/masks/fold_0/view_mask_0.0.npz",
+      "sha256": "3425031b40fee07721c1512f289a4490a9c36a61f2c8df6df9de749649b62815",
+      "bytes": 255
+    },
+    {
+      "path": "Yeast/masks/fold_0/view_mask_0.1.npz",
+      "sha256": "cb90c6f090aadd99122bcfa6d7d009f89835ead0ae480d1611d20b93ddb5ea20",
+      "bytes": 743
+    },
+    {
+      "path": "Yeast/masks/fold_0/view_mask_0.3.npz",
+      "sha256": "c6e732f5b58abc1a9924a798a146e3b07e6a36061ecd92eef84597e70b71d2c9",
+      "bytes": 993
+    },
+    {
+      "path": "Yeast/masks/fold_0/view_mask_0.5.npz",
+      "sha256": "a00b612d351291a3a23e7f8577a5edc0ea5f1ca8c7bf879ab91b29cbc50e60c7",
+      "bytes": 770
+    },
+    {
+      "path": "Yeast/masks/fold_1/label_mask_0.0.npz",
+      "sha256": "d0b531e549aaf25653fdd845b7bab3f9506acea08be4cac97ebb0f6faa7573c4",
+      "bytes": 995
+    },
+    {
+      "path": "Yeast/masks/fold_1/label_mask_0.1.npz",
+      "sha256": "2b7512512336a48e00a5f3afe31b62b1ea44b5c110b44c2b29631564aaac6d62",
+      "bytes": 3578
+    },
+    {
+      "path": "Yeast/masks/fold_1/label_mask_0.3.npz",
+      "sha256": "a34cb9f9ae1e7c2f8f16c760c1355545feb419a34fec42b6c14a47b6c3b0b188",
+      "bytes": 5170
+    },
+    {
+      "path": "Yeast/masks/fold_1/label_mask_0.5.npz",
+      "sha256": "55872724e8d02eeed71c947dae2fa35ed908226b0c51ffd42519f31d31239da4",
+      "bytes": 5429
+    },
+    {
+      "path": "Yeast/masks/fold_1/label_mask_0.7.npz",
+      "sha256": "ad0af57b1adc107be5cb6d4f632431b29e2b829236fbafa7abf9afbd9881f17f",
+      "bytes": 5110
+    },
+    {
+      "path": "Yeast/masks/fold_1/metadata.json",
+      "sha256": "ffe95df638371d28e946d8bfd0632e60bc14b079cbb6f3180070c0e52268788f",
+      "bytes": 12527
+    },
+    {
+      "path": "Yeast/masks/fold_1/view_mask_0.0.npz",
+      "sha256": "3425031b40fee07721c1512f289a4490a9c36a61f2c8df6df9de749649b62815",
+      "bytes": 255
+    },
+    {
+      "path": "Yeast/masks/fold_1/view_mask_0.1.npz",
+      "sha256": "d3a5008b289fc6574c99b2380c8a01efdfdeee06c1538c605414df5b340c8e77",
+      "bytes": 734
+    },
+    {
+      "path": "Yeast/masks/fold_1/view_mask_0.3.npz",
+      "sha256": "acff3e24ff8815c17de0a18f53339cb9058e01cd1d93e511f77c1357c34d7a21",
+      "bytes": 983
+    },
+    {
+      "path": "Yeast/masks/fold_1/view_mask_0.5.npz",
+      "sha256": "6b1601b5a0d5b5bdd54686cf579d51dd29d770dc8947a43e6e8b55bb14be96ad",
+      "bytes": 778
+    },
+    {
+      "path": "Yeast/masks/fold_2/label_mask_0.0.npz",
+      "sha256": "17f8a014a4c80d6916c734315fb8b1a63509af83f2f6e9302da7c69e2633d905",
+      "bytes": 1002
+    },
+    {
+      "path": "Yeast/masks/fold_2/label_mask_0.1.npz",
+      "sha256": "5898212da818943f1e4776a8852f9146ada4438edb7a309f9354092fc2cfc8a0",
+      "bytes": 3575
+    },
+    {
+      "path": "Yeast/masks/fold_2/label_mask_0.3.npz",
+      "sha256": "60e9d00a074871f9589774c37fecbc10d5229bf55d43356eb785a6d223c16097",
+      "bytes": 5156
+    },
+    {
+      "path": "Yeast/masks/fold_2/label_mask_0.5.npz",
+      "sha256": "841478deb66c71373645cf29d3d0105861f4575c7c974ac89cda0346181c3ae7",
+      "bytes": 5435
+    },
+    {
+      "path": "Yeast/masks/fold_2/label_mask_0.7.npz",
+      "sha256": "e339d4321ee1055bcfd67e9cf7a0ab955bab5cc5fafe7298cc8b42e8e7842e5d",
+      "bytes": 5051
+    },
+    {
+      "path": "Yeast/masks/fold_2/metadata.json",
+      "sha256": "4990daf169b9a368545b7a593f7bc207982cd692dba06afb03156f5ef6c9b7bf",
+      "bytes": 12537
+    },
+    {
+      "path": "Yeast/masks/fold_2/view_mask_0.0.npz",
+      "sha256": "3425031b40fee07721c1512f289a4490a9c36a61f2c8df6df9de749649b62815",
+      "bytes": 255
+    },
+    {
+      "path": "Yeast/masks/fold_2/view_mask_0.1.npz",
+      "sha256": "87ceb2ee0c1019b3496547235ce8be846e8f43c039b2c6bd3df474e1f76069c6",
+      "bytes": 737
+    },
+    {
+      "path": "Yeast/masks/fold_2/view_mask_0.3.npz",
+      "sha256": "b03fd90e554fae8c0c093898d314cf3ce301a57825dc5ad4c13c9951492ee86a",
+      "bytes": 983
+    },
+    {
+      "path": "Yeast/masks/fold_2/view_mask_0.5.npz",
+      "sha256": "5974a8460ea5e748484d8ef1a9f4f9caea3bc7c77f617999fdc042698bb0e50c",
+      "bytes": 781
+    },
+    {
+      "path": "Yeast/masks/fold_3/label_mask_0.0.npz",
+      "sha256": "bcd0eb495d54b2643177fd5a605885dc59f7f962868ee285ddf3cd95e0e68c90",
+      "bytes": 984
+    },
+    {
+      "path": "Yeast/masks/fold_3/label_mask_0.1.npz",
+      "sha256": "4226055dda367ceaea2c0c0d94415283a4a20b0130c27dba709ad1bfb2b7c47a",
+      "bytes": 3591
+    },
+    {
+      "path": "Yeast/masks/fold_3/label_mask_0.3.npz",
+      "sha256": "40a3647b1f7b1218bea06620ddf152643e541ecc247dec85eb38f051a153a2c0",
+      "bytes": 5181
+    },
+    {
+      "path": "Yeast/masks/fold_3/label_mask_0.5.npz",
+      "sha256": "92d08fcb221806a6da72e2d5b33e0da3039ef5e299602844f4501abc286b5eca",
+      "bytes": 5465
+    },
+    {
+      "path": "Yeast/masks/fold_3/label_mask_0.7.npz",
+      "sha256": "5ca43625cb228fc93fbdab72fc22ea1b5e4ecacd88024c1d7ae3a6193bdf385e",
+      "bytes": 5110
+    },
+    {
+      "path": "Yeast/masks/fold_3/metadata.json",
+      "sha256": "f85267fb8aa6b1af6fc55845dc40735c932354200376a914b0becdd1f78821a2",
+      "bytes": 12530
+    },
+    {
+      "path": "Yeast/masks/fold_3/view_mask_0.0.npz",
+      "sha256": "3425031b40fee07721c1512f289a4490a9c36a61f2c8df6df9de749649b62815",
+      "bytes": 255
+    },
+    {
+      "path": "Yeast/masks/fold_3/view_mask_0.1.npz",
+      "sha256": "9241c53554951c35a9bbda34fb6a27b81a08f7906c81a01af70d2b04093cd515",
+      "bytes": 742
+    },
+    {
+      "path": "Yeast/masks/fold_3/view_mask_0.3.npz",
+      "sha256": "803d6b2289c47ce6ef3186d879fcbb589ef6ac8e035c76e75636005e884d3a4f",
+      "bytes": 999
+    },
+    {
+      "path": "Yeast/masks/fold_3/view_mask_0.5.npz",
+      "sha256": "38e42cfcbfbd1a6a1b9c67e7fa1b43779aa614f043a7c86b8c2e3a893c87d748",
+      "bytes": 786
+    },
+    {
+      "path": "Yeast/masks/fold_4/label_mask_0.0.npz",
+      "sha256": "a8130cba98163812ef34d274f4c9819ee80163522df414a0c4673d8369a4a042",
+      "bytes": 990
+    },
+    {
+      "path": "Yeast/masks/fold_4/label_mask_0.1.npz",
+      "sha256": "28921c865a8fa5d4d14943ef8e4d2fef9a35d00197e159c36844d192104089fc",
+      "bytes": 3582
+    },
+    {
+      "path": "Yeast/masks/fold_4/label_mask_0.3.npz",
+      "sha256": "187be5d85040a0678d45fa16af6342e3f177455a5f11387634fa6f4bfb4071e0",
+      "bytes": 5182
+    },
+    {
+      "path": "Yeast/masks/fold_4/label_mask_0.5.npz",
+      "sha256": "a2235f61d014fc112c4f2f7e9b1e32c0dab15b0851a2d2eb8715b4cedfb0afcf",
+      "bytes": 5477
+    },
+    {
+      "path": "Yeast/masks/fold_4/label_mask_0.7.npz",
+      "sha256": "bfa895dca8c2f450df616dd9ba74ce46f517774fbbbf6832fffc4fd220f0236f",
+      "bytes": 5092
+    },
+    {
+      "path": "Yeast/masks/fold_4/metadata.json",
+      "sha256": "e91306694b826fff0ddd63117a7821003187faa109d6aebd1dc83d71179b98ad",
+      "bytes": 12530
+    },
+    {
+      "path": "Yeast/masks/fold_4/view_mask_0.0.npz",
+      "sha256": "3425031b40fee07721c1512f289a4490a9c36a61f2c8df6df9de749649b62815",
+      "bytes": 255
+    },
+    {
+      "path": "Yeast/masks/fold_4/view_mask_0.1.npz",
+      "sha256": "0f159ef6e11dd9fb6217f7255cf93af2105352ff21f0d1ca18cab65f4d5b1d09",
+      "bytes": 741
+    },
+    {
+      "path": "Yeast/masks/fold_4/view_mask_0.3.npz",
+      "sha256": "84309fe1be6f7f4dbeb588052ce13543b8dd03113f52c8becd7488fd54c5fbf4",
+      "bytes": 1002
+    },
+    {
+      "path": "Yeast/masks/fold_4/view_mask_0.5.npz",
+      "sha256": "9999910e262566d3246deeec52aa174ac0a76a8af9262ba9d851e5572435f317",
+      "bytes": 781
+    },
+    {
+      "path": "Yeast/metadata.json",
+      "sha256": "5d8dbd64b2bf86601308a686bb69d6aa9de62da3dcb6474491d1843fd5f40fa8",
+      "bytes": 11780
+    },
+    {
+      "path": "Yeast/sample_group_ids.npy",
+      "sha256": "608a362ac522720107a552dba8f45c0651418e99eb7d5ec8d70fdda05613d3d9",
+      "bytes": 19464
+    },
+    {
+      "path": "划分数量.csv",
+      "sha256": "6f1c0c10a344a2938de627d32f6e72788beba0d12d8807b87878cab4c7f1a568",
+      "bytes": 2092
+    },
+    {
+      "path": "协议.json",
+      "sha256": "0cea2077147f3f3309bfdcebe848f64b2f858328c4d85f31fb2d8f373f29294d",
+      "bytes": 6592
+    },
+    {
+      "path": "实际缺失率.csv",
+      "sha256": "0fd78362abea7e1e7eb0a08730aea51daa478c94e311028e52bac13323b87f25",
+      "bytes": 61371
+    },
+    {
+      "path": "核验结果.json",
+      "sha256": "51daacb0790817a518c49dd5ca41f7536c1f6562b95a3a4446e0a9407ac00c45",
+      "bytes": 1766
+    },
+    {
+      "path": "说明.md",
+      "sha256": "38fc22558723f584a35c3a7a1e7bc78d2bfca7e7fb017dc30d208a315225a2ab",
+      "bytes": 7255
+    }
+  ]
+}

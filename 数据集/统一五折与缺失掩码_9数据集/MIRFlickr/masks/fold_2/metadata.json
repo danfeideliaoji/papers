@@ -1,0 +1,826 @@
+{
+  "dataset": "MIRFlickr",
+  "fold": 2,
+  "split_sha256": "336c8d9ebccb8ebd477d951e88278c08a0a4e7ad6cea372e47190c3e735b53ba",
+  "group_file_sha256": "6c988410c5c1abbb7b119a8c5d0cc6823ae2ecfc1be2a3d6d1a6619357963983",
+  "view_masks": [
+    {
+      "file": "view_mask_0.0.npz",
+      "sha256": "a4eb710a9082d502e4111ad3b023b152bfcb25f47dc28e19afd5fef6a0b884ec",
+      "shape": [
+        25000,
+        6
+      ],
+      "rate": 0.0,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000
+          ]
+        },
+        "val16": {
+          "rows": 4000,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            4000,
+            4000,
+            4000,
+            4000,
+            4000,
+            4000
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000
+          ]
+        },
+        "test20": {
+          "rows": 5000,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 6,
+          "visible_per_column": [
+            5000,
+            5000,
+            5000,
+            5000,
+            5000,
+            5000
+          ]
+        }
+      }
+    },
+    {
+      "file": "view_mask_0.1.npz",
+      "sha256": "feb468a2b11e85b714bccca6b7a10821c1531032627a428c8c007be81fdfe8b5",
+      "shape": [
+        25000,
+        6
+      ],
+      "rate": 0.1,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.09999999999999998,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            14411,
+            14401,
+            14381,
+            14351,
+            14438,
+            14418
+          ]
+        },
+        "val16": {
+          "rows": 4000,
+          "actual_missing_rate": 0.09999999999999998,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 3,
+          "visible_per_column": [
+            3600,
+            3592,
+            3644,
+            3596,
+            3578,
+            3590
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.09999999999999998,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            18011,
+            17993,
+            18025,
+            17947,
+            18016,
+            18008
+          ]
+        },
+        "test20": {
+          "rows": 5000,
+          "actual_missing_rate": 0.09999999999999998,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            4508,
+            4500,
+            4471,
+            4513,
+            4510,
+            4498
+          ]
+        }
+      }
+    },
+    {
+      "file": "view_mask_0.3.npz",
+      "sha256": "510eeb61cfa8facc41c3efdf1d9d4105f85ba9066f65562d35f0c6c2453d2183",
+      "shape": [
+        25000,
+        6
+      ],
+      "rate": 0.3,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.30000000000000004,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            11320,
+            11272,
+            11044,
+            11103,
+            11293,
+            11168
+          ]
+        },
+        "val16": {
+          "rows": 4000,
+          "actual_missing_rate": 0.30000000000000004,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            2785,
+            2814,
+            2790,
+            2833,
+            2773,
+            2805
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.30000000000000004,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            14105,
+            14086,
+            13834,
+            13936,
+            14066,
+            13973
+          ]
+        },
+        "test20": {
+          "rows": 5000,
+          "actual_missing_rate": 0.30000000000000004,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            3556,
+            3462,
+            3490,
+            3473,
+            3518,
+            3501
+          ]
+        }
+      }
+    },
+    {
+      "file": "view_mask_0.5.npz",
+      "sha256": "495b673b53e8c34dab1dd1635f7d2c8dcd1226ea8bc8c26d963e09037d6ef543",
+      "shape": [
+        25000,
+        6
+      ],
+      "rate": 0.5,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            8053,
+            8055,
+            7821,
+            8058,
+            8003,
+            8010
+          ]
+        },
+        "val16": {
+          "rows": 4000,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            1976,
+            2031,
+            1966,
+            2051,
+            1961,
+            2015
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            10029,
+            10086,
+            9787,
+            10109,
+            9964,
+            10025
+          ]
+        },
+        "test20": {
+          "rows": 5000,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 1,
+          "visible_per_column": [
+            2529,
+            2438,
+            2502,
+            2496,
+            2542,
+            2493
+          ]
+        }
+      }
+    }
+  ],
+  "label_masks": [
+    {
+      "file": "label_mask_0.0.npz",
+      "sha256": "825831783441f291f1e13d0db0f3e6b340f54ca5a4552739e3b005ff7c3f19a3",
+      "shape": [
+        25000,
+        38
+      ],
+      "rate": 0.0,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 38,
+          "visible_per_column": [
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000,
+            16000
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.0,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 38,
+          "visible_per_column": [
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000,
+            20000
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.1.npz",
+      "sha256": "c4521954986919939625a4855d800b5aca5387d090bc8ef7c086ff8b22ab1170",
+      "shape": [
+        25000,
+        38
+      ],
+      "rate": 0.1,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.09983881578947373,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 26,
+          "visible_per_column": [
+            14477,
+            14362,
+            14391,
+            14465,
+            14427,
+            14427,
+            14418,
+            14391,
+            14427,
+            14408,
+            14412,
+            14465,
+            14314,
+            14362,
+            14402,
+            14361,
+            14427,
+            14398,
+            14411,
+            14389,
+            14468,
+            14444,
+            14382,
+            14437,
+            14342,
+            14403,
+            14399,
+            14374,
+            14387,
+            14428,
+            14423,
+            14376,
+            14362,
+            14405,
+            14365,
+            14374,
+            14384,
+            14411
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.09999999999999998,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 26,
+          "visible_per_column": [
+            18059,
+            17949,
+            18005,
+            18036,
+            18020,
+            18027,
+            18006,
+            17970,
+            18048,
+            18034,
+            18022,
+            18083,
+            17906,
+            17950,
+            17985,
+            17918,
+            18046,
+            18005,
+            18035,
+            17976,
+            18059,
+            18059,
+            17937,
+            18049,
+            17942,
+            17974,
+            18027,
+            17970,
+            17991,
+            18012,
+            18051,
+            17989,
+            17963,
+            17987,
+            17947,
+            17987,
+            17989,
+            17987
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.3.npz",
+      "sha256": "45d23546d3b9f59af7cd6076b7659390227387166ecc379e925442e1f17cbdde",
+      "shape": [
+        25000,
+        38
+      ],
+      "rate": 0.3,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.2997976973684211,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 13,
+          "visible_per_column": [
+            11268,
+            11168,
+            11246,
+            11236,
+            11194,
+            11182,
+            11223,
+            11207,
+            11217,
+            11156,
+            11219,
+            11288,
+            11189,
+            11246,
+            11105,
+            11119,
+            11216,
+            11251,
+            11230,
+            11184,
+            11256,
+            11166,
+            11312,
+            11229,
+            11079,
+            11270,
+            11216,
+            11223,
+            11149,
+            11206,
+            11240,
+            11216,
+            11201,
+            11193,
+            11114,
+            11103,
+            11231,
+            11175
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.30000000000000004,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 13,
+          "visible_per_column": [
+            14050,
+            13989,
+            14068,
+            14017,
+            13994,
+            13950,
+            14008,
+            13983,
+            14040,
+            13982,
+            14028,
+            14082,
+            13991,
+            14024,
+            13866,
+            13914,
+            14015,
+            14071,
+            14037,
+            13973,
+            14061,
+            13979,
+            14065,
+            14065,
+            13841,
+            14032,
+            14061,
+            14024,
+            13979,
+            13978,
+            14045,
+            14052,
+            13982,
+            13978,
+            13912,
+            13923,
+            14003,
+            13938
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.5.npz",
+      "sha256": "ae7f5eb71267635765af64110ec594ef8c90ac6e805bfb3bceace3bff46b0cdc",
+      "shape": [
+        25000,
+        38
+      ],
+      "rate": 0.5,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.49947039473684207,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 8,
+          "visible_per_column": [
+            8097,
+            7939,
+            7998,
+            8085,
+            8018,
+            8063,
+            8017,
+            7963,
+            8004,
+            7941,
+            8105,
+            8072,
+            7966,
+            8020,
+            7856,
+            7848,
+            8018,
+            8118,
+            8086,
+            8030,
+            8008,
+            8025,
+            7985,
+            7999,
+            7996,
+            8045,
+            8039,
+            8009,
+            7976,
+            8059,
+            8119,
+            8076,
+            7985,
+            7987,
+            7841,
+            7924,
+            8118,
+            7887
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.5,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 8,
+          "visible_per_column": [
+            10036,
+            9924,
+            10007,
+            10107,
+            10016,
+            10055,
+            10060,
+            9992,
+            10019,
+            9924,
+            10107,
+            10074,
+            9924,
+            10018,
+            9799,
+            9824,
+            10018,
+            10153,
+            10073,
+            10004,
+            10008,
+            10065,
+            9934,
+            10020,
+            9928,
+            10004,
+            10038,
+            10026,
+            9993,
+            10045,
+            10110,
+            10062,
+            9986,
+            9934,
+            9825,
+            9933,
+            10092,
+            9863
+          ]
+        }
+      }
+    },
+    {
+      "file": "label_mask_0.7.npz",
+      "sha256": "d2d3921086e4aaa0801ba0c1c0f901dd115ebc47c4a31b68efbc9f40e514ffab",
+      "shape": [
+        25000,
+        38
+      ],
+      "rate": 0.7,
+      "partitions": {
+        "train64": {
+          "rows": 16000,
+          "actual_missing_rate": 0.6999490131578947,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            4811,
+            4742,
+            4774,
+            4824,
+            4815,
+            4834,
+            4851,
+            4797,
+            4756,
+            4702,
+            4873,
+            4849,
+            4759,
+            4820,
+            4749,
+            4736,
+            4745,
+            4813,
+            4880,
+            4798,
+            4786,
+            4877,
+            4840,
+            4822,
+            4823,
+            4783,
+            4890,
+            4850,
+            4802,
+            4806,
+            4871,
+            4834,
+            4818,
+            4746,
+            4644,
+            4704,
+            4918,
+            4689
+          ]
+        },
+        "outer_train80": {
+          "rows": 20000,
+          "actual_missing_rate": 0.7,
+          "all_unknown_or_missing_rows": 0,
+          "min_visible_per_row": 2,
+          "visible_per_column": [
+            6000,
+            6023,
+            5974,
+            6044,
+            6012,
+            6011,
+            6051,
+            6037,
+            5980,
+            5918,
+            6114,
+            6063,
+            5927,
+            6043,
+            5910,
+            5929,
+            5947,
+            6040,
+            6028,
+            5963,
+            5979,
+            6126,
+            5998,
+            6034,
+            5958,
+            5984,
+            6112,
+            6039,
+            6009,
+            5966,
+            6074,
+            6026,
+            6065,
+            5902,
+            5840,
+            5899,
+            6122,
+            5853
+          ]
+        }
+      }
+    }
+  ],
+  "rng": "numpy.default_rng/PCG64",
+  "rng_seed_words": {
+    "view:train64": [
+      20261026,
+      3432471392,
+      453560700,
+      2359395387,
+      2846634947
+    ],
+    "view:val16": [
+      20261026,
+      2772866078,
+      1807641965,
+      2718113887,
+      330147250
+    ],
+    "view:test20": [
+      20261026,
+      612977581,
+      1923583294,
+      2431381061,
+      2397938878
+    ],
+    "label:outer_train80": [
+      20261026,
+      840249017,
+      988421183,
+      597337065,
+      3783200211
+    ]
+  },
+  "source_label_values_used": false,
+  "evaluation_labels": "Validation/test use full labels in evaluator; stored training known_mask is NOT an evaluation mask."
+}

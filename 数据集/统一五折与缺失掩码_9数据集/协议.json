@@ -1,0 +1,203 @@
+{
+  "protocol": "nested_group_consistent_missingness_v1",
+  "seed": 20261026,
+  "view_rates": [
+    0.0,
+    0.1,
+    0.3,
+    0.5
+  ],
+  "label_rates": [
+    0.0,
+    0.1,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "view_rate_denominator": "sample rows x views within each internal partition",
+  "label_rate_denominator": "outer_train_idx sample rows x labels; internal train64 rate is also recorded",
+  "value_semantics": "1=observed/known, 0=hidden; arrays indexed by original zero-based sample row",
+  "group_policy": "Exact-feature duplicate rows share identical view/label masks within each fold.",
+  "view_sampling": "One uniformly protected view per group, then uniform random ordering of other group/view slots. Row-weighted nearest prefixes select missing slots. This is constrained random missingness, not independent Bernoulli MCAR.",
+  "label_sampling": "Uniform random ordering of group/label slots; row-weighted nearest prefixes hide positive/negative positions without reading their values. No known-positive repair and no forced known label per sample.",
+  "nesting": "Within each fold, hidden positions at a lower rate remain hidden at every higher rate.",
+  "validation_and_test_labels": "Full benchmark labels are evaluation-only. For no-validation methods, inner-val sample rows enter outer training ONLY with the stored training label mask.",
+  "source_records": [
+    {
+      "dataset": "3Sources",
+      "source_path": "E:\\论文资料库_GitHub\\数据集\\3Sources\\3sources.mat",
+      "source_sha256": "0d5875e0fd4b7fef5c6a1b00d42d7b886d56a868bde45eeda5de9ed5afe24191",
+      "samples": 169,
+      "labels": 6,
+      "view_dimensions": [
+        1000,
+        1000,
+        1000
+      ]
+    },
+    {
+      "dataset": "Corel5k",
+      "source_path": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\研究探索\\02_不完整多视图多标签\\数据资源\\源数据\\Corel5k\\RANK本地作者包\\corel5k_six_view.mat",
+      "source_sha256": "21db00c49606193a6ab5c37896761fa8630aa7e2d58a7d55eb4bcde009851eb9",
+      "samples": 4999,
+      "labels": 260,
+      "view_dimensions": [
+        100,
+        1000,
+        512,
+        4096,
+        4096,
+        4096
+      ]
+    },
+    {
+      "dataset": "Emotions",
+      "source_path": "E:\\论文资料库_GitHub\\数据集\\Emotions\\emotions.mat",
+      "source_sha256": "6beebbc50400c7034223f47df882e317cb43ca14cc51723072563cd7f91e434b",
+      "samples": 593,
+      "labels": 6,
+      "view_dimensions": [
+        8,
+        64
+      ]
+    },
+    {
+      "dataset": "ESPGame",
+      "source_path": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\研究探索\\02_不完整多视图多标签\\数据资源\\源数据\\ESPGame\\RANK作者公开六视图\\espgame_six_view.mat",
+      "source_sha256": "02aa852a993041d2841cd8a3f9ce3ae18b37ab7dba7fb5160dd8364fc0f1e01e",
+      "samples": 20770,
+      "labels": 268,
+      "view_dimensions": [
+        100,
+        1000,
+        512,
+        4096,
+        4096,
+        4096
+      ]
+    },
+    {
+      "dataset": "IAPRTC12",
+      "source_path": "E:\\论文资料库_GitHub\\数据集\\IAPRTC-12\\iaprtc12.mat",
+      "source_sha256": "6a02a5f7b97f09cd36c54f3efe764c10dc3a0b155d92d2ff1ea9faa46d5f3081",
+      "samples": 4999,
+      "labels": 291,
+      "view_dimensions": [
+        100,
+        300,
+        512,
+        100,
+        300
+      ]
+    },
+    {
+      "dataset": "MIRFlickr",
+      "source_path": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\研究探索\\02_不完整多视图多标签\\数据资源\\实验子集\\MIRFlickr-4500\\source\\mirflickr_six_view.mat",
+      "source_sha256": "561670f87842b7318e6bb6b4110b839ad222eb526a6e6754aac76397f56a8b73",
+      "samples": 25000,
+      "labels": 38,
+      "view_dimensions": [
+        100,
+        1000,
+        512,
+        4096,
+        4096,
+        4096
+      ]
+    },
+    {
+      "dataset": "Pascal07",
+      "source_path": "E:\\Papers_2025_2026\\Papers_2025_2026_CCF_A\\03_Multi-View_Multi-Label\\研究探索\\02_不完整多视图多标签\\数据资源\\源数据\\Pascal07\\neighbor_value六视图\\pascal07_six_view.mat",
+      "source_sha256": "0ec0acf6ccc378baee52f30aa5cd9ffe1d187932003f2b3da3f2f0f6781c1826",
+      "samples": 9963,
+      "labels": 20,
+      "view_dimensions": [
+        100,
+        1000,
+        512,
+        4096,
+        4096,
+        4096
+      ]
+    },
+    {
+      "dataset": "Scene",
+      "source_path": "E:\\论文资料库_GitHub\\数据集\\Scene\\scene.mat",
+      "source_sha256": "ad47a3d28b3de75a04ad08fa8bc44649b5c1ce111f134d386868c809497cb453",
+      "samples": 2407,
+      "labels": 6,
+      "view_dimensions": [
+        98,
+        196
+      ]
+    },
+    {
+      "dataset": "Yeast",
+      "source_path": "E:\\论文资料库_GitHub\\数据集\\Yeast\\yeast.mat",
+      "source_sha256": "70dc6622c7dacbc1df160ebec2623a89bf1dba092ca0b348f6cbaa3814fa6c4f",
+      "samples": 2417,
+      "labels": 14,
+      "view_dimensions": [
+        79,
+        24
+      ]
+    }
+  ],
+  "fold_count": 45,
+  "view_mask_count": 180,
+  "label_mask_count": 225,
+  "numpy_version": "2.3.5",
+  "settings": {
+    "main": {
+      "view_missing_rate": 0.5,
+      "label_missing_rate": 0.5
+    },
+    "view_sensitivity": [
+      {
+        "view_missing_rate": 0.1,
+        "label_missing_rate": 0.5
+      },
+      {
+        "view_missing_rate": 0.3,
+        "label_missing_rate": 0.5
+      },
+      {
+        "view_missing_rate": 0.5,
+        "label_missing_rate": 0.5
+      }
+    ],
+    "label_sensitivity": [
+      {
+        "view_missing_rate": 0.5,
+        "label_missing_rate": 0.1
+      },
+      {
+        "view_missing_rate": 0.5,
+        "label_missing_rate": 0.3
+      },
+      {
+        "view_missing_rate": 0.5,
+        "label_missing_rate": 0.5
+      },
+      {
+        "view_missing_rate": 0.5,
+        "label_missing_rate": 0.7
+      }
+    ],
+    "optional_controls": [
+      {
+        "view_missing_rate": 0.0,
+        "label_missing_rate": 0.0
+      },
+      {
+        "view_missing_rate": 0.0,
+        "label_missing_rate": 0.5
+      },
+      {
+        "view_missing_rate": 0.5,
+        "label_missing_rate": 0.0
+      }
+    ],
+    "execution": "Masks only; no training or evaluation was launched. Main setting is prepared for all 9 datasets; sensitivity need not run on all datasets."
+  }
+}
