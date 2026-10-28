@@ -1,69 +1,21 @@
 # 数据集
 
-按数据集名称直接存放。不同内容的同名文件保留为不同版本，不应互相替换。作者包内的小型演示数据保留原路径，并在这里按数据集名称另存副本。
+保留九个实验数据集：Corel5k、Pascal07、MIRFlickr、ESPGame、IAPRTC-12、Scene、Emotions、Yeast和3Sources。Pascal07在仓库中的目录名为VOC2007。
 
-| 数据集 | 文件数 |
-|---|---:|
-| [3Sources](<3Sources/>) | 1 |
-| [Adult](<Adult/>) | 1 |
-| [Arts](<Arts/>) | 2 |
-| [AudioSet](<AudioSet/>) | 3 |
-| [Auto MPG](<Auto MPG/>) | 1 |
-| [BBCSport](<BBCSport/>) | 1 |
-| [BDGP](<BDGP/>) | 11 |
-| [Bike](<Bike/>) | 1 |
-| [BlogFeedback](<BlogFeedback/>) | 61 |
-| [BRAC](<BRAC/>) | 1 |
-| [Breast Cancer Wisconsin](<Breast Cancer Wisconsin/>) | 1 |
-| [CAL500](<CAL500/>) | 2 |
-| [CASP](<CASP/>) | 1 |
-| [COIL20](<COIL20/>) | 1 |
-| [Communities and Crime](<Communities and Crime/>) | 5 |
-| [Concrete](<Concrete/>) | 1 |
-| [Corel5k](<Corel5k/>) | 16 |
-| [CREMA-D](<CREMA-D/>) | 7 |
-| [Crop Yield](<Crop Yield/>) | 8 |
-| [Dry Bean](<Dry Bean/>) | 1 |
-| [DVM](<DVM/>) | 5 |
-| [Education](<Education/>) | 1 |
-| [Emotions](<Emotions/>) | 5 |
-| [Enron](<Enron/>) | 1 |
-| [Entertainment](<Entertainment/>) | 1 |
-| [Enzymes](<Enzymes/>) | 1 |
-| [ESPGame](<ESPGame/>) | 1 |
-| [Facebook Comment Volume](<Facebook Comment Volume/>) | 3 |
-| [Flags](<Flags/>) | 1 |
-| [Forest Fires](<Forest Fires/>) | 1 |
-| [GPCRs](<GPCRs/>) | 1 |
-| [Handwritten](<Handwritten/>) | 3 |
-| [Health](<Health/>) | 1 |
-| [Heart Disease UCI](<Heart Disease UCI/>) | 1 |
-| [HW](<HW/>) | 1 |
-| [IAPRTC-12](<IAPRTC-12/>) | 1 |
-| [Image](<Image/>) | 1 |
-| [Kin8nm](<Kin8nm/>) | 1 |
-| [Mammographic Masses](<Mammographic Masses/>) | 1 |
-| [Medical](<Medical/>) | 1 |
-| [MEPS](<MEPS/>) | 2 |
-| [MIRFlickr](<MIRFlickr/>) | 1 |
-| [MovieLens](<MovieLens/>) | 1 |
-| [MS COCO](<MS COCO/>) | 4 |
-| [MSRCv1](<MSRCv1/>) | 11 |
-| [NGs](<NGs/>) | 1 |
-| [OBJECT](<OBJECT/>) | 1 |
-| [Online Shoppers](<Online Shoppers/>) | 1 |
-| [PIE](<PIE/>) | 1 |
-| [ROSMAP](<ROSMAP/>) | 1 |
-| [Scene](<Scene/>) | 8 |
-| [Superconductivity](<Superconductivity/>) | 2 |
-| [VGGSound](<VGGSound/>) | 8 |
-| [VOC2007](<VOC2007/>) | 1 |
-| [WDBC](<WDBC/>) | 1 |
-| [Wine Quality](<Wine Quality/>) | 1 |
-| [Yacht Hydrodynamics](<Yacht Hydrodynamics/>) | 1 |
-| [Yeast](<Yeast/>) | 1 |
+同名数据可能有多个版本；固定索引对应的数据身份与样本顺序，以统一划分包内的metadata.json和sources.json为准，不得将索引套用于其他版本。
 
-划分清单、邻接矩阵、词向量等配套文件保存在对应源码原位置。
+| 数据集 | 仓库目录 | 文件数 |
+|---|---|---:|
+| Corel5k | [Corel5k](<Corel5k/>) | 16 |
+| Pascal07 | [VOC2007](<VOC2007/>) | 1 |
+| MIRFlickr | [MIRFlickr](<MIRFlickr/>) | 1 |
+| ESPGame | [ESPGame](<ESPGame/>) | 1 |
+| IAPRTC-12 | [IAPRTC-12](<IAPRTC-12/>) | 1 |
+| Scene | [Scene](<Scene/>) | 8 |
+| Emotions | [Emotions](<Emotions/>) | 5 |
+| Yeast | [Yeast](<Yeast/>) | 1 |
+| 3Sources | [3Sources](<3Sources/>) | 1 |
+
 ## 统一实验划分
 
-[九个数据集的统一五折索引与缺失掩码](统一五折与缺失掩码_9数据集/README.md)：45套固定五折索引及配套缺失掩码，基础种子20261026。需要验证集时约64/16/20，不需要验证集时约80/20，并共用测试折。数据版本和样本顺序必须匹配包内说明；训练未知标签不能当作负例。
+[九个数据集的统一五折索引与缺失掩码](统一五折与缺失掩码_9数据集/README.md)：45套固定五折索引、180个视图掩码和225个标签掩码，基础种子20261026。需要验证集时约64/16/20，不需要验证集时约80/20，并共用测试折。训练未知标签不能当作负例。
