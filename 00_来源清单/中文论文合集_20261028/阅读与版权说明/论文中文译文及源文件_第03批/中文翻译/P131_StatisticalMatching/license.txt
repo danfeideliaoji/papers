@@ -1,0 +1,20 @@
+Original article: Riccardo D’Alberto and Meri Raggi, Integrating rather than collecting: statistical matching in the data flood era, Statistical Papers 65 (2024), 2135–2163. DOI 10.1007/s00362-023-01468-3.
+Copyright The Author(s) 2023.
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+Publisher: https://link.springer.com/article/10.1007/s00362-023-01468-3
+
+Local source PDF page 23 contains the following article-specific license statement:
+ ThisarticleislicensedunderaCreativeCommonsAttribution4.0InternationalLicense,which
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence,
+and indicate if changes were made. The images or other third party material in this article are included
+in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If
+material is not included in the article’s Creative Commons licence and your intended use is not permitted
+by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the
+copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+
+
+Changes: unofficial Chinese translation, new pagination and Chinese table/captions; source figures and numbered formulas reproduced as attributed crops. No author/publisher endorsement implied.
+
+Third-party exception review: the only numbered figure (Figure 1, source page 5) has no credit-line exclusion; Table 1 and equations likewise carry no separate restrictive credit. They fall under the article license.
